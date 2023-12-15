@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+ background-image: url(images/HD_sitebackimage_5_poster3_compressed.jpg);
+ font-family: Roboto, Arial;
+}
+
+
+
+.main{
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+
+.main-container {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(24, 24, 24);
+  max-width: 1200px;
+  width: 1200px;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  bottom: 0;
+
+}
+.slideshow-container {
+  width: 1200px;
+  position: relative;
+  margin: auto;
+  cursor: pointer;
+}
+.mySlides {
+display: none;
+}
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -36px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 1s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  
+  
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 10%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 20px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.Section-descripts {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(145, 145, 145);
+  font-family: 'Libre Franklin', sans-serif;
+  display: inline-block;
+  padding-left: 20px;
+}
+.view-all {
+  text-decoration: none;
+  padding-left: 8px;
+  color: rgb(39, 146, 189);
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+.anime-slides{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2px;
+  width: 1160px;
+  height: 140px;
+  background-color: rgb(24, 24, 24);
+  margin-left: 20px;
+  position: relative;
+  margin-top: 10px;
+}
+.anime-Previews{
+  margin-left: 5px;
+  width: 224px;
+  height: 130px;
+  background-color: blue;
+  border-radius: 2px;
+  position: relative;
+  z-index: 12;
+  cursor: pointer;
+}
+.anime-Previews:hover{
+  opacity: .8;
+}
+.anime-times-flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.new-episode-times {
+  background-color: orange;
+  height: 18px;
+  width: 100px;
+  white-space: nowrap;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding-left: 6px;
+  padding-right: 6px;
+  z-index: 13;
+  display: inline-flex;
+  float: inline-start;
+  position: static;
+  margin-top: -120px;
+  margin-left: -210px;
+  margin-right: 96px;
+}
+
+.qwerty{
+  margin-left: -1144px;
+}
+
+.q {
+  margin-left: 10px;
+}
+
+.asdf {
+  color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 20px;
+  width: 190px;
+  bottom: 0;
+  top: 0;
+  opacity: 0;
+  padding-top: 60px;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+  z-index: 10001;
+  background-color: rgba(34, 34, 34, 0.4);
+}
+.asdf:hover {
+  opacity: 1;
+  font-weight: 600;
+}
+
+.asdfg {
+  color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 20px;
+  width: 190px;
+  bottom: 0;
+  top: 0;
+  opacity: 0;
+  padding-top: 60px;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+  z-index: 10001;
+  background-color: rgba(34, 34, 34, 0.4);
+}
+.asdfg:hover {
+  opacity: 1;
+  font-weight: 600;
+}
+
+.footer {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(41, 41, 41);
+  max-width: 1200px;
+  width: 1200px;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-between;
+  font-size: 12px;
+  align-items: center;
+  padding-top: 10px;
+}
+.footer-list{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-left: 80px;
+  color:  rgb(190, 190, 190);
+  margin-bottom: 30px;
+}
+
+a {
+  color: rgb(190, 190, 190);
+  text-decoration: none;
+  padding-right: 0px;
+  padding-top: 5px;
+}
+
+
+.lines {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1199px) {
+  .main-container, .slideshow-container, .footer, .anime-slides{
+    width: 1000px;
+  }
+  .anime-Previews {
+    width: 180px;
+    height: 100px;
+  }
+  .hovers{
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .new-episode-times{
+    margin-top: -82px;
+    margin-left: -184px;
+    margin-right: 74px;
+  }
+  .anime-slides{
+    width: fit-content;
+  }
+  .qwerty{
+    margin-left: -948px;
+  }
+  .slides-descriptions{
+    margin-bottom: -28px;
+    z-index: 100000000;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .main-container, .slideshow-container, .footer, .anime-slides{
+    width: 800px;
+  }
+  .anime-Previews {
+    width: 140px;
+    height: 80px;
+  }
+  .hovers{
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+    font-size: 10px;
+    width: 144px;
+  }
+  .new-episode-times{
+    margin-top: -82px;
+    margin-left: -184px;
+    margin-right: 74px;
+    opacity: 0;
+  }
+  .anime-slides{
+    width: fit-content;
+    margin-top: 0;
+  }
+  .qwerty{
+    margin-left: -748px;
+  }
+  .Section-descripts{
+    margin-top: -10px;
+  }
+  .footer-list{
+    margin-left: 10px;
+    gap: 4px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .main-container, .slideshow-container, .footer, .anime-slides{
+    width: 600px;
+  }
+  .anime-Previews {
+    width: 100px;
+    height: 80px;
+  }
+  .hovers{
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+    font-size: 10px;
+    width: 104px;
+  }
+  .new-episode-times{
+    margin-top: -82px;
+    margin-left: -184px;
+    margin-right: 74px;
+    opacity: 0;
+  }
+  .anime-slides{
+    width: fit-content;
+    margin-top: 0;
+  }
+  .qwerty{
+    margin-left: -548px;
+  }
+  .Section-descripts{
+    margin-top: -10px;
+  }
+  .footer-list{
+    margin-left: 0px;
+    gap: 0px;
+  }
+}
