@@ -1,5 +1,5 @@
 export const recentlyAddedAnimeInfos = [{
-  id: 'q',
+  id: 'A0000-0000-0001',
   hoverID: 'asdf',
   name: 'BLADE OF THE IMMORTAL',
   image: 'css/animePosters/BOI_01_MASTER_300x169.jpg',
@@ -7,7 +7,7 @@ export const recentlyAddedAnimeInfos = [{
   opacity: 1,
 },
 {
-  id: 'qw',
+  id: 'A0000-0000-0002',
   hoverID: 'asdf',
   name: 'SHIROBAKO',
   image: 'css/animePosters/SHB_MASTER_300x169.jpg',
@@ -15,7 +15,7 @@ export const recentlyAddedAnimeInfos = [{
   opacity: 1,
 },
 {
-  id: 'qwe',
+  id: 'A0000-0000-0003',
   hoverID: 'asdf',
   name: `KINO'S JOURNEY`,
   image: 'css/animePosters/KJ_Master_300x169.jpg',
@@ -23,7 +23,7 @@ export const recentlyAddedAnimeInfos = [{
   opacity: 1,
 },
 {
-  id: 'qwer',
+  id: 'A0000-0000-0004',
   hoverID: 'asdf',
   name: 'THE DEMON SWORD MASTER OF EXCLAIBUR ACADEMY',
   image: 'css/animePosters/DEA_01_MASTER_300x169.jpg',
@@ -31,7 +31,7 @@ export const recentlyAddedAnimeInfos = [{
   opacity: 1,
 },
 {
-  id: 'qwert',
+  id: 'A0000-0000-0005',
   hoverID: 'asdf',
   name: 'TO LOVERU DARKNESS 2',
   image: 'css/animePosters/TLD_02_MASTER_300x169.jpg',
@@ -39,7 +39,7 @@ export const recentlyAddedAnimeInfos = [{
   opacity: 1,
 },
 {
-  id: 'qwerty',
+  id: 'A0000-0001-0001',
   hoverID: 'asdfg',
   name: 'HIMOUTO! UMARU-CHAN',
   image: 'css/animePosters/HUC_MASTER_300x169.jpg',
@@ -47,7 +47,7 @@ export const recentlyAddedAnimeInfos = [{
   opacity: 0,
 },
 {
-  id: 'qwertyu',
+  id: 'A0000-0001-0002',
   hoverID: 'asdfg',
   name: 'KIDS ON THE SLOPE',
   image: 'css/animePosters/KOS_MASTER_300x169.jpg',
@@ -55,7 +55,7 @@ export const recentlyAddedAnimeInfos = [{
   opacity: 0,
 },
 {
-  id: 'qwertyui',
+  id: 'A0000-0001-0003',
   hoverID: 'asdfg',
   name: 'MY LOVE STORY!!',
   image: 'css/animePosters/MLS_MASTER_300x169.jpg',
@@ -63,7 +63,7 @@ export const recentlyAddedAnimeInfos = [{
   opacity: 0,
 },
 {
-  id: 'qwertyuio',
+  id: 'A0000-0001-0004',
   hoverID: 'asdfg',
   name: 'LOVE, CHUNIBYO & OTHER DELUSIONS! HEART THROB-OVA',
   image: 'css/animePosters/CDK_02_OVA_MASTER_300x169.jpg',
@@ -71,7 +71,7 @@ export const recentlyAddedAnimeInfos = [{
   opacity: 0,
 },
 {
-  id: 'qwertyuiop',
+  id: 'A0000-0001-0005',
   hoverID: 'asdfg',
   name: 'BEYOND THE BOUNDARY-OVA',
   image: 'css/animePosters/BTB_OVA_MASTER_300x169.jpg',
@@ -81,7 +81,7 @@ export const recentlyAddedAnimeInfos = [{
 
 
 export const SimulcastAnimeInfos = [{
-  id: 'q',
+  id: 'B0000-0000-0001',
   hoverID: 'asdf',
   name: 'THE VEXATIONS OF A SHUT-IN VAMPIRE PRINCESS',
   image: 'css/SimulcastPosters/VVP_01_MASTER_300x169.jpg',
@@ -89,7 +89,7 @@ export const SimulcastAnimeInfos = [{
   opacity: 1,
 },
 {
-  id: 'qw',
+  id: 'B0000-0000-0002',
   hoverID: 'asdf',
   name: 'RAGNA CRIMSON',
   image: 'css/SimulcastPosters/RCR_01_MASTER_300x169.jpg',
@@ -97,7 +97,7 @@ export const SimulcastAnimeInfos = [{
   opacity: 1,
 },
 {
-  id: 'qw',
+  id: 'B0000-0000-0003',
   hoverID: 'asdf',
   name: 'DARK GATHERING',
   image: 'css/SimulcastPosters/DKG_01_MASTER_300x169.jpg',
@@ -105,7 +105,7 @@ export const SimulcastAnimeInfos = [{
   opacity: 1,
 },
 {
-  id: 'qw',
+  id: 'B0000-0000-0004',
   hoverID: 'asdf',
   name: 'THE DEMON SWORD MASTER OF EXCLAIBUR ACADEMY',
   image: 'css/SimulcastPosters/DEA_01_MASTER_300x169.jpg',
@@ -113,7 +113,7 @@ export const SimulcastAnimeInfos = [{
   opacity: 1,
 },
 {
-  id: 'qw',
+  id: 'B0000-0000-0005',
   hoverID: 'asdf',
   name: 'HELCK',
   image: 'css/SimulcastPosters/HLK_01_MASTER_300x169.jpg',
@@ -121,7 +121,7 @@ export const SimulcastAnimeInfos = [{
   opacity: 1,
 },
 {
-  id: 'qwerty',
+  id: 'B0000-0001-0001',
   hoverID: 'asdfg',
   name: 'THE EMINENCE IN SHADOW',
   image: 'css/SimulcastPosters/EIS_01_MASTER_300x169.jpg',
@@ -129,7 +129,7 @@ export const SimulcastAnimeInfos = [{
   opacity: 0,
 },
 {
-  id: 'qwertyuio',
+  id: 'B0000-0001-0002',
   hoverID: 'asdfg',
   name: 'CARDFIGHT!! VANGAURD',
   image: 'css/SimulcastPosters/VWD_01_MASTER_300x169.jpg',
@@ -137,7 +137,7 @@ export const SimulcastAnimeInfos = [{
   opacity: 0,
 },
 {
-  id: 'qwertyuio',
+  id: 'B0000-0001-0003',
   hoverID: 'asdfg',
   name: 'SPY CLASSROOM',
   image: 'css/SimulcastPosters/SCL_01_MASTER_300x169.jpg',
@@ -145,7 +145,7 @@ export const SimulcastAnimeInfos = [{
   opacity: 0,
 },
 {
-  id: 'qwertyuio',
+  id: 'B0000-0001-0004',
   hoverID: 'asdfg',
   name: 'THE MOST HERETICAL LAST BOSS QUEEN',
   image: 'css/SimulcastPosters/HLB_01_MASTER_300x169.jpg',
@@ -153,7 +153,7 @@ export const SimulcastAnimeInfos = [{
   opacity: 0,
 },
 {
-  id: 'qwertyuio',
+  id: 'B0000-0001-0005',
   hoverID: 'asdfg',
   name: 'THE DREAMING BOY IS A REALIST',
   image: 'css/SimulcastPosters/DBR_01_MASTER_300x169.jpg',
@@ -163,7 +163,7 @@ export const SimulcastAnimeInfos = [{
 
 
 export const exclusivesAnimeInfos = [{
-  id: 'q',
+  id: 'C0000-0000-0001',
   hoverID: 'asdf',
   name: 'DARK GATHERING',
   image: 'css/SimulcastPosters/DKG_01_MASTER_300x169.jpg',
@@ -171,7 +171,7 @@ export const exclusivesAnimeInfos = [{
   opacity: 1,
 },
 {
-  id: 'qw',
+  id: 'C0000-0000-0002',
   hoverID: 'asdf',
   name: 'LOVE, CHUNIBYO & OTHER DELUSIONS!-OVA',
   image: 'css/ExclusivePosters/CDK_01_OVA_MASTER_300x169.jpg',
@@ -179,7 +179,7 @@ export const exclusivesAnimeInfos = [{
   opacity: 1,
 },
 {
-  id: 'qw',
+  id: 'C0000-0000-0003',
   hoverID: 'asdf',
   name: 'LOVE, CHUNIBYO & OTHER DELUSIONS! HEART THROB-OVA',
   image: 'css/ExclusivePosters/CDK_02_OVA_MASTER_300x169.jpg',
@@ -187,7 +187,7 @@ export const exclusivesAnimeInfos = [{
   opacity: 1,
 },
 {
-  id: 'qw',
+  id: 'C0000-0000-0004',
   hoverID: 'asdf',
   name: 'LOVE FLOPS',
   image: 'css/ExclusivePosters/LFP_01_MASTER_300x169.jpg',
@@ -195,7 +195,7 @@ export const exclusivesAnimeInfos = [{
   opacity: 1,
 },
 {
-  id: 'qw',
+  id: 'C0000-0000-0005',
   hoverID: 'asdf',
   name: 'PHANTOM OF THE IDOL',
   image: 'css/ExclusivePosters/PHI_01_MASTER_300x169.jpg',
@@ -203,7 +203,7 @@ export const exclusivesAnimeInfos = [{
   opacity: 1,
 },
 {
-  id: 'qwerty',
+  id: 'C0000-0001-0001',
   hoverID: 'asdfg',
   name: 'THE DREAMING BOY IS A REALIST',
   image: 'css/ExclusivePosters/DBR_01_MASTER_300x169.jpg',
@@ -211,7 +211,7 @@ export const exclusivesAnimeInfos = [{
   opacity: 0,
 },
 {
-  id: 'qwertyuio',
+  id: 'C0000-0001-0002',
   hoverID: 'asdfg',
   name: 'GUNBUSTER THE MOVIE',
   image: 'css/ExclusivePosters/GNB_01_MASTER_300x169.jpg',
@@ -219,7 +219,7 @@ export const exclusivesAnimeInfos = [{
   opacity: 0,
 },
 {
-  id: 'qwertyuio',
+  id: 'C0000-0001-0003',
   hoverID: 'asdfg',
   name: 'THE DEMON SWORD MASTER OF EXCLAIBUR ACADEMY',
   image: 'css/SimulcastPosters/DEA_01_MASTER_300x169.jpg',
@@ -227,7 +227,7 @@ export const exclusivesAnimeInfos = [{
   opacity: 0,
 },
 {
-  id: 'qwertyuio',
+  id: 'C0000-0001-0004',
   hoverID: 'asdfg',
   name: 'THE VEXATIONS OF A SHUT-IN VAMPIRE PRINCESS',
   image: 'css/SimulcastPosters/VVP_01_MASTER_300x169.jpg',
@@ -235,7 +235,7 @@ export const exclusivesAnimeInfos = [{
   opacity: 0,
 },
 {
-  id: 'qwertyuio',
+  id: 'C0000-0001-0005',
   hoverID: 'asdfg',
   name: 'RAGNA CRIMSON',
   image: 'css/SimulcastPosters/RCR_01_MASTER_300x169.jpg',
@@ -245,7 +245,7 @@ export const exclusivesAnimeInfos = [{
 
 
 export const IntroToHidiveAnimeInfos = [{
-  id: 'q',
+  id: 'D0000-0000-0001',
   hoverID: 'asdf',
   name: 'REAL GIRL',
   image: 'css/IntroToHidivePosters/real-girl_RLG_01_MASTER_300x169_01.jpg',
@@ -253,7 +253,7 @@ export const IntroToHidiveAnimeInfos = [{
   opacity: 1
 },
 {
-  id: 'qw',
+  id: 'D0000-0000-0002',
   hoverID: 'asdf',
   name: 'LEGEND OF THE GALACTIC HEROES',
   image: 'css/IntroToHidivePosters/LegendGalacticHeroes_MASTER_300x169.jpg',
@@ -261,7 +261,7 @@ export const IntroToHidiveAnimeInfos = [{
   opacity: 1,
 },
 {
-  id: 'qw',
+  id: 'D0000-0000-0003',
   hoverID: 'asdf',
   name: 'BLOOM INTO YOU',
   image: 'css/IntroToHidivePosters/BIB_01_MASTER_300x169_01.jpg',
@@ -269,7 +269,7 @@ export const IntroToHidiveAnimeInfos = [{
   opacity: 1,
 },
 {
-  id: 'qw',
+  id: 'D0000-0000-0004',
   hoverID: 'asdf',
   name: 'GATE',
   image: 'css/IntroToHidivePosters/GTE_MASTER_300x169.jpg',
@@ -277,7 +277,7 @@ export const IntroToHidiveAnimeInfos = [{
   opacity: 1,
 },
 {
-  id: 'qw',
+  id: 'D0000-0000-0005',
   hoverID: 'asdf',
   name: 'IS IT WRONG TO PICK UP GIRLS IN A DUNGEON',
   image: 'css/IntroToHidivePosters/WPG_OVA_MASTER_300x169_v02.jpg',
@@ -285,7 +285,7 @@ export const IntroToHidiveAnimeInfos = [{
   opacity: 1,
 },
 {
-  id: 'qwerty',
+  id: 'D0000-0001-0001',
   hoverID: 'asdfg',
   name: 'MADE IN ABYSS',
   image: 'css/IntroToHidivePosters/made-in-abyss_MIA_MASTER_300x169.jpg',
@@ -293,7 +293,7 @@ export const IntroToHidiveAnimeInfos = [{
   opacity: 0,
 },
 {
-  id: 'qwertyuio',
+  id: 'D0000-0001-0002',
   hoverID: 'asdfg',
   name: 'FOOD WARS!',
   image: 'css/IntroToHidivePosters/FDW_MASTER_300x169.jpg',
@@ -301,7 +301,7 @@ export const IntroToHidiveAnimeInfos = [{
   opacity: 0,
 },
 {
-  id: 'qwertyuio',
+  id: 'D0000-0001-0003',
   hoverID: 'asdfg',
   name: 'MY GIRLFRIEND IS A SHOBITCH',
   image: 'css/IntroToHidivePosters/FVB_01_MASTER_300x169.jpg',
@@ -309,7 +309,7 @@ export const IntroToHidiveAnimeInfos = [{
   opacity: 0,
 },
 {
-  id: 'qwertyuio',
+  id: 'D0000-0001-0004',
   hoverID: 'asdfg',
   name: `MONTHLY GILRS' NOZAKI-KUN`,
   image: 'css/IntroToHidivePosters/MGN_MASTER_300x169.jpg',
@@ -317,7 +317,7 @@ export const IntroToHidiveAnimeInfos = [{
   opacity: 0,
 },
 {
-  id: 'qwertyuio',
+  id: 'D0000-0001-0005',
   hoverID: 'asdfg',
   name: 'DOMESTIC GIRLFRIEND',
   image: 'css/IntroToHidivePosters/DGF_01_MASTER_300x169.jpg',
@@ -327,7 +327,7 @@ export const IntroToHidiveAnimeInfos = [{
 
 
 export const TrendingNowAnimeInfos = [{
-  id: 'q',
+  id: 'E0000-0000-0001',
   hoverID: 'asdf',
   name: 'THE EMINENCE IN SHADOW',
   image: 'css/SimulcastPosters/EIS_01_MASTER_300x169.jpg',
@@ -335,7 +335,7 @@ export const TrendingNowAnimeInfos = [{
   opacity: 1
 },
 {
-  id: 'qw',
+  id: 'E0000-0000-0002',
   hoverID: 'asdf',
   name: 'THE SEVEN HEAVENLY VIRTUES',
   image: 'css/TrendingnowPosters/SHV_01_MASTER_300x169_01.jpg',
@@ -343,7 +343,7 @@ export const TrendingNowAnimeInfos = [{
   opacity: 1,
 },
 {
-  id: 'qw',
+  id: 'E0000-0000-0003',
   hoverID: 'asdf',
   name: 'RE:CYCLE OF THE PENGUINDRUM MOVIE',
   image: 'css/TrendingnowPosters/PGD_MOVIE2_MASTER_300x169.jpg',
@@ -351,7 +351,7 @@ export const TrendingNowAnimeInfos = [{
   opacity: 1,
 },
 {
-  id: 'qw',
+  id: 'E0000-0000-0004',
   hoverID: 'asdf',
   name: 'HELCK',
   image: 'css/SimulcastPosters/HLK_01_MASTER_300x169.jpg',
@@ -359,7 +359,7 @@ export const TrendingNowAnimeInfos = [{
   opacity: 1,
 },
 {
-  id: 'qw',
+  id: 'E0000-0000-0005',
   hoverID: 'asdf',
   name: 'THE DEMON SWORD MASTER OF EXCLAIBUR ACADEMY',
   image: 'css/SimulcastPosters/DEA_01_MASTER_300x169.jpg',
@@ -367,7 +367,7 @@ export const TrendingNowAnimeInfos = [{
   opacity: 1,
 },
 {
-  id: 'qwerty',
+  id: 'E0000-0001-0001',
   hoverID: 'asdfg',
   name: 'MANAGEMENT OF A NOVICE ALCHEMIST',
   image: 'css/TrendingnowPosters/MNA_01_MASTER_300x169.jpg',
@@ -375,7 +375,7 @@ export const TrendingNowAnimeInfos = [{
   opacity: 0,
 },
 {
-  id: 'qwertyuio',
+  id: 'E0000-0001-0002',
   hoverID: 'asdfg',
   name: 'ENDO AND KOBAYASHI, LIVE! THE LATEST ON TSUNDERE',
   image: 'css/TrendingnowPosters/EKL_01_MASTER_300x169.jpg',
@@ -383,7 +383,7 @@ export const TrendingNowAnimeInfos = [{
   opacity: 0,
 },
 {
-  id: 'qwertyuio',
+  id: 'E0000-0001-0003',
   hoverID: 'asdfg',
   name: 'LEVEL 1 DEMON LORD & ONE ROOM HERO',
   image: 'css/TrendingnowPosters/ORH_01_MASTER_300x169.jpg',
@@ -391,7 +391,7 @@ export const TrendingNowAnimeInfos = [{
   opacity: 0,
 },
 {
-  id: 'qwertyuio',
+  id: 'E0000-0001-0004',
   hoverID: 'asdfg',
   name: 'GATE',
   image: 'css/IntroToHidivePosters/GTE_MASTER_300x169.jpg',
@@ -399,7 +399,7 @@ export const TrendingNowAnimeInfos = [{
   opacity: 0,
 },
 {
-  id: 'qwertyuio',
+  id: 'E0000-0001-0005',
   hoverID: 'asdfg',
   name: 'PHANTOM OF THE IDOL',
   image: 'css/ExclusivePosters/PHI_01_MASTER_300x169.jpg',
