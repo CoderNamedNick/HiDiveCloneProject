@@ -37,7 +37,10 @@
               START 7-DAY FREE TRIAL
             </button>
           </a>
-          <img class="Search-icon" src="css/images/icons8-search-48 (1).png">
+          <div id="search-icon-div">
+            <input id="searchbar" type="text" placeholder="search">
+            <button id="Search-icon-btn" onclick="b()"><img class="Search-icon" src="css/images/icons8-search-48 (1).png"></button>
+          </div>
           <img class="account-icon" src="css/images/icons8-user-64.png">
         </div>
       </div>
@@ -154,6 +157,7 @@
   </div>
 
   <script type="module" src="scripts/index.js"></script>
+  <script src="scripts/searchbtn.js"></script>
   <script src="scripts/SlideShow.js"></script>
 </body>
 </html>

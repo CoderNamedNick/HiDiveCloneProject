@@ -7,6 +7,10 @@ import { TrendingNowAnimeInfos } from "./animes-info.js";
 
 alert('this is a clone site made for learning!! FOR REAL ANIME GO TO HIDIVE')
 
+
+
+
+
 let recentlyAddedAnimeInfosHTML = '';
 
 
