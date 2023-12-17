@@ -6,15 +6,10 @@ body{
  background-image: url(images/HD_sitebackimage_5_poster3_compressed.jpg);
  font-family: Roboto, Arial;
 }
-
-
-
 .main{
   align-items: center;
   margin-bottom: 60px;
 }
-
-
 .main-container {
   margin-right: auto;
   margin-left: auto;
@@ -51,14 +46,11 @@ display: none;
   transition: 1s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  
-  
 }
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 .dot {
   cursor: pointer;
   height: 5px;
@@ -70,11 +62,9 @@ display: none;
   transition: background-color 0.6s ease;
   margin-bottom: 20px;
 }
-
 .active, .dot:hover {
   background-color: #717171;
 }
-
 .Section-descripts {
   font-size: 24px;
   font-weight: 500;
@@ -90,7 +80,6 @@ display: none;
   text-transform: capitalize;
   font-size: 12px;
 }
-
 .anime-slides{
   display: flex;
   flex-direction: row;
@@ -144,7 +133,6 @@ display: none;
   margin-left: -210px;
   margin-right: 96px;
 }
-
 .A0000-0001-0001, .B0000-0001-0001, .C0000-0001-0001,
 .D0000-0001-0001, .E0000-0001-0001{
   margin-left: -1144px;
@@ -153,7 +141,6 @@ display: none;
 .D0000-0000-0001, .E0000-0000-0001{
   margin-left: 10px;
 }
-
 .Displaying, .NotDisplaying {
   color: white;
   position: absolute;
@@ -176,7 +163,6 @@ display: none;
   opacity: 1;
   font-weight: 600;
 }
-
 .footer {
   margin-right: auto;
   margin-left: auto;
@@ -200,27 +186,16 @@ display: none;
   color:  rgb(190, 190, 190);
   margin-bottom: 30px;
 }
-
 a {
   color: rgb(190, 190, 190);
   text-decoration: none;
   padding-right: 0px;
   padding-top: 5px;
 }
-
-
 .lines {
   font-size: 20px;
   padding-bottom: 20px;
 }
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 1199px) {
   .main-container, .slideshow-container, .footer, .anime-slides{
     width: 1000px;
