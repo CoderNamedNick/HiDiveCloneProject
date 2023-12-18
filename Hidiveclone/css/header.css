@@ -68,6 +68,12 @@
   color: white;
   cursor: pointer;
 }
+.Search-icon-after{
+  width: 20px;
+  background-color: rgb(11, 11, 11);
+  color: white;
+  cursor: pointer;
+}
 #Search-icon-div{
   background-color: rgb(11, 11, 11);
 }
@@ -80,7 +86,7 @@
   opacity: 0;
 }
 #searchbar-after{
-  width: 140px;
+  width: 200px;
   height: 40px;
   padding-left: 20px;
   margin-right: 0px;
@@ -105,6 +111,9 @@
   border-radius: 4px;
   font-size: 12px;
   cursor: pointer;
+}
+.Trial-signup-btn-after{
+  opacity: 0;
 }
 
 
