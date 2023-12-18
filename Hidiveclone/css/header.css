@@ -53,6 +53,9 @@
   width: 20px;
   cursor: pointer;
 }
+.caret-options{
+  border-width: 20px;
+}
 .right-side{
   display: flex;
   flex-direction: row;
