@@ -43,6 +43,13 @@
   font-size: 13px;
   padding: 0;
   margin: 0;
+  font-family: Roboto, Arial;
+}
+.More{
+  background-color: rgb(11, 11, 11);
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 .caret {
   background-color: rgb(11, 11, 11);
@@ -55,6 +62,22 @@
 }
 .caret-options{
   border-width: 20px;
+}
+.News-tooltip, .Shop-tooltip{
+  padding-bottom: 10px;
+}
+.News-tooltip:hover, .Shop-tooltip:hover, .Header-list a:hover {
+  color: rgb(76, 204, 255);
+}
+.tooltip{
+  position: fixed;
+  margin-top: 18px;
+  background-color: rgb(11, 11, 11);
+  opacity: 1;
+  padding-left: 20px;
+  padding-right: 130px;
+  font-family: Roboto, Arial;
+  border-radius: 8px;
 }
 .right-side{
   display: flex;
