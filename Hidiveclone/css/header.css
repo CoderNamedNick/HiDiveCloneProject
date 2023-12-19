@@ -165,8 +165,13 @@
   cursor: pointer;
 }
 .account-tooltip{
+  width: 1px;
+  opacity: 0;
+  margin-top: -200px;
+}
+.account-tooltip-after{
   position: fixed;
-  margin-top: 18px;
+  margin-top: 10px;
   margin-left: -40px;
   width: 120px;
   background-color: rgb(11, 11, 11);
