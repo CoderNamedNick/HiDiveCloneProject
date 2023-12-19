@@ -51,25 +51,37 @@
   border: none;
   cursor: pointer;
 }
+.More:hover{
+  color: rgb(76, 204, 255);
+}
 .caret {
-  background-color: rgb(11, 11, 11);
-  color: white;
-  border: none;
-  margin-left: -4px;
-  z-index: 20;
-  width: 20px;
-  cursor: pointer;
+  display: inline;
+  font-size: 8px;
 }
 .caret-options{
   border-width: 20px;
 }
 .News-tooltip, .Shop-tooltip{
   padding-bottom: 10px;
+  background-color: rgb(11, 11, 11);
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: Roboto, Arial;
 }
 .News-tooltip:hover, .Shop-tooltip:hover, .Header-list a:hover {
   color: rgb(76, 204, 255);
 }
 .tooltip{
+  position: fixed;
+  margin-top: -100px;
+  background-color: rgb(11, 11, 11);
+  opacity: 0;
+  font-family: Roboto, Arial;
+  border-radius: 8px;
+  z-index: 2;
+}
+.tooltip-after{
   position: fixed;
   margin-top: 18px;
   background-color: rgb(11, 11, 11);
@@ -78,6 +90,7 @@
   padding-right: 130px;
   font-family: Roboto, Arial;
   border-radius: 8px;
+  z-index: 30;
 }
 .right-side{
   display: flex;

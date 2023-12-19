@@ -25,3 +25,26 @@ let a = () => {
   </a>
   `
 }
+
+
+let c = () => {
+  document.getElementById('More-div').innerHTML = `
+  <button onclick="d()" class="More">MORE <p class="caret">&#9660;</p>
+  </button>
+  <div class="tooltip-after">
+    <p class="News-tooltip">NEWS</p>
+    <p class="Shop-tooltip">SHOP</p>
+  </div>
+  `
+}
+
+let d = () => {
+  document.getElementById('More-div').innerHTML = `
+  <button onclick="c()" class="More">MORE <p class="caret">&#9660;</p>
+  </button>
+  <div class="tooltip">
+    <p class="News-tooltip">NEWS</p>
+    <p class="Shop-tooltip">SHOP</p>
+  </div>
+  `
+}

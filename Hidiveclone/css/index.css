@@ -22,7 +22,6 @@ body{
   flex: 1;
   justify-content: space-between;
   bottom: 0;
-
 }
 .slideshow-container {
   width: 1200px;
@@ -31,7 +30,7 @@ body{
   cursor: pointer;
 }
 .mySlides {
-display: none;
+  display: none;
 }
 .prev, .next{
   cursor: pointer;
