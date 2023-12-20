@@ -141,4 +141,104 @@ let AllAnimes = [{
   name: 'GUNBUSTER THE MOVIE',
   image: 'css/ExclusivePosters/GNB_01_MASTER_300x169.jpg',
   genre: ['action', 'fantasy', ' Drama', 'Supernatural', 'Seinen',]
+},
+{
+  id: 'D0000-0000-0001',
+  name: 'REAL GIRL',
+  image: 'css/IntroToHidivePosters/real-girl_RLG_01_MASTER_300x169_01.jpg',
+  genre: ['action', 'fantasy', ' Drama', 'Supernatural', 'Seinen',]
+},
+{
+  id: 'D0000-0000-0002',
+  name: 'LEGEND OF THE GALACTIC HEROES',
+  image: 'css/IntroToHidivePosters/LegendGalacticHeroes_MASTER_300x169.jpg',
+  genre: ['action', 'fantasy', ' Drama', 'Supernatural', 'Seinen',]
+},
+{
+  id: 'D0000-0000-0003',
+  name: 'BLOOM INTO YOU',
+  image: 'css/IntroToHidivePosters/BIB_01_MASTER_300x169_01.jpg',
+  genre: ['action', 'fantasy', ' Drama', 'Supernatural', 'Seinen',]
+},
+{
+  id: 'D0000-0000-0004',
+  name: 'GATE',
+  image: 'css/IntroToHidivePosters/GTE_MASTER_300x169.jpg',
+  genre: ['action', 'fantasy', ' Drama', 'Supernatural', 'Seinen',]
+},
+{
+  id: 'D0000-0000-0005',
+  name: 'IS IT WRONG TO PICK UP GIRLS IN A DUNGEON',
+  image: 'css/IntroToHidivePosters/WPG_OVA_MASTER_300x169_v02.jpg',
+  genre: ['action', 'fantasy', ' Drama', 'Supernatural', 'Seinen',]
+},
+{
+  id: 'D0000-0001-0001',
+  name: 'MADE IN ABYSS',
+  image: 'css/IntroToHidivePosters/made-in-abyss_MIA_MASTER_300x169.jpg',
+  genre: ['action', 'fantasy', ' Drama', 'Supernatural', 'Seinen',]
+},
+{
+  id: 'D0000-0001-0002',
+  name: 'FOOD WARS!',
+  image: 'css/IntroToHidivePosters/FDW_MASTER_300x169.jpg',
+  genre: ['action', 'fantasy', ' Drama', 'Supernatural', 'Seinen',]
+},
+{
+  id: 'D0000-0001-0003',
+  name: 'MY GIRLFRIEND IS A SHOBITCH',
+  image: 'css/IntroToHidivePosters/FVB_01_MASTER_300x169.jpg',
+  genre: ['action', 'fantasy', ' Drama', 'Supernatural', 'Seinen',]
+},
+{
+  id: 'D0000-0001-0004',
+  name: `MONTHLY GILRS' NOZAKI-KUN`,
+  image: 'css/IntroToHidivePosters/MGN_MASTER_300x169.jpg',
+  genre: ['action', 'fantasy', ' Drama', 'Supernatural', 'Seinen',]
+},
+{
+  id: 'D0000-0001-0005',
+  name: 'DOMESTIC GIRLFRIEND',
+  image: 'css/IntroToHidivePosters/DGF_01_MASTER_300x169.jpg',
+  genre: ['action', 'fantasy', ' Drama', 'Supernatural', 'Seinen',]
+},
+{
+  id: 'E0000-0000-0002',
+  hoverID: 'Displaying',
+  name: 'THE SEVEN HEAVENLY VIRTUES',
+  image: 'css/TrendingnowPosters/SHV_01_MASTER_300x169_01.jpg',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 1,
+},
+{
+  id: 'E0000-0000-0003',
+  hoverID: 'Displaying',
+  name: 'RE:CYCLE OF THE PENGUINDRUM MOVIE',
+  image: 'css/TrendingnowPosters/PGD_MOVIE2_MASTER_300x169.jpg',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 1,
+},
+{
+  id: 'E0000-0001-0001',
+  hoverID: 'NotDisplaying',
+  name: 'MANAGEMENT OF A NOVICE ALCHEMIST',
+  image: 'css/TrendingnowPosters/MNA_01_MASTER_300x169.jpg',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 0,
+},
+{
+  id: 'E0000-0001-0002',
+  hoverID: 'NotDisplaying',
+  name: 'ENDO AND KOBAYASHI, LIVE! THE LATEST ON TSUNDERE',
+  image: 'css/TrendingnowPosters/EKL_01_MASTER_300x169.jpg',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 0,
+},
+{
+  id: 'E0000-0001-0003',
+  hoverID: 'NotDisplaying',
+  name: 'LEVEL 1 DEMON LORD & ONE ROOM HERO',
+  image: 'css/TrendingnowPosters/ORH_01_MASTER_300x169.jpg',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 0,
 }]
