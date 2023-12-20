@@ -4,8 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HIDIVE SEARCH</title>
+  <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
-  
+  <div class="Header">
+    <div class="FlexBox">
+      <div class="left-side">
+        <div class="Header-logo">
+          <img class="Logo" src="css/images/HIDIVE_logo.svg">
+        </div>
+        <div class="Header-list">
+            <a href="https://www.hidive.com/dashboard">SIMULCASTS</a>
+            <a href="https://www.hidive.com/dashboard"> DUBS</a>
+            <a href="https://www.hidive.com/dashboard">SERIES</a>
+            <a href="https://www.hidive.com/dashboard">MOVIES</a>
+            <a href="https://www.hidive.com/dashboard">&#124;</a>
+            <a href="https://www.hidive.com/dashboard">SCHEDULE</a>
+            <a href="https://www.hidive.com/dashboard">HOME</a>
+            <div id="More-div">
+              <button onclick="c()" class="More">MORE <p class="caret">&#9660;</p>
+              </button>
+              <div class="tooltip">
+                <p class="News-tooltip">NEWS</p>
+                <p class="Shop-tooltip">SHOP</p>
+              </div>
+            </div>
+        </div>
+
+      </div>
+      <div class="right-side">
+        <div id="Trial-signup-div">
+          <a href="https://www.hidive.com/dashboard">
+            <button class="Trial-signup-btn">
+              START 7-DAY FREE TRIAL
+            </button>
+          </a>
+        </div>
+        <div id="search-icon-div">
+          <input id="searchbar" type="text" placeholder="search">
+          <button id="Search-icon-btn" onclick="b()"><img class="Search-icon" src="css/images/icons8-search-48 (1).png"></button>
+        </div>
+        <div id="account-icon-div">
+          <button onclick="e()" id="account-btn"><img class="account-icon" src="css/images/icons8-user-64.png"></button>
+          <div class="account-tooltip">
+            <p class="login-tooltip">LOG IN</p>
+            <hr>
+            <p class="help-tooltip">HELP CENTER</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

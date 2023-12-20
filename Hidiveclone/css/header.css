@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+ background-image: url(images/HD_sitebackimage_5_poster3_compressed.jpg);
+ font-family: Roboto, Arial;
+}
 .Header {
   display: flex;
   flex-direction: row;
