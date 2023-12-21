@@ -135,10 +135,24 @@ body{
 .A0000-0001-0001, .B0000-0001-0001, .C0000-0001-0001,
 .D0000-0001-0001, .E0000-0001-0001{
   margin-left: -1144px;
+  animation-name: slider;
+  animation-duration: 1s;
+  animation-direction: left;
+}
+@keyframes slider {
+  from {margin-left: 1000px;}
+  to {margin-left: -1144px;}
 }
 .A0000-0000-0001, .B0000-0000-0001, .C0000-0000-0001,
 .D0000-0000-0001, .E0000-0000-0001{
   margin-left: 10px;
+  animation-name: slider2;
+  animation-duration: 1s;
+  animation-direction: right;
+}
+@keyframes slider2 {
+  from {margin-left: -1000px;}
+  to {margin-left: 10px;}
 }
 .Displaying, .NotDisplaying {
   color: white;
