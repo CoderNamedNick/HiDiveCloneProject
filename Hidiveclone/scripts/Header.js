@@ -1,7 +1,7 @@
 
 let b = () => {
   document.getElementById('search-icon-div').innerHTML = `
-  <input id="searchbar-after" type="text" placeholder="search">
+  <input id="searchbar-after" onkeypress="handleKeyPress(event)" placeholder="search">
   <button id="Search-icon-btn-after" onclick="a()"><img class="Search-icon-after" src="css/images/icons8-search-48 (1).png"></button>  `
   document.getElementById('Trial-signup-div').innerHTML = `
   <a href="https://www.hidive.com/dashboard">
@@ -69,4 +69,12 @@ let f = () => {
     <p class="help-tooltip">HELP CENTER</p>
   </div>
   `
+}
+
+function handleKeyPress(event) {
+  if (event.key === 'Enter') {
+    var inputValue = document.getElementById('searchbar-after').value;
+    alert('Entered value: ' + inputValue);
+    // You can do something with the entered value here
+  }
 }
