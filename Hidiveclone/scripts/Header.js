@@ -79,6 +79,7 @@ function handleKeyPress(event) {
     alert('Entered value: ' + inputValue);
     // You can do something with the entered value here
     inputedsearch = inputValue
+    localStorage.setItem('myVariable', inputedsearch);
     console.log(inputedsearch);
     window.location.href = "search.html";
   }

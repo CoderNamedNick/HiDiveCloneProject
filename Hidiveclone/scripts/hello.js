@@ -1,10 +1,8 @@
 
 
+const retrievedValue = localStorage.getItem('myVariable');
 
-let hello = () => {
-  document.getElementById('search-result-div').innerHTML = `
-    <p>${inputedsearch}</p>
-  `
-}
 
-hello();
+document.getElementById('search-result-div').innerHTML = `
+  <p>${retrievedValue}</p>
+`
