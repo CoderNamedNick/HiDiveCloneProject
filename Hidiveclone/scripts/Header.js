@@ -71,10 +71,23 @@ let f = () => {
   `
 }
 
+let inputedsearch= '';
+
 function handleKeyPress(event) {
   if (event.key === 'Enter') {
     var inputValue = document.getElementById('searchbar-after').value;
     alert('Entered value: ' + inputValue);
     // You can do something with the entered value here
+    inputedsearch = inputValue
+    console.log(inputedsearch);
+    window.location.href = "search.html";
+    alert('hello')
+    hello()
   }
+}
+
+let hello = () => {
+  document.getElementById('search-result-div').innerHTML = `
+    <p>${inputedsearch}</p>
+  `
 }
