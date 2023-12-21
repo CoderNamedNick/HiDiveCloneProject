@@ -81,13 +81,5 @@ function handleKeyPress(event) {
     inputedsearch = inputValue
     console.log(inputedsearch);
     window.location.href = "search.html";
-    alert('hello')
-    hello()
   }
-}
-
-let hello = () => {
-  document.getElementById('search-result-div').innerHTML = `
-    <p>${inputedsearch}</p>
-  `
 }
