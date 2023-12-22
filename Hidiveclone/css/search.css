@@ -1,0 +1,15 @@
+.SEARCH-H1{
+  color: #333;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.hr1{
+  margin: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0px;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #555, #5A5A5A, #555);
+}
