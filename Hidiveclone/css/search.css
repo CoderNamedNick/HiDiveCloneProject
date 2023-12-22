@@ -13,3 +13,29 @@
   background: #333;
   background-image: linear-gradient(to right, #555, #5A5A5A, #555);
 }
+.search-searchpage{
+  margin-top: 30px;
+  width: 500px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 16px;
+  height: 34px;
+  margin-right: auto;
+  margin-left: 300px;
+  background-color: rgb(24, 24, 24);
+  color: white;
+}
+.Search-icon-searchpage{
+  width: 30px;
+  height: 20px;
+}
+.Search-icon-searchpage-btn{
+  cursor: pointer;
+  width: 30px;
+  height: 20px;
+  border: none;
+  margin-left: -40px;
+  position: relative;
+  bottom: -4px;
+}
