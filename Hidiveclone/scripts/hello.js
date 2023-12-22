@@ -11,4 +11,4 @@ document.getElementById('search-result-div').innerHTML = `
 
 getsearch(AllAnimes, retrievedValue)
 
-console.log(typeof(retrievedValue))
+console.log(retrievedValue)

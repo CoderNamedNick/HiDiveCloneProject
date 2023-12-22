@@ -248,7 +248,23 @@ export let AllAnimes = [{
 export let getsearch = (param, param2) => {
   param.forEach((Anime) => {
     if(Anime.name === param2) {
-      console.log(param2)
+      document.getElementById('Anime-search-result-div').innerHTML = `
+      <img class="searched-anime-image" src="${Anime.image}">
+          <div class="anime-search-description-div">
+            <div class="searched-anime-name">
+              <h2>${Anime.name}</h2>
+            </div>
+            <div class="searched-anime-Stats">
+              <p>SEASON 1 | 24 EPISODES | TV-PG</p>
+            </div>
+            <div class="searched-anime-paragraph">
+              <p>Despite Takeos big heart, girls dont want him. Hes used to it. But his luck may change when he meets Yamato!</p>
+            </div>
+            <div class="searched-anime-watchnow">
+              <p><a>Show Info</a>  <a>Watch Now</a></p>
+            </div>
+          </div>
+      `
     }else {
       console.log('poop')
     }

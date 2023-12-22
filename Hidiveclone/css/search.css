@@ -39,3 +39,24 @@
   position: relative;
   bottom: -4px;
 }
+
+#Anime-search-result-div{
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.searched-anime-image{
+  width: 320px;
+  height: 180px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+.anime-search-description-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2px;
+  margin-left: 60px;
+  height: 160px;
+  color: white;
+}
