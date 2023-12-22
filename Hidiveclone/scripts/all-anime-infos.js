@@ -1,4 +1,4 @@
-let AllAnimes = [{
+export let AllAnimes = [{
   id: 'A0000-0000-0001',
   name: 'BLADE OF THE IMMORTAL',
   image: 'css/animePosters/BOI_01_MASTER_300x169.jpg',
@@ -241,4 +241,16 @@ let AllAnimes = [{
   image: 'css/TrendingnowPosters/ORH_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
-}]
+}];
+
+
+
+export let getsearch = (param, param2) => {
+  param.forEach((Anime) => {
+    if(Anime.name === param2) {
+      console.log(param2)
+    }else {
+      console.log('poop')
+    }
+  });
+}
