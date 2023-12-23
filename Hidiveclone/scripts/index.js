@@ -62,21 +62,13 @@ refresh2()
 
 document.getElementById('next-BTN2').onclick = () => {
   SimulcastAnimeInfosHTML = '';
-  SimulcastAnimeInfos.forEach((Anime) => {
-    if (Anime.opacity === 1) {
-      Anime.opacity = 0
-    }else {Anime.opacity = 1};
-  });
+  changeopacity(SimulcastAnimeInfos);
   refresh2()
 }
 
 document.getElementById('prev-BTN2').onclick = () => {
   SimulcastAnimeInfosHTML = '';
-  SimulcastAnimeInfos.forEach((Anime) => {
-    if (Anime.opacity === 1) {
-      Anime.opacity = 0
-    }else {Anime.opacity = 1};
-  });
+  changeopacity(SimulcastAnimeInfos)
   refresh2()
 }
 
@@ -91,21 +83,13 @@ refresh3()
 
 document.getElementById('next-BTN3').onclick = () => {
   exclusivesAnimeInfosHTML = '';
-  exclusivesAnimeInfos.forEach((Anime) => {
-    if (Anime.opacity === 1) {
-      Anime.opacity = 0
-    }else {Anime.opacity = 1};
-  });
+  changeopacity(exclusivesAnimeInfos)
   refresh3()
 }
 
 document.getElementById('prev-BTN3').onclick = () => {
   exclusivesAnimeInfosHTML = '';
-  exclusivesAnimeInfos.forEach((Anime) => {
-    if (Anime.opacity === 1) {
-      Anime.opacity = 0
-    }else {Anime.opacity = 1};
-  });
+  changeopacity(exclusivesAnimeInfos)
   refresh3()
 }
 
@@ -120,21 +104,13 @@ refresh4()
 
 document.getElementById('next-BTN4').onclick = () => {
   IntroToHidiveAnimeInfosHTML = '';
-  IntroToHidiveAnimeInfos.forEach((Anime) => {
-    if (Anime.opacity === 1) {
-      Anime.opacity = 0
-    }else {Anime.opacity = 1};
-  });
+  changeopacity(IntroToHidiveAnimeInfos)
   refresh4()
 }
 
 document.getElementById('prev-BTN4').onclick = () => {
   IntroToHidiveAnimeInfosHTML = '';
-  IntroToHidiveAnimeInfos.forEach((Anime) => {
-    if (Anime.opacity === 1) {
-      Anime.opacity = 0
-    }else {Anime.opacity = 1};
-  });
+  changeopacity(IntroToHidiveAnimeInfos)
   refresh4()
 }
 
@@ -149,20 +125,12 @@ refresh5()
 
 document.getElementById('next-BTN5').onclick = () => {
   TrendingNowAnimeInfosHTML = '';
-  TrendingNowAnimeInfos.forEach((Anime) => {
-    if (Anime.opacity === 1) {
-      Anime.opacity = 0
-    }else {Anime.opacity = 1};
-  });
+  changeopacity(TrendingNowAnimeInfos)
   refresh5()
 }
 
 document.getElementById('prev-BTN5').onclick = () => {
   TrendingNowAnimeInfosHTML = '';
-  TrendingNowAnimeInfos.forEach((Anime) => {
-    if (Anime.opacity === 1) {
-      Anime.opacity = 0
-    }else {Anime.opacity = 1};
-  });
+  changeopacity(TrendingNowAnimeInfos)
   refresh5()
 }
