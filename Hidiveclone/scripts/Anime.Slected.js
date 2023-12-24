@@ -1,8 +1,8 @@
-const retrievedAnime = localStorage.getItem("AnimeSlected")
+export const retrievedAnimeID = localStorage.getItem("AnimeSlected")
 
 export let AnimeSelctedToWatch = () => {
   window.location.href = "watchAnime.html";
 }
 
 
-console.log(retrievedAnime)
+console.log(retrievedAnimeID)

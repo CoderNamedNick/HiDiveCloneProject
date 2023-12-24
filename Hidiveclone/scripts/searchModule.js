@@ -1,6 +1,6 @@
 import { AllAnimes } from "./all-anime-infos.js";
 import { getsearch } from "./all-anime-infos.js";
-import { AnimeSelctedToWatch } from "./Anime.Slected.js";
+import { AnimeSelctedToWatch, retrievedAnimeID } from "./Anime.Slected.js";
 
 const retrievedValue = localStorage.getItem('myVariable');
 
@@ -12,9 +12,17 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-getsearch(AllAnimes, retrievedValue)
+getsearch(AllAnimes, retrievedValue);
+
 document.getElementById('WATCHNOW').onclick = () => {
   AnimeSelctedToWatch()
 }
 
 console.log(retrievedValue)
+
+
+AllAnimes.forEach(Anime => {
+  if (Anime.id === retrievedAnimeID) {
+    console.log('hellllooooooo')
+  }
+});
