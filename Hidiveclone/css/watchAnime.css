@@ -14,7 +14,7 @@
 .video-buttons{
   background-color:  rgb(76, 204, 255);
   color: white;
-  padding: 2px 2px;
+  padding: 4px 4px;
   border: none;
   border-radius: 4px;
   margin-bottom: 8px;
@@ -35,4 +35,13 @@
   height: 1px;
   background: #333;
   background-image: linear-gradient(to right, #555, #5A5A5A, #555);
+}
+.video-stats{
+  font-weight: 500;
+  font-size: 20px;
+  color: #646464;
+}
+.episode-description{
+  height: 100px;
+  color: #646464;
 }
