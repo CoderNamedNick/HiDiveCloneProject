@@ -275,6 +275,7 @@ export let AllAnimes = [{
 
 
 export let getsearch = (param, param2,) => {
+  localStorage.clear()
   param.forEach((Anime) => {
     if(Anime.name === param2) {
       document.getElementById('Anime-search-result-div').innerHTML = `
