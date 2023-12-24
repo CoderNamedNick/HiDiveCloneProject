@@ -5,6 +5,7 @@ export const recentlyAddedAnimeInfos = [{
   image: 'css/animePosters/BOI_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; E6 IN 2 DAYS',
   opacity: 1,
+  animeAllId: 'A0000-0000-0001'
 },
 {
   id: 'A0000-0000-0002',

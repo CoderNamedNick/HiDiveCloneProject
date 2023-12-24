@@ -7,7 +7,18 @@ import { TrendingNowAnimeInfos } from "./animes-info.js";
 
 alert('this is a clone site made for learning!! FOR REAL ANIME GO TO HIDIVE')
 
+localStorage.clear();
+
 let recentlyAddedAnimeInfosHTML = '';
+
+
+
+function clickedpreview(animeId) {
+  let retrievedAnime1ID = animeId;
+  localStorage.setItem("AnimeSelected",retrievedAnime1ID)
+  alert('wait');
+  window.location.href = "watchAnime.html";
+}
 
 const generateHtml = (infos, html) => {
   html = '';
@@ -17,7 +28,7 @@ const generateHtml = (infos, html) => {
       <div class="anime-times-flexbox ${anime.id}" style="position: relative; opacity: ${anime.opacity}">
         <img class="anime-Previews" src="${anime.image}">
         <div class="new-episode-times" style="z-index: 10003"><p>${anime.newEpTimes}</p></div>
-        <a href="https://www.hidive.com"><span class="hovers ${anime.hoverID}">${anime.name}</span></a>
+        <a href="#" class="blah" data-anime-all-id="${anime.animeAllId}"><span class="hovers ${anime.hoverID}">${anime.name}</span></a>
       </div>
     `;
   });
@@ -26,10 +37,18 @@ const generateHtml = (infos, html) => {
 
 var refresh = () => {
   recentlyAddedAnimeInfosHTML = generateHtml(recentlyAddedAnimeInfos, recentlyAddedAnimeInfosHTML);
-  document.querySelector('.js-anime-slides-recentlyAdded').innerHTML = `${recentlyAddedAnimeInfosHTML}`
+  document.querySelector('.js-anime-slides-recentlyAdded').innerHTML = `${recentlyAddedAnimeInfosHTML}`;
 }
 
+
 refresh();
+
+document.querySelectorAll('.blah').forEach((element) => {
+  element.addEventListener('click', function() {
+    clickedpreview(element.dataset.animeAllId);
+  });
+});
+
 
 let changeopacity = (param) => {
   param.forEach((Anime) => {
@@ -50,6 +69,7 @@ document.getElementById('prev-BTN').onclick = () => {
   changeopacity(recentlyAddedAnimeInfos);
   refresh()
 }
+
 
 let SimulcastAnimeInfosHTML = '';
 

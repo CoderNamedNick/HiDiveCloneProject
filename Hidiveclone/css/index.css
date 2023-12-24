@@ -103,6 +103,9 @@ body{
   z-index: 12;
   cursor: pointer;
 }
+.blah{
+  cursor: pointer;
+}
 .anime-Previews:hover{
   opacity: .8;
 }
