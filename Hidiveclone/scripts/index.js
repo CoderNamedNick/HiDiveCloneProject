@@ -16,7 +16,7 @@ let recentlyAddedAnimeInfosHTML = '';
 function clickedpreview(animeId) {
   let retrievedAnime1ID = animeId;
   localStorage.setItem("AnimeSelected",retrievedAnime1ID)
-  alert('wait');
+  //alert('wait');
   window.location.href = "watchAnime.html";
 }
 
@@ -38,16 +38,18 @@ const generateHtml = (infos, html) => {
 var refresh = () => {
   recentlyAddedAnimeInfosHTML = generateHtml(recentlyAddedAnimeInfos, recentlyAddedAnimeInfosHTML);
   document.querySelector('.js-anime-slides-recentlyAdded').innerHTML = `${recentlyAddedAnimeInfosHTML}`;
+
+  // Set up click event listeners after refreshing
+  document.querySelectorAll('.blah').forEach((element) => {
+    element.addEventListener('click', function () {
+      clickedpreview(element.dataset.animeAllId);
+    });
+  });
 }
 
 
 refresh();
 
-document.querySelectorAll('.blah').forEach((element) => {
-  element.addEventListener('click', function() {
-    clickedpreview(element.dataset.animeAllId);
-  });
-});
 
 
 let changeopacity = (param) => {
@@ -59,13 +61,11 @@ let changeopacity = (param) => {
 }
 
 document.getElementById('next-BTN').onclick = () => {
-  recentlyAddedAnimeInfosHTML = '';
   changeopacity(recentlyAddedAnimeInfos);
   refresh()
 }
 
 document.getElementById('prev-BTN').onclick = () => {
-  recentlyAddedAnimeInfosHTML = '';
   changeopacity(recentlyAddedAnimeInfos);
   refresh()
 }
@@ -76,6 +76,13 @@ let SimulcastAnimeInfosHTML = '';
 var refresh2 = () => {
   SimulcastAnimeInfosHTML = generateHtml(SimulcastAnimeInfos, SimulcastAnimeInfosHTML);
   document.querySelector('.js-anime-slides-simulcast').innerHTML = `${SimulcastAnimeInfosHTML}`
+
+   // Set up click event listeners after refreshing
+   document.querySelectorAll('.blah').forEach((element) => {
+    element.addEventListener('click', function () {
+      clickedpreview(element.dataset.animeAllId);
+    });
+  });
 }
 
 refresh2()
@@ -96,7 +103,14 @@ let exclusivesAnimeInfosHTML = '';
 
 var refresh3 = () => {
   exclusivesAnimeInfosHTML = generateHtml(exclusivesAnimeInfos, exclusivesAnimeInfosHTML);
-  document.querySelector('.js-anime-slides-exclusives').innerHTML = `${exclusivesAnimeInfosHTML}` 
+  document.querySelector('.js-anime-slides-exclusives').innerHTML = `${exclusivesAnimeInfosHTML}`  
+
+   // Set up click event listeners after refreshing
+  document.querySelectorAll('.blah').forEach((element) => {
+    element.addEventListener('click', function () {
+      clickedpreview(element.dataset.animeAllId);
+    });
+  });
 }
 
 refresh3()
@@ -118,6 +132,13 @@ let IntroToHidiveAnimeInfosHTML = '';
 var refresh4 = () => {
   IntroToHidiveAnimeInfosHTML = generateHtml(IntroToHidiveAnimeInfos, IntroToHidiveAnimeInfosHTML);
   document.querySelector('.js-anime-slides-INTRO-TO-HIDIVE').innerHTML = `${IntroToHidiveAnimeInfosHTML}`
+
+   // Set up click event listeners after refreshing
+   document.querySelectorAll('.blah').forEach((element) => {
+    element.addEventListener('click', function () {
+      clickedpreview(element.dataset.animeAllId);
+    });
+  });
 }
 
 refresh4()
@@ -138,7 +159,14 @@ let TrendingNowAnimeInfosHTML = '';
 
 var refresh5 = () => {
   TrendingNowAnimeInfosHTML = generateHtml(TrendingNowAnimeInfos, TrendingNowAnimeInfosHTML); 
-  document.querySelector('.js-anime-slides-TRENDING-NOW').innerHTML = `${TrendingNowAnimeInfosHTML}` 
+  document.querySelector('.js-anime-slides-TRENDING-NOW').innerHTML = `${TrendingNowAnimeInfosHTML}`  
+
+   // Set up click event listeners after refreshing
+   document.querySelectorAll('.blah').forEach((element) => {
+    element.addEventListener('click', function () {
+      clickedpreview(element.dataset.animeAllId);
+    });
+  });
 }
 
 refresh5()
