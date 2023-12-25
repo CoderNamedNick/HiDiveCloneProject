@@ -14,6 +14,7 @@ export const recentlyAddedAnimeInfos = [{
   image: 'css/animePosters/SHB_MASTER_300x169.jpg',
   newEpTimes: '&#128344; E1 IN 23 DAYS',
   opacity: 1,
+  animeAllId: 'A0000-0000-0002'
 },
 {
   id: 'A0000-0000-0003',
@@ -22,6 +23,7 @@ export const recentlyAddedAnimeInfos = [{
   image: 'css/animePosters/KJ_Master_300x169.jpg',
   newEpTimes: '&#128344; E6 IN 2 DAYS',
   opacity: 1,
+  animeAllId: 'A0000-0000-0003'
 },
 {
   id: 'A0000-0000-0004',
@@ -30,6 +32,7 @@ export const recentlyAddedAnimeInfos = [{
   image: 'css/animePosters/DEA_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; E11 IN 4 DAYS',
   opacity: 1,
+  animeAllId: 'A0000-0000-0004'
 },
 {
   id: 'A0000-0000-0005',
@@ -38,6 +41,7 @@ export const recentlyAddedAnimeInfos = [{
   image: 'css/animePosters/TLD_02_MASTER_300x169.jpg',
   newEpTimes: '&#128344; E1 IN 4 DAYS',
   opacity: 1,
+  animeAllId: 'A0000-0000-0005'
 },
 {
   id: 'A0000-0001-0001',
@@ -46,6 +50,7 @@ export const recentlyAddedAnimeInfos = [{
   image: 'css/animePosters/HUC_MASTER_300x169.jpg',
   newEpTimes: '&#128344; E1 IN 23 DAYS',
   opacity: 0,
+  animeAllId: 'A0000-0000-0006'
 },
 {
   id: 'A0000-0001-0002',
@@ -54,6 +59,7 @@ export const recentlyAddedAnimeInfos = [{
   image: 'css/animePosters/KOS_MASTER_300x169.jpg',
   newEpTimes: '&#128344; E1 IN 23 DAYS',
   opacity: 0,
+  animeAllId: 'A0000-0000-0007'
 },
 {
   id: 'A0000-0001-0003',
@@ -62,6 +68,7 @@ export const recentlyAddedAnimeInfos = [{
   image: 'css/animePosters/MLS_MASTER_300x169.jpg',
   newEpTimes: '&#128344; E1 IN 4 DAYS',
   opacity: 0,
+  animeAllId: 'A0000-0000-0008'
 },
 {
   id: 'A0000-0001-0004',
@@ -70,6 +77,7 @@ export const recentlyAddedAnimeInfos = [{
   image: 'css/animePosters/CDK_02_OVA_MASTER_300x169.jpg',
   newEpTimes: '&#128344; E1 IN 3 DAYS',
   opacity: 0,
+  animeAllId: 'A0000-0000-0009'
 },
 {
   id: 'A0000-0001-0005',
@@ -78,6 +86,7 @@ export const recentlyAddedAnimeInfos = [{
   image: 'css/animePosters/BTB_OVA_MASTER_300x169.jpg',
   newEpTimes: '&#128344; E1 IN 2 DAYS',
   opacity: 0,
+  animeAllId: 'A0000-0000-0010'
 }]
 
 
@@ -88,6 +97,7 @@ export const SimulcastAnimeInfos = [{
   image: 'css/SimulcastPosters/VVP_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; TODAY',
   opacity: 1,
+  animeAllId: 'A0000-0000-0011'
 },
 {
   id: 'B0000-0000-0002',
@@ -96,6 +106,7 @@ export const SimulcastAnimeInfos = [{
   image: 'css/SimulcastPosters/RCR_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; TODAY',
   opacity: 1,
+  animeAllId: 'A0000-0000-0012'
 },
 {
   id: 'B0000-0000-0003',
@@ -104,6 +115,7 @@ export const SimulcastAnimeInfos = [{
   image: 'css/SimulcastPosters/DKG_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; TOMORROW',
   opacity: 1,
+  animeAllId: 'A0000-0000-0013'
 },
 {
   id: 'B0000-0000-0004',
@@ -112,6 +124,7 @@ export const SimulcastAnimeInfos = [{
   image: 'css/SimulcastPosters/DEA_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; E11 IN 2 DAYS',
   opacity: 1,
+  animeAllId: 'A0000-0000-0004'
 },
 {
   id: 'B0000-0000-0005',
@@ -120,6 +133,7 @@ export const SimulcastAnimeInfos = [{
   image: 'css/SimulcastPosters/HLK_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; E23 IN 3 DAYS',
   opacity: 1,
+  animeAllId: 'A0000-0000-0014'
 },
 {
   id: 'B0000-0001-0001',
@@ -128,6 +142,7 @@ export const SimulcastAnimeInfos = [{
   image: 'css/SimulcastPosters/EIS_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
+  animeAllId: 'A0000-0000-0015'
 },
 {
   id: 'B0000-0001-0002',
@@ -136,6 +151,7 @@ export const SimulcastAnimeInfos = [{
   image: 'css/SimulcastPosters/VWD_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
+  animeAllId: 'A0000-0000-0016'
 },
 {
   id: 'B0000-0001-0003',
@@ -144,6 +160,7 @@ export const SimulcastAnimeInfos = [{
   image: 'css/SimulcastPosters/SCL_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
+  animeAllId: 'A0000-0000-0017'
 },
 {
   id: 'B0000-0001-0004',
@@ -152,6 +169,7 @@ export const SimulcastAnimeInfos = [{
   image: 'css/SimulcastPosters/HLB_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
+  animeAllId: 'A0000-0000-0018'
 },
 {
   id: 'B0000-0001-0005',
@@ -160,6 +178,7 @@ export const SimulcastAnimeInfos = [{
   image: 'css/SimulcastPosters/DBR_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
+  animeAllId: 'A0000-0000-0019'
 }]
 
 
@@ -170,6 +189,7 @@ export const exclusivesAnimeInfos = [{
   image: 'css/SimulcastPosters/DKG_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; TODAY',
   opacity: 1,
+  animeAllId: 'A0000-0000-0013'
 },
 {
   id: 'C0000-0000-0002',
@@ -178,6 +198,7 @@ export const exclusivesAnimeInfos = [{
   image: 'css/ExclusivePosters/CDK_01_OVA_MASTER_300x169.jpg',
   newEpTimes: '&#128344; TODAY',
   opacity: 1,
+  animeAllId: 'A0000-0000-0020'
 },
 {
   id: 'C0000-0000-0003',
@@ -186,6 +207,7 @@ export const exclusivesAnimeInfos = [{
   image: 'css/ExclusivePosters/CDK_02_OVA_MASTER_300x169.jpg',
   newEpTimes: '&#128344; TODAY',
   opacity: 1,
+  animeAllId: 'A0000-0000-0021'
 },
 {
   id: 'C0000-0000-0004',
@@ -194,6 +216,7 @@ export const exclusivesAnimeInfos = [{
   image: 'css/ExclusivePosters/LFP_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; TODAY',
   opacity: 1,
+  animeAllId: 'A0000-0000-0022'
 },
 {
   id: 'C0000-0000-0005',
@@ -202,6 +225,7 @@ export const exclusivesAnimeInfos = [{
   image: 'css/ExclusivePosters/PHI_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; TODAY',
   opacity: 1,
+  animeAllId: 'A0000-0000-0023'
 },
 {
   id: 'C0000-0001-0001',
@@ -210,6 +234,7 @@ export const exclusivesAnimeInfos = [{
   image: 'css/ExclusivePosters/DBR_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
+  animeAllId: 'A0000-0000-0019'
 },
 {
   id: 'C0000-0001-0002',
@@ -218,6 +243,7 @@ export const exclusivesAnimeInfos = [{
   image: 'css/ExclusivePosters/GNB_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
+  animeAllId: 'A0000-0000-0024'
 },
 {
   id: 'C0000-0001-0003',
@@ -226,6 +252,7 @@ export const exclusivesAnimeInfos = [{
   image: 'css/SimulcastPosters/DEA_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
+  animeAllId: 'A0000-0000-0004'
 },
 {
   id: 'C0000-0001-0004',
@@ -234,6 +261,7 @@ export const exclusivesAnimeInfos = [{
   image: 'css/SimulcastPosters/VVP_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
+  animeAllId: 'A0000-0000-0011'
 },
 {
   id: 'C0000-0001-0005',
@@ -242,6 +270,7 @@ export const exclusivesAnimeInfos = [{
   image: 'css/SimulcastPosters/RCR_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
+  animeAllId: 'A0000-0000-0012'
 }]
 
 
@@ -251,7 +280,8 @@ export const IntroToHidiveAnimeInfos = [{
   name: 'REAL GIRL',
   image: 'css/IntroToHidivePosters/real-girl_RLG_01_MASTER_300x169_01.jpg',
   newEpTimes: '&#128344; FINISHED',
-  opacity: 1
+  opacity: 1,
+  animeAllId: 'A0000-0000-0025'
 },
 {
   id: 'D0000-0000-0002',
@@ -260,6 +290,7 @@ export const IntroToHidiveAnimeInfos = [{
   image: 'css/IntroToHidivePosters/LegendGalacticHeroes_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 1,
+  animeAllId: 'A0000-0000-0026'
 },
 {
   id: 'D0000-0000-0003',
@@ -268,6 +299,7 @@ export const IntroToHidiveAnimeInfos = [{
   image: 'css/IntroToHidivePosters/BIB_01_MASTER_300x169_01.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 1,
+  animeAllId: 'A0000-0000-0027'
 },
 {
   id: 'D0000-0000-0004',
@@ -276,6 +308,7 @@ export const IntroToHidiveAnimeInfos = [{
   image: 'css/IntroToHidivePosters/GTE_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 1,
+  animeAllId: 'A0000-0000-0028'
 },
 {
   id: 'D0000-0000-0005',
@@ -284,6 +317,7 @@ export const IntroToHidiveAnimeInfos = [{
   image: 'css/IntroToHidivePosters/WPG_OVA_MASTER_300x169_v02.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 1,
+  animeAllId: 'A0000-0000-0029'
 },
 {
   id: 'D0000-0001-0001',
@@ -292,6 +326,7 @@ export const IntroToHidiveAnimeInfos = [{
   image: 'css/IntroToHidivePosters/made-in-abyss_MIA_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
+  animeAllId: 'A0000-0000-0030'
 },
 {
   id: 'D0000-0001-0002',
@@ -300,6 +335,7 @@ export const IntroToHidiveAnimeInfos = [{
   image: 'css/IntroToHidivePosters/FDW_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
+  animeAllId: 'A0000-0000-0031'
 },
 {
   id: 'D0000-0001-0003',
@@ -308,6 +344,7 @@ export const IntroToHidiveAnimeInfos = [{
   image: 'css/IntroToHidivePosters/FVB_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
+  animeAllId: 'A0000-0000-0032'
 },
 {
   id: 'D0000-0001-0004',
@@ -316,6 +353,7 @@ export const IntroToHidiveAnimeInfos = [{
   image: 'css/IntroToHidivePosters/MGN_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
+  animeAllId: 'A0000-0000-0033'
 },
 {
   id: 'D0000-0001-0005',
@@ -324,6 +362,7 @@ export const IntroToHidiveAnimeInfos = [{
   image: 'css/IntroToHidivePosters/DGF_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
+  animeAllId: 'A0000-0000-0034'
 }]
 
 
@@ -333,7 +372,8 @@ export const TrendingNowAnimeInfos = [{
   name: 'THE EMINENCE IN SHADOW',
   image: 'css/SimulcastPosters/EIS_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
-  opacity: 1
+  opacity: 1,
+  animeAllId: 'A0000-0000-0015'
 },
 {
   id: 'E0000-0000-0002',
@@ -342,6 +382,7 @@ export const TrendingNowAnimeInfos = [{
   image: 'css/TrendingnowPosters/SHV_01_MASTER_300x169_01.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 1,
+  animeAllId: 'A0000-0000-0035'
 },
 {
   id: 'E0000-0000-0003',
@@ -350,6 +391,7 @@ export const TrendingNowAnimeInfos = [{
   image: 'css/TrendingnowPosters/PGD_MOVIE2_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 1,
+  animeAllId: 'A0000-0000-0036'
 },
 {
   id: 'E0000-0000-0004',
@@ -358,6 +400,7 @@ export const TrendingNowAnimeInfos = [{
   image: 'css/SimulcastPosters/HLK_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 1,
+  animeAllId: 'A0000-0000-0014'
 },
 {
   id: 'E0000-0000-0005',
@@ -366,6 +409,7 @@ export const TrendingNowAnimeInfos = [{
   image: 'css/SimulcastPosters/DEA_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 1,
+  animeAllId: 'A0000-0000-0004'
 },
 {
   id: 'E0000-0001-0001',
@@ -374,6 +418,7 @@ export const TrendingNowAnimeInfos = [{
   image: 'css/TrendingnowPosters/MNA_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
+  animeAllId: 'A0000-0000-0037'
 },
 {
   id: 'E0000-0001-0002',
@@ -382,6 +427,7 @@ export const TrendingNowAnimeInfos = [{
   image: 'css/TrendingnowPosters/EKL_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
+  animeAllId: 'A0000-0000-0038'
 },
 {
   id: 'E0000-0001-0003',
@@ -390,6 +436,7 @@ export const TrendingNowAnimeInfos = [{
   image: 'css/TrendingnowPosters/ORH_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
+  animeAllId: 'A0000-0000-0039'
 },
 {
   id: 'E0000-0001-0004',
@@ -398,6 +445,7 @@ export const TrendingNowAnimeInfos = [{
   image: 'css/IntroToHidivePosters/GTE_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
+  animeAllId: 'A0000-0000-0028'
 },
 {
   id: 'E0000-0001-0005',
@@ -406,4 +454,5 @@ export const TrendingNowAnimeInfos = [{
   image: 'css/ExclusivePosters/PHI_01_MASTER_300x169.jpg',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
+  animeAllId: 'A0000-0000-0023'
 }]
