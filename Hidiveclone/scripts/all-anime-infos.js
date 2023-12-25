@@ -272,8 +272,6 @@ export let AllAnimes = [{
   paragraph: `The Demon Lord seeks revenge on Max, the hero, after a humiliating defeat ten years ago! Unfortunately, Max now has no interest in an epic rematch after his humiliating fall from hero to zero.`
 }];
 
-
-
 export let getsearch = (param, param2,) => {
   localStorage.clear()
   param.forEach((Anime) => {

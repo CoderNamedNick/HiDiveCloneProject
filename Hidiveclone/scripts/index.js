@@ -11,8 +11,6 @@ localStorage.clear();
 
 let recentlyAddedAnimeInfosHTML = '';
 
-
-
 function clickedpreview(animeId) {
   let retrievedAnime1ID = animeId;
   localStorage.setItem("AnimeSelected",retrievedAnime1ID)
@@ -47,10 +45,7 @@ var refresh = () => {
   });
 }
 
-
 refresh();
-
-
 
 let changeopacity = (param) => {
   param.forEach((Anime) => {
@@ -69,7 +64,6 @@ document.getElementById('prev-BTN').onclick = () => {
   changeopacity(recentlyAddedAnimeInfos);
   refresh()
 }
-
 
 let SimulcastAnimeInfosHTML = '';
 

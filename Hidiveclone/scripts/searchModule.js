@@ -11,13 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
   `;
 });
 
-
 getsearch(AllAnimes, retrievedValue);
 
 document.getElementById('WATCHNOW').onclick = () => {
   AnimeSelctedToWatch()
 }
-
-console.log(retrievedValue)
-
-

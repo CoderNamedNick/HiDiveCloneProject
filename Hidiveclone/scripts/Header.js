@@ -12,7 +12,6 @@ let b = () => {
   `
 }
 
-
 let a = () => {
   document.getElementById('search-icon-div').innerHTML = `
   <input id="searchbar" type="text" placeholder="search">
@@ -25,7 +24,6 @@ let a = () => {
   </a>
   `
 }
-
 
 let c = () => {
   document.getElementById('More-div').innerHTML = `
