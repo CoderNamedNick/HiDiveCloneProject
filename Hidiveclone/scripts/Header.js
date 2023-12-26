@@ -51,7 +51,7 @@ let e = () => {
   document.getElementById('account-icon-div').innerHTML = `
   <button onclick="f()" id="account-btn"><img class="account-icon" src="css/images/icons8-user-64.png"></button>
   <div class="account-tooltip-after">
-    <p class="login-tooltip">LOG IN</p>
+  <a href="login.html"><p class="login-tooltip">LOG IN</p></a>
     <hr>
     <p class="help-tooltip">HELP CENTER</p>
   </div>
@@ -62,7 +62,7 @@ let f = () => {
   document.getElementById('account-icon-div').innerHTML = `
   <button onclick="e()" id="account-btn"><img class="account-icon" src="css/images/icons8-user-64.png"></button>
   <div class="account-tooltip">
-    <p class="login-tooltip">LOG IN</p>
+  <a href="login.html"><p class="login-tooltip">LOG IN</p></a>
     <hr>
     <p class="help-tooltip">HELP CENTER</p>
   </div>

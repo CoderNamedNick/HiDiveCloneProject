@@ -31,6 +31,15 @@ body{
 }
 .mySlides {
   display: none;
+  animation-name: BigSlides;
+  animation-duration: 1s;
+  animation-direction: right;
+}
+@keyframes BigSlides {
+  from {margin-left: 400px;}
+  to {margin-left: 0px;}
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 .prev, .next{
   cursor: pointer;
