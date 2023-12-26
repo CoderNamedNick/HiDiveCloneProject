@@ -1,8 +1,8 @@
 import { AllAnimes } from "./all-anime-infos.js";
 import { getsearch } from "./all-anime-infos.js";
-import { AnimeSelctedToWatch} from "./Anime.Slected.js";
 
 const retrievedValue = localStorage.getItem('myVariable');
+
 
 document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('search-result-div').innerHTML = `
@@ -14,5 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
 getsearch(AllAnimes, retrievedValue);
 
 document.getElementById('WATCHNOW').onclick = () => {
-  AnimeSelctedToWatch()
+  window.location.href = "watchAnime.html";
 }
+

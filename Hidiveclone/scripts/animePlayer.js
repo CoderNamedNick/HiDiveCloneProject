@@ -1,7 +1,7 @@
 import { AllAnimes } from "../scripts/all-anime-infos.js";
-import { retrievedAnimeID } from "../scripts/Anime.Slected.js";
 
 const retrievedAnime2ID = localStorage.getItem("AnimeSelected")
+const retrievedAnimeID = localStorage.getItem("AnimeSlected")
 
 AllAnimes.forEach(Anime => {
   if (Anime.id === retrievedAnimeID) {

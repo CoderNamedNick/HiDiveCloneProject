@@ -1,4 +1,4 @@
-export let AllAnimes = [{
+export const AllAnimes = [{
   id: 'A0000-0000-0001',
   name: 'BLADE OF THE IMMORTAL',
   image: 'css/animePosters/BOI_01_MASTER_300x169.jpg',
