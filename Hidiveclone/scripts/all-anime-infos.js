@@ -3,70 +3,120 @@ export const AllAnimes = [{
   name: 'BLADE OF THE IMMORTAL',
   image: 'css/animePosters/BOI_01_MASTER_300x169.jpg',
   genre: ['Action ', 'Fantasy ', 'Drama ', 'Supernatural ', 'Seinen',],
-  paragraph: 'When a young girl named Rin asks Manji, the Slayer of Hundreds, to help her take revenge on the group of master swordsmen who murdered her family, Manji sees an opportunity to lift his curse of eternal life and put an end to his infinite suffering.'
+  paragraph: 'When a young girl named Rin asks Manji, the Slayer of Hundreds, to help her take revenge on the group of master swordsmen who murdered her family, Manji sees an opportunity to lift his curse of eternal life and put an end to his infinite suffering.',
+  Classid: 'A0000-0000-0001',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; E6 IN 2 DAYS',
+  opacity: 1,
+  category: ['recentlyAddedAnime',]
 },
 {
   id: 'A0000-0000-0002',
   name: 'SHIROBAKO',
   image: 'css/animePosters/SHB_MASTER_300x169.jpg',
   genre: ['Comedy ', 'Slice of Life'],
-  paragraph: 'Aoi, Ema, Shizuka, Misa, and Midori make a promise over donuts to follow their dreams and work in the anime industry. Since then, day after day, the five girls have spent all of their time trying to fulfil their promise.'
+  paragraph: 'Aoi, Ema, Shizuka, Misa, and Midori make a promise over donuts to follow their dreams and work in the anime industry. Since then, day after day, the five girls have spent all of their time trying to fulfil their promise.',
+  Classid: 'A0000-0000-0002',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; E1 IN 23 DAYS',
+  opacity: 1,
+  category: ['recentlyAddedAnime',]
 },
 {
   id: 'A0000-0000-0003',
   name: `KINO'S JOURNEY`,
   image: 'css/animePosters/KJ_Master_300x169.jpg',
   genre: ['Action ', 'Adventure ', 'Science Fiction'],
-  paragraph: 'Accompanied by a talking motorcycle, Kino travels the globe and witnesses both the beauty and the brutality of the world and its people.'
+  paragraph: 'Accompanied by a talking motorcycle, Kino travels the globe and witnesses both the beauty and the brutality of the world and its people.',
+  Classid: 'A0000-0000-0003',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; E6 IN 2 DAYS',
+  opacity: 1,
+  category: ['recentlyAddedAnime',]
 },
 {
   id: 'A0000-0000-0004',
   name: 'THE DEMON SWORD MASTER OF EXCLAIBUR ACADEMY',
   image: 'css/animePosters/DEA_01_MASTER_300x169.jpg',
   genre: ['Action ', 'Fantasy ', 'Adventure'],
-  paragraph: 'An undead sorcerer and powerful Dark Lord awakens as a ten-year-old boy a thousand years after entering magical stasis during a climactic battle. Now he has to adapt to a strange new era and deal with the twisted monsters called Voids.'
+  paragraph: 'An undead sorcerer and powerful Dark Lord awakens as a ten-year-old boy a thousand years after entering magical stasis during a climactic battle. Now he has to adapt to a strange new era and deal with the twisted monsters called Voids.',
+  Classid: 'A0000-0000-0004',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; E11 IN 4 DAYS',
+  opacity: 1,
+  category: ['recentlyAddedAnime',]
 },
 {
   id: 'A0000-0000-0005',
   name: 'TO LOVERU DARKNESS 2',
   image: 'css/animePosters/TLD_02_MASTER_300x169.jpg',
   genre: ['Romance ', 'Mature ', 'Science Fiction ', 'Action and Adventure'],
-  paragraph: 'Rito and the princesses of Deviluke are back again! When the arrival of a new girl threatens one of their own, it’s up to Rito and the girls to fend off the unwelcome advances of a mysterious adversary, or else they might lose someone for good.'
+  paragraph: 'Rito and the princesses of Deviluke are back again! When the arrival of a new girl threatens one of their own, it’s up to Rito and the girls to fend off the unwelcome advances of a mysterious adversary, or else they might lose someone for good.',
+  Classid: 'A0000-0000-0005',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; E1 IN 4 DAYS',
+  opacity: 1,
+  category: ['recentlyAddedAnime',]
 },
 {
   id: 'A0000-0000-0006',
   name: 'HIMOUTO! UMARU-CHAN',
   image: 'css/animePosters/HUC_MASTER_300x169.jpg',
   genre: ['Family and Kids ', 'Comedy ', 'Slice of Life'],
-  paragraph: 'In public, Umaru is the perfect vision of a beautiful and smart high school girl. At home, she morphs into the ultimate slob with the ability to game all night and binge on junk food and cola. Can her big brother, Taihei, change her?'
+  paragraph: 'In public, Umaru is the perfect vision of a beautiful and smart high school girl. At home, she morphs into the ultimate slob with the ability to game all night and binge on junk food and cola. Can her big brother, Taihei, change her?',
+  Classid: 'A0000-0001-0001',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; E1 IN 23 DAYS',
+  opacity: 0,
+  category: ['recentlyAddedAnime',]
 },
 {
   id: 'A0000-0000-0007',
   name: 'KIDS ON THE SLOPE',
   image: 'css/animePosters/KOS_MASTER_300x169.jpg',
   genre: ['Romance ', 'Slice of Life ', 'Drama'],
-  paragraph: 'Karou has moved from town to town his entire life, never able to live in one place long enough to consider it home. After his most recent move he expects more of the same until he meets Sentaro who introduces him to his newest passion, jazz.'
+  paragraph: 'Karou has moved from town to town his entire life, never able to live in one place long enough to consider it home. After his most recent move he expects more of the same until he meets Sentaro who introduces him to his newest passion, jazz.',
+  Classid: 'A0000-0001-0002',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; E1 IN 23 DAYS',
+  opacity: 0,
+  category: ['recentlyAddedAnime',]
 },
 {
   id: 'A0000-0000-0008',
   name: 'MY LOVE STORY!!',
   image: 'css/animePosters/MLS_MASTER_300x169.jpg',
   genre: ['Romance ', 'Comedy ', 'Slice of Life'],
-  paragraph: 'Takeo Goda is a big guy with a big heart, but girls like his attractive best friend more. Yet when Takeo helps a girl who was being harassed on the train, his love life may take a turn for the better!'
+  paragraph: 'Takeo Goda is a big guy with a big heart, but girls like his attractive best friend more. Yet when Takeo helps a girl who was being harassed on the train, his love life may take a turn for the better!',
+  Classid: 'A0000-0001-0003',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; E1 IN 4 DAYS',
+  opacity: 0,
+  category: ['recentlyAddedAnime',]
 },
 {
   id: 'A0000-0000-0009',
   name: 'LOVE, CHUNIBYO & OTHER DELUSIONS! HEART THROB-OVA',
   image: 'css/animePosters/CDK_02_OVA_MASTER_300x169.jpg',
   genre: ['Romance ', 'Comedy ', 'Slice of Life ','Drama'],
-  paragraph: 'Problems arise for Yuta and Rikka after Makoto gives Yuta a USB containing pictures of an idol that he had a crush on in middle school. After Rikka asks Yuta to return the stick, he secretly keeps it and Rikka finds after sneaking into his room.'
+  paragraph: 'Problems arise for Yuta and Rikka after Makoto gives Yuta a USB containing pictures of an idol that he had a crush on in middle school. After Rikka asks Yuta to return the stick, he secretly keeps it and Rikka finds after sneaking into his room.',
+  Classid: 'A0000-0001-0004',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; E1 IN 3 DAYS',
+  opacity: 0,
+  category: ['recentlyAddedAnime',]
 },
 {
   id: 'A0000-0000-0010',
   name: 'BEYOND THE BOUNDARY-OVA',
   image: 'css/animePosters/BTB_OVA_MASTER_300x169.jpg',
   genre: ['Drama ', 'Fantasy ', 'Supernatural ', 'Action ', 'Adventure'],
-  paragraph: 'Set two years before Akihito met Mirai, the Nase siblings, Hiroomi and Mitsuki, first encounter Akihito when they are sent to subdue him and bring back by any means necessary'
+  paragraph: 'Set two years before Akihito met Mirai, the Nase siblings, Hiroomi and Mitsuki, first encounter Akihito when they are sent to subdue him and bring back by any means necessary',
+  Classid: 'A0000-0001-0005',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; E1 IN 2 DAYS',
+  opacity: 0,
+  category: ['recentlyAddedAnime',]
 },
 {
   id: 'A0000-0000-0011',
@@ -271,6 +321,13 @@ export const AllAnimes = [{
   genre: ['Comedy ','Fantasy ','Seinen'],
   paragraph: `The Demon Lord seeks revenge on Max, the hero, after a humiliating defeat ten years ago! Unfortunately, Max now has no interest in an epic rematch after his humiliating fall from hero to zero.`
 }];
+
+export let recentlyAddedAnimes = AllAnimes.filter((Anime => Anime.category?.at(0) == 'recentlyAddedAnime'))
+
+
+
+
+
 
 export let getsearch = (param, param2,) => {
   localStorage.clear()

@@ -1,11 +1,13 @@
-import {recentlyAddedAnimeInfos} from "./animes-info.js";
 import { SimulcastAnimeInfos } from "./animes-info.js";
 import { exclusivesAnimeInfos } from "./animes-info.js";
 import { IntroToHidiveAnimeInfos } from "./animes-info.js";
 import { TrendingNowAnimeInfos } from "./animes-info.js";
+import { recentlyAddedAnimes } from "./all-anime-infos.js";
 
 
 alert('this is a clone site made for learning!! FOR REAL ANIME GO TO HIDIVE')
+
+console.log(recentlyAddedAnimes)
 
 localStorage.clear();
 
@@ -18,15 +20,15 @@ function clickedpreview(animeId) {
   window.location.href = "watchAnime.html";
 }
 
-const generateHtml = (infos, html) => {
+const generateHtml = (array, html) => {
   html = '';
 
-  infos.forEach((anime) => {
+  array.forEach((anime) => {
     html += `
-      <div class="anime-times-flexbox ${anime.id}" style="position: relative; opacity: ${anime.opacity}">
+      <div class="anime-times-flexbox ${anime.Classid}" style="position: relative; opacity: ${anime.opacity}">
         <img class="anime-Previews" src="${anime.image}">
         <div class="new-episode-times" style="z-index: 10003"><p>${anime.newEpTimes}</p></div>
-        <a href="#" class="blah" data-anime-all-id="${anime.animeAllId}"><span class="hovers ${anime.hoverID}">${anime.name}</span></a>
+        <a href="#" class="blah" data-anime-all-id="${anime.id}"><span class="hovers ${anime.hoverID}">${anime.name}</span></a>
       </div>
     `;
   });
@@ -34,7 +36,7 @@ const generateHtml = (infos, html) => {
 };
 
 var refresh = () => {
-  recentlyAddedAnimeInfosHTML = generateHtml(recentlyAddedAnimeInfos, recentlyAddedAnimeInfosHTML);
+  recentlyAddedAnimeInfosHTML = generateHtml(recentlyAddedAnimes, recentlyAddedAnimeInfosHTML);
   document.querySelector('.js-anime-slides-recentlyAdded').innerHTML = `${recentlyAddedAnimeInfosHTML}`;
 
   // Set up click event listeners after refreshing
@@ -56,12 +58,12 @@ let changeopacity = (param) => {
 }
 
 document.getElementById('next-BTN').onclick = () => {
-  changeopacity(recentlyAddedAnimeInfos);
+  changeopacity(recentlyAddedAnimes);
   refresh()
 }
 
 document.getElementById('prev-BTN').onclick = () => {
-  changeopacity(recentlyAddedAnimeInfos);
+  changeopacity(recentlyAddedAnimes);
   refresh()
 }
 
