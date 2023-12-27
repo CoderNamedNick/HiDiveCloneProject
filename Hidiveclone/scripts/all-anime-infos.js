@@ -44,7 +44,43 @@ export const AllAnimes = [{
   hoverID: 'Displaying',
   newEpTimes: '&#128344; E11 IN 4 DAYS',
   opacity: 1,
-  category: ['recentlyAddedAnime',]
+  category: ['recentlyAddedAnime']
+},
+{
+  id: 'A0000-0000-0004',
+  name: 'THE DEMON SWORD MASTER OF EXCLAIBUR ACADEMY',
+  image: 'css/animePosters/DEA_01_MASTER_300x169.jpg',
+  genre: ['Action ', 'Fantasy ', 'Adventure'],
+  paragraph: 'An undead sorcerer and powerful Dark Lord awakens as a ten-year-old boy a thousand years after entering magical stasis during a climactic battle. Now he has to adapt to a strange new era and deal with the twisted monsters called Voids.',
+  Classid: 'B0000-0000-0001',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; E11 IN 2 DAYS',
+  opacity: 1,
+  category: ['SimulcastAnime']
+},
+{
+  id: 'A0000-0000-0004',
+  name: 'THE DEMON SWORD MASTER OF EXCLAIBUR ACADEMY',
+  image: 'css/animePosters/DEA_01_MASTER_300x169.jpg',
+  genre: ['Action ', 'Fantasy ', 'Adventure'],
+  paragraph: 'An undead sorcerer and powerful Dark Lord awakens as a ten-year-old boy a thousand years after entering magical stasis during a climactic battle. Now he has to adapt to a strange new era and deal with the twisted monsters called Voids.',
+  Classid: 'C0000-0000-0001',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 1,
+  category: ['exclusivesAnime']
+},
+{
+  id: 'A0000-0000-0004',
+  name: 'THE DEMON SWORD MASTER OF EXCLAIBUR ACADEMY',
+  image: 'css/animePosters/DEA_01_MASTER_300x169.jpg',
+  genre: ['Action ', 'Fantasy ', 'Adventure'],
+  paragraph: 'An undead sorcerer and powerful Dark Lord awakens as a ten-year-old boy a thousand years after entering magical stasis during a climactic battle. Now he has to adapt to a strange new era and deal with the twisted monsters called Voids.',
+  Classid: 'E0000-0000-0005',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 1,
+  category: ['TrendingNowAnime',]
 },
 {
   id: 'A0000-0000-0005',
@@ -123,208 +159,451 @@ export const AllAnimes = [{
   name: 'THE VEXATIONS OF A SHUT-IN VAMPIRE PRINCESS',
   image: 'css/SimulcastPosters/VVP_01_MASTER_300x169.jpg',
   genre: ['Comedy ', 'fantasy '],
-  paragraph: `After three years as a shut-in, a vampire known as Komari awakens to find she's been appointed as a Commander in the Mulnite Imperial Army! Unfortunately, her new unit consists of belligerent ruffians who revolt at the slightest hint of weakness.`
+  paragraph: `After three years as a shut-in, a vampire known as Komari awakens to find she's been appointed as a Commander in the Mulnite Imperial Army! Unfortunately, her new unit consists of belligerent ruffians who revolt at the slightest hint of weakness.`,
+  Classid: 'B0000-0000-0002',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; TODAY',
+  opacity: 1,
+  category: ['SimulcastAnime',]
+},
+{
+  id: 'A0000-0000-0011',
+  name: 'THE VEXATIONS OF A SHUT-IN VAMPIRE PRINCESS',
+  image: 'css/SimulcastPosters/VVP_01_MASTER_300x169.jpg',
+  genre: ['Comedy ', 'fantasy '],
+  paragraph: `After three years as a shut-in, a vampire known as Komari awakens to find she's been appointed as a Commander in the Mulnite Imperial Army! Unfortunately, her new unit consists of belligerent ruffians who revolt at the slightest hint of weakness.`,
+  Classid: 'C0000-0000-0002',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 1,
+  category: ['exclusivesAnime',]
 },
 {
   id: 'A0000-0000-0012',
   name: 'RAGNA CRIMSON',
   image: 'css/SimulcastPosters/RCR_01_MASTER_300x169.jpg',
   genre: ['action ', 'fantasy ','Supernatural'],
-  paragraph: `Ragna teams up with the enigmatic Crimson to stand against the dragons menacing the world. Although Crimson’s motivations are mysterious, his goal and Ragna’s perfectly align, and together they’ll vanquish the dragons once and for all.`
+  paragraph: `Ragna teams up with the enigmatic Crimson to stand against the dragons menacing the world. Although Crimson’s motivations are mysterious, his goal and Ragna’s perfectly align, and together they’ll vanquish the dragons once and for all.`,
+  Classid: 'B0000-0000-0003',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; TODAY',
+  opacity: 1,
+  category: ['SimulcastAnime',]
+},
+{
+  id: 'A0000-0000-0012',
+  name: 'RAGNA CRIMSON',
+  image: 'css/SimulcastPosters/RCR_01_MASTER_300x169.jpg',
+  genre: ['action ', 'fantasy ','Supernatural'],
+  paragraph: `Ragna teams up with the enigmatic Crimson to stand against the dragons menacing the world. Although Crimson’s motivations are mysterious, his goal and Ragna’s perfectly align, and together they’ll vanquish the dragons once and for all.`,
+  Classid: 'C0000-0000-0003',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 1,
+  category: ['exclusivesAnime',]
 },
 {
   id: 'A0000-0000-0013',
   name: 'DARK GATHERING',
   image: 'css/SimulcastPosters/DKG_01_MASTER_300x169.jpg',
   genre: ['Mature ', 'Horror ', 'Supernatural'],
-  paragraph: 'Keitaro takes a part-time job tutoring the child prodigy Yayoi. Little does he know she’s a gifted medium hell-bent on finding the spirit behind her mother’s vanishing and she’s gravely determined to drag Keitaro into a terrifying supernatural world.'
+  paragraph: 'Keitaro takes a part-time job tutoring the child prodigy Yayoi. Little does he know she’s a gifted medium hell-bent on finding the spirit behind her mother’s vanishing and she’s gravely determined to drag Keitaro into a terrifying supernatural world.',
+  Classid: 'B0000-0000-0004',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; TOMORROW',
+  opacity: 1,
+  category: ['SimulcastAnime',]
+},
+{
+  id: 'A0000-0000-0013',
+  name: 'DARK GATHERING',
+  image: 'css/SimulcastPosters/DKG_01_MASTER_300x169.jpg',
+  genre: ['Mature ', 'Horror ', 'Supernatural'],
+  paragraph: 'Keitaro takes a part-time job tutoring the child prodigy Yayoi. Little does he know she’s a gifted medium hell-bent on finding the spirit behind her mother’s vanishing and she’s gravely determined to drag Keitaro into a terrifying supernatural world.',
+  Classid: 'C0000-0000-0004',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; TODAY',
+  opacity: 1,
+  category: ['exclusivesAnime',]
 },
 {
   id: 'A0000-0000-0014',
   name: 'HELCK',
   image: 'css/SimulcastPosters/HLK_01_MASTER_300x169.jpg',
   genre: ['action ', 'fantasy ', ' Comedy'],
-  paragraph: `Why would a human want to kill all humans? What secrets is he hiding? A world-shaking plot is afoot, and human hero Helck may just be the demons’ last hope..`
+  paragraph: `Why would a human want to kill all humans? What secrets is he hiding? A world-shaking plot is afoot, and human hero Helck may just be the demons’ last hope..`,
+  Classid: 'B0000-0000-0005',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; E23 IN 3 DAYS',
+  opacity: 1,
+  category: ['SimulcastAnime',]
+},
+{
+  id: 'A0000-0000-0014',
+  name: 'HELCK',
+  image: 'css/SimulcastPosters/HLK_01_MASTER_300x169.jpg',
+  genre: ['action ', 'fantasy ', ' Comedy'],
+  paragraph: `Why would a human want to kill all humans? What secrets is he hiding? A world-shaking plot is afoot, and human hero Helck may just be the demons’ last hope..`,
+  Classid: 'E0000-0000-0004',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 1,
+  category: ['TrendingNowAnime',]
 },
 {
   id: 'A0000-0000-0015',
   name: 'THE EMINENCE IN SHADOW',
   image: 'css/SimulcastPosters/EIS_01_MASTER_300x169.jpg',
   genre: ['action ', 'fantasy ','Supernatural ', 'Adventure'],
-  paragraph: `When Cid is isekai’d to another world, he creates an underground organization to live out a fight against a made-up cult. Little does he know the cult is real, and they’re not happy his power fantasy just impeded their plans!`
+  paragraph: `When Cid is isekai’d to another world, he creates an underground organization to live out a fight against a made-up cult. Little does he know the cult is real, and they’re not happy his power fantasy just impeded their plans!`,
+  Classid: 'B0000-0001-0001',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 0,
+  category: ['SimulcastAnime',]
+},
+{
+  id: 'A0000-0000-0015',
+  name: 'THE EMINENCE IN SHADOW',
+  image: 'css/SimulcastPosters/EIS_01_MASTER_300x169.jpg',
+  genre: ['action ', 'fantasy ','Supernatural ', 'Adventure'],
+  paragraph: `When Cid is isekai’d to another world, he creates an underground organization to live out a fight against a made-up cult. Little does he know the cult is real, and they’re not happy his power fantasy just impeded their plans!`,
+  Classid: 'E0000-0000-0001',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 1,
+  category: ['TrendingNowAnime',]
 },
 {
   id: 'A0000-0000-0016',
   name: 'CARDFIGHT!! VANGAURD',
   image: 'css/SimulcastPosters/VWD_01_MASTER_300x169.jpg',
   genre: ['action ', 'Adventure'],
-  paragraph: '15-year-old Yu-yu discovers a nocturnal amusement park where the members of Team Blackout play Vanguard each night. Yu-yu soon finds himself drawn into epic battles and thrilling action as he and Team Blackout fight to maintain their territory.'
+  paragraph: '15-year-old Yu-yu discovers a nocturnal amusement park where the members of Team Blackout play Vanguard each night. Yu-yu soon finds himself drawn into epic battles and thrilling action as he and Team Blackout fight to maintain their territory.',
+  Classid: 'B0000-0001-0002',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 0,
+  category: ['SimulcastAnime',]
 },
 {
   id: 'A0000-0000-0017',
   name: 'SPY CLASSROOM',
   image: 'css/SimulcastPosters/SCL_01_MASTER_300x169.jpg',
   genre: ['action ', 'Shounen ', ' Drama'],
-  paragraph: 'Spy-in-training Lily is desperate to score a passing grade. Eager to prove herself, she leaps at the chance to join the mysterious team Lamplight and beat the Impossible Mission. Too bad the task ahead is even more harrowing than she imagined…'
+  paragraph: 'Spy-in-training Lily is desperate to score a passing grade. Eager to prove herself, she leaps at the chance to join the mysterious team Lamplight and beat the Impossible Mission. Too bad the task ahead is even more harrowing than she imagined…',
+  Classid: 'B0000-0001-0003',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 0,
+  category: ['SimulcastAnime',]
 },
 {
   id: 'A0000-0000-0018',
   name: 'THE MOST HERETICAL LAST BOSS QUEEN',
   image: 'css/SimulcastPosters/HLB_01_MASTER_300x169.jpg',
   genre: ['Romance ', 'fantasy'],
-  paragraph: `Our protagonist was just reincarnated as Princess Pride Royal Ivy, the last boss and ultimate villain of her favorite otome game. But evil just isn’t her style, so she’ll use Pride’s powerful abilities to sow peace and love instead of discord!`
+  paragraph: `Our protagonist was just reincarnated as Princess Pride Royal Ivy, the last boss and ultimate villain of her favorite otome game. But evil just isn’t her style, so she’ll use Pride’s powerful abilities to sow peace and love instead of discord!`,
+  Classid: 'B0000-0001-0004',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 0,
+  category: ['SimulcastAnime',]
 },
 {
   id: 'A0000-0000-0019',
   name: 'THE DREAMING BOY IS A REALIST',
   image: 'css/SimulcastPosters/DBR_01_MASTER_300x169.jpg',
   genre: ['Romance ','Drama ','Slice of Life'],
-  paragraph: `Did Wataru’s intentions slip by Aika because she was getting impatient?! This is the start of a romcom revolving around two people who just can't get their feelings across and both think their love is unrequited!`
+  paragraph: `Did Wataru’s intentions slip by Aika because she was getting impatient?! This is the start of a romcom revolving around two people who just can't get their feelings across and both think their love is unrequited!`,
+  Classid: 'B0000-0001-0005',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 0,
+  category: ['SimulcastAnime',]
+},
+{
+  id: 'A0000-0000-0019',
+  name: 'THE DREAMING BOY IS A REALIST',
+  image: 'css/SimulcastPosters/DBR_01_MASTER_300x169.jpg',
+  genre: ['Romance ','Drama ','Slice of Life'],
+  paragraph: `Did Wataru’s intentions slip by Aika because she was getting impatient?! This is the start of a romcom revolving around two people who just can't get their feelings across and both think their love is unrequited!`,
+  Classid: 'C0000-0000-0005',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 1,
+  category: ['exclusivesAnime',]
 },
 {
   id: 'A0000-0000-0020',
   name: 'LOVE, CHUNIBYO & OTHER DELUSIONS!-OVA',
   image: 'css/ExclusivePosters/CDK_01_OVA_MASTER_300x169.jpg',
   genre:  ['Romance ', 'Comedy ', 'Slice of Life ','Drama'],
-  paragraph: `With Christmas fast approaching, Rikka and Nibutani plan a Christmas party at Sanae's Mansion after Makoto's suggestion. Chaos ensues at the party as Rikka and Yuta continue exploring their burgeoning relationship.`
+  paragraph: `With Christmas fast approaching, Rikka and Nibutani plan a Christmas party at Sanae's Mansion after Makoto's suggestion. Chaos ensues at the party as Rikka and Yuta continue exploring their burgeoning relationship.`,
+  Classid: 'C0000-0001-0001',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; TODAY',
+  opacity: 0,
+  category: ['exclusivesAnime',]
 },
 {
   id: 'A0000-0000-0021',
   name: 'LOVE, CHUNIBYO & OTHER DELUSIONS! HEART THROB-OVA',
   image: 'css/ExclusivePosters/CDK_02_OVA_MASTER_300x169.jpg',
   genre: ['action ', 'fantasy ', 'Drama ', 'Supernatural ', 'Seinen'],
-  paragraph: `Problems arise for Yuta and Rikka after Makoto gives Yuta a USB containing pictures of an idol that he had a crush on in middle school. After Rikka asks Yuta to return the stick, he secretly keeps it and Rikka finds after sneaking into his room.`
+  paragraph: `Problems arise for Yuta and Rikka after Makoto gives Yuta a USB containing pictures of an idol that he had a crush on in middle school. After Rikka asks Yuta to return the stick, he secretly keeps it and Rikka finds after sneaking into his room.`,
+  Classid: 'C0000-0001-0002',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; TODAY',
+  opacity: 0,
+  category: ['exclusivesAnime',]
 },
 {
   id: 'A0000-0000-0022',
   name: 'LOVE FLOPS',
   image: 'css/ExclusivePosters/LFP_01_MASTER_300x169.jpg',
   genre: ['Scince Fiction ', 'Romance ', ' Comedy'],
-  paragraph: `Destiny draws five beautiful people into Asahi’s path, and he soon receives not one, not two, but five love confessions. Asahi must follow his heart to find which of the five is his perfect match, else his love fortunes may end in an epic flop!`
+  paragraph: `Destiny draws five beautiful people into Asahi’s path, and he soon receives not one, not two, but five love confessions. Asahi must follow his heart to find which of the five is his perfect match, else his love fortunes may end in an epic flop!`,
+  Classid: 'C0000-0001-0003',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; TODAY',
+  opacity: 0,
+  category: ['exclusivesAnime',]
 },
 {
   id: 'A0000-0000-0023',
   name: 'PHANTOM OF THE IDOL',
   image: 'css/ExclusivePosters/PHI_01_MASTER_300x169.jpg',
   genre: ['Comedy ', 'Supernatural'],
-  paragraph: `Yuya is part of the idol duo ZINGS, but his laziness and disdain for fans puts him in danger of getting blacklisted. That is, until he meets Asahi, the ghost of a former idol who’s eager to stage her own comeback by possessing Yuya's willing body!`
+  paragraph: `Yuya is part of the idol duo ZINGS, but his laziness and disdain for fans puts him in danger of getting blacklisted. That is, until he meets Asahi, the ghost of a former idol who’s eager to stage her own comeback by possessing Yuya's willing body!`,
+  Classid: 'C0000-0001-0003',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; TODAY',
+  opacity: 0,
+  category: ['exclusivesAnime',]
+},
+{
+  id: 'A0000-0000-0023',
+  name: 'PHANTOM OF THE IDOL',
+  image: 'css/ExclusivePosters/PHI_01_MASTER_300x169.jpg',
+  genre: ['Comedy ', 'Supernatural'],
+  paragraph: `Yuya is part of the idol duo ZINGS, but his laziness and disdain for fans puts him in danger of getting blacklisted. That is, until he meets Asahi, the ghost of a former idol who’s eager to stage her own comeback by possessing Yuya's willing body!`,
+  Classid: 'E0000-0001-0005',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 0,
+  category: ['TrendingNowAnime',]
 },
 {
   id: 'A0000-0000-0024',
   name: 'GUNBUSTER THE MOVIE',
   image: 'css/ExclusivePosters/GNB_01_MASTER_300x169.jpg',
   genre: ['Scince Fiction ', 'action ', 'Adventure ', 'Mecha'],
-  paragraph: `There are monsters between the stars, alien nightmares seeking to destroy the human race. Noriko Takaya is training to pilot a giant robot to fight them, but, despite the reality of their enemies, Noriko and the other pilots’ real adversary is time.`
+  paragraph: `There are monsters between the stars, alien nightmares seeking to destroy the human race. Noriko Takaya is training to pilot a giant robot to fight them, but, despite the reality of their enemies, Noriko and the other pilots’ real adversary is time.`,
+  Classid: 'C0000-0001-0004',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 0,
+  category: ['exclusivesAnime',]
 },
 {
   id: 'A0000-0000-0025',
   name: 'REAL GIRL',
   image: 'css/IntroToHidivePosters/real-girl_RLG_01_MASTER_300x169_01.jpg',
   genre: ['Shoujo ', 'Romance ', 'Comedy'],
-  paragraph: `The reclusive Hikari Tsutsui has an aversion to real-world girls. That is, until he meets the popular Iroha Igarashi. The couple quickly develops a close bond neither expected, one that challenges their preconceived notions of who people truly are.`
+  paragraph: `The reclusive Hikari Tsutsui has an aversion to real-world girls. That is, until he meets the popular Iroha Igarashi. The couple quickly develops a close bond neither expected, one that challenges their preconceived notions of who people truly are.`,
+  Classid: 'D0000-0000-0001',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 1,
+  category: ['IntroToHidiveAnime',]
 },
 {
   id: 'A0000-0000-0026',
   name: 'LEGEND OF THE GALACTIC HEROES',
   image: 'css/IntroToHidivePosters/LegendGalacticHeroes_MASTER_300x169.jpg',
   genre: ['action ', 'Mature ', 'Science Fiction ', 'Drama'],
-  paragraph: `War rages between the Galactic Empire and the Free Planets Alliance. With two new brilliant young leaders at the helm, anything can happen in this military space opera.`
+  paragraph: `War rages between the Galactic Empire and the Free Planets Alliance. With two new brilliant young leaders at the helm, anything can happen in this military space opera.`,
+  Classid: 'D0000-0000-0002',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 1,
+  category: ['IntroToHidiveAnime',]
 },
 {
   id: 'A0000-0000-0027',
   name: 'BLOOM INTO YOU',
   image: 'css/IntroToHidivePosters/BIB_01_MASTER_300x169_01.jpg',
   genre: ['Romace ',' Drama ', 'Slice of Life'],
-  paragraph: `Yuu has always dreamt of receiving a love confession but feels nothing when a boy gives her one. Confused, she starts her first year of high school and meets Touko. Will Yuu’s heart finally skip a beat?`
+  paragraph: `Yuu has always dreamt of receiving a love confession but feels nothing when a boy gives her one. Confused, she starts her first year of high school and meets Touko. Will Yuu’s heart finally skip a beat?`,
+  Classid: 'D0000-0000-0003',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 1,
+  category: ['IntroToHidiveAnime',]
 },
 {
   id: 'A0000-0000-0028',
   name: 'GATE',
   image: 'css/IntroToHidivePosters/GTE_MASTER_300x169.jpg',
   genre: ['Action ', 'Fantasy ', 'Supernatural '],
-  paragraph: `His failed attempt to save a doujinshi sale from an otherworldly attack turned Itami into an accidental hero. He’s promoted to second lieutenant of the Self-Defense Force and sent on a mission through the gate into another world.`
+  paragraph: `His failed attempt to save a doujinshi sale from an otherworldly attack turned Itami into an accidental hero. He’s promoted to second lieutenant of the Self-Defense Force and sent on a mission through the gate into another world.`,
+  Classid: 'D0000-0000-0004',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 1,
+  category: ['IntroToHidiveAnime',]
+},
+{
+  id: 'A0000-0000-0028',
+  name: 'GATE',
+  image: 'css/IntroToHidivePosters/GTE_MASTER_300x169.jpg',
+  genre: ['Action ', 'Fantasy ', 'Supernatural '],
+  paragraph: `His failed attempt to save a doujinshi sale from an otherworldly attack turned Itami into an accidental hero. He’s promoted to second lieutenant of the Self-Defense Force and sent on a mission through the gate into another world.`,
+  Classid: 'E0000-0001-0004',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 0,
+  category: ['TrendingNowAnime',]
 },
 {
   id: 'A0000-0000-0029',
   name: 'IS IT WRONG TO PICK UP GIRLS IN A DUNGEON',
   image: 'css/IntroToHidivePosters/WPG_OVA_MASTER_300x169_v02.jpg',
   genre: ['action ', 'fantasy ', 'Romance ', 'Supernatural ', 'Seinen'],
-  paragraph: `A fateful encounter - that is what adventuring is all about! This comedy attempts to answer its title’s question as a young adventurer, blessed by the tiny Goddess Hestia, seeks to impress the perfect girl in a dungeon filled with mythical beasts.`
+  paragraph: `A fateful encounter - that is what adventuring is all about! This comedy attempts to answer its title’s question as a young adventurer, blessed by the tiny Goddess Hestia, seeks to impress the perfect girl in a dungeon filled with mythical beasts.`,
+  Classid: 'D0000-0000-0005',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 1,
+  category: ['IntroToHidiveAnime',]
 },
 {
   id: 'A0000-0000-0030',
   name: 'MADE IN ABYSS',
   image: 'css/IntroToHidivePosters/made-in-abyss_MIA_MASTER_300x169.jpg',
   genre: ['action ', 'Science Fiction ', 'Mystery ', 'Thriller ', 'Fantasy'],
-  paragraph: `Within the depths of the Abyss, a girl named Riko stumbles upon a robot who looks like a young boy. Riko and her new friend descend into uncharted territory to unlock its mysteries, but what lies in wait for them in the darkness?`
+  paragraph: `Within the depths of the Abyss, a girl named Riko stumbles upon a robot who looks like a young boy. Riko and her new friend descend into uncharted territory to unlock its mysteries, but what lies in wait for them in the darkness?`,
+  Classid: 'D0000-0001-0001',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 0,
+  category: ['IntroToHidiveAnime',]
 },
 {
   id: 'A0000-0000-0031',
   name: 'FOOD WARS!',
   image: 'css/IntroToHidivePosters/FDW_MASTER_300x169.jpg',
   genre: ['Comedy ', 'Slice of Life'],
-  paragraph: `Things are about to heat up for young Soma as he battles some of the world's best chefs to prove himself and refine his skills in the first season of Food Wars!`
+  paragraph: `Things are about to heat up for young Soma as he battles some of the world's best chefs to prove himself and refine his skills in the first season of Food Wars!`,
+  Classid: 'D0000-0001-0002',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 0,
+  category: ['IntroToHidiveAnime',]
 },
 {
   id: 'A0000-0000-0032',
   name: 'MY GIRLFRIEND IS A SHOBITCH',
   image: 'css/IntroToHidivePosters/FVB_01_MASTER_300x169.jpg',
   genre: ['Slice of Life ', 'Comedy ', 'Romance'],
-  paragraph: `When Shinozaki confesses to the Akiho Kosaka, the last thing he expected was for her to say “yes.” In an effort to be a good girlfriend, Kosaka decides to study all manner of ways to keep Shinozaki sexually satisfied… in the theoretical sense.`
+  paragraph: `When Shinozaki confesses to the Akiho Kosaka, the last thing he expected was for her to say “yes.” In an effort to be a good girlfriend, Kosaka decides to study all manner of ways to keep Shinozaki sexually satisfied… in the theoretical sense.`,
+  Classid: 'D0000-0001-0003',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 0,
+  category: ['IntroToHidiveAnime',]
 },
 {
   id: 'A0000-0000-0033',
   name: `MONTHLY GILRS' NOZAKI-KUN`,
   image: 'css/IntroToHidivePosters/MGN_MASTER_300x169.jpg',
   genre: ['Comedy ', 'Slice of Life ', 'Romance'],
-  paragraph: `When Sakura's confession to her crush Nozaki goes awry, she instead finds herself working as his assistant for his side-job as a manga creator!`
+  paragraph: `When Sakura's confession to her crush Nozaki goes awry, she instead finds herself working as his assistant for his side-job as a manga creator!`,
+  Classid: 'D0000-0001-0004',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 0,
+  category: ['IntroToHidiveAnime',]
 },
 {
   id: 'A0000-0000-0034',
   name: 'DOMESTIC GIRLFRIEND',
   image: 'css/IntroToHidivePosters/DGF_01_MASTER_300x169.jpg',
   genre: ['Romance ','Drama'],
-  paragraph: `Natsuo’s life suddenly becomes more complicated when his father comes home and announces he has remarried a woman with two daughters whom Natsuo has met before. They’re Hina, his teacher and unrequited crush, and Rui, a girl he previously slept with.`
+  paragraph: `Natsuo’s life suddenly becomes more complicated when his father comes home and announces he has remarried a woman with two daughters whom Natsuo has met before. They’re Hina, his teacher and unrequited crush, and Rui, a girl he previously slept with.`,
+  Classid: 'D0000-0001-0005',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 0,
+  category: ['IntroToHidiveAnime',]
 },
 {
   id: 'A0000-0000-0035',
   name: 'THE SEVEN HEAVENLY VIRTUES',
   image: 'css/TrendingnowPosters/SHV_01_MASTER_300x169_01.jpg',
   genre: ['Mature ','Action ','Fantasy'],
-  paragraph: `Heaven has been thrown into chaos, and the Seven Heavenly Virtues, are sent to Earth to find the “true messiah”. As these beauties from the sky try to race against time, they realize how far the Seven Mortal Sins have spread their plague.`
+  paragraph: `Heaven has been thrown into chaos, and the Seven Heavenly Virtues, are sent to Earth to find the “true messiah”. As these beauties from the sky try to race against time, they realize how far the Seven Mortal Sins have spread their plague.`,
+  Classid: 'E0000-0000-0002',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 1,
+  category: ['TrendingNowAnime',]
 },
 {
   id: 'A0000-0000-0036',
   name: 'RE:CYCLE OF THE PENGUINDRUM MOVIE',
   image: 'css/TrendingnowPosters/PGD_MOVIE2_MASTER_300x169.jpg',
   genre: ['Supernatural ','Drama ','Mystery ','Thriller'],
-  paragraph: `Is destiny a matter of chance or a matter of choice? To keep their terminally ill sister, Himari, alive, Kanba and Shouma must find the mysterious Penguindrum.`
+  paragraph: `Is destiny a matter of chance or a matter of choice? To keep their terminally ill sister, Himari, alive, Kanba and Shouma must find the mysterious Penguindrum.`,
+  Classid: 'E0000-0000-0003',
+  hoverID: 'Displaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 1,
+  category: ['TrendingNowAnime',]
 },
 {
   id: 'A0000-0000-0037',
   name: 'MANAGEMENT OF A NOVICE ALCHEMIST',
   image: 'css/TrendingnowPosters/MNA_01_MASTER_300x169.jpg',
   genre: ['Fantasy ','Adventure ','Comedy ','Slice of Life','Fantasy'],
-  paragraph: `Sarasa was gifted a house to use as an alchemy storefront, but it’s smackdab in the middle of nowhere! With customers to find and supplies to gather, Sarasa has her work cut out for her as she transmutes this bad location into a golden opportunity.`
+  paragraph: `Sarasa was gifted a house to use as an alchemy storefront, but it’s smackdab in the middle of nowhere! With customers to find and supplies to gather, Sarasa has her work cut out for her as she transmutes this bad location into a golden opportunity.`,
+  Classid: 'E0000-0001-0001',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 0,
+  category: ['TrendingNowAnime',]
 },
 {
   id: 'A0000-0000-0038',
   name: 'ENDO AND KOBAYASHI, LIVE! THE LATEST ON TSUNDERE',
   image: 'css/TrendingnowPosters/EKL_01_MASTER_300x169.jpg',
   genre: ['Romance ','Comedy ','Shoujo'],
-  paragraph: `Endo and Kobayashi love to bicker about their latest video game fixation. They think they're simply providing color commentary, but one of the game’s characters, Siegwald, can hear them talking about his fiancée, the villainess Lieselotte!`
+  paragraph: `Endo and Kobayashi love to bicker about their latest video game fixation. They think they're simply providing color commentary, but one of the game’s characters, Siegwald, can hear them talking about his fiancée, the villainess Lieselotte!`,
+  Classid: 'E0000-0001-0002',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 0,
+  category: ['TrendingNowAnime',]
 },
 {
   id: 'A0000-0000-0039',
   name: 'LEVEL 1 DEMON LORD & ONE ROOM HERO',
   image: 'css/TrendingnowPosters/ORH_01_MASTER_300x169.jpg',
   genre: ['Comedy ','Fantasy ','Seinen'],
-  paragraph: `The Demon Lord seeks revenge on Max, the hero, after a humiliating defeat ten years ago! Unfortunately, Max now has no interest in an epic rematch after his humiliating fall from hero to zero.`
+  paragraph: `The Demon Lord seeks revenge on Max, the hero, after a humiliating defeat ten years ago! Unfortunately, Max now has no interest in an epic rematch after his humiliating fall from hero to zero.`,
+  Classid: 'E0000-0001-0003',
+  hoverID: 'NotDisplaying',
+  newEpTimes: '&#128344; FINISHED',
+  opacity: 0,
+  category: ['TrendingNowAnime',]
 }];
 
 export let recentlyAddedAnimes = AllAnimes.filter((Anime => Anime.category?.at(0) == 'recentlyAddedAnime'))
-
-
+export let SimulcastAnimes = AllAnimes.filter((Anime => Anime.category?.at(0) == 'SimulcastAnime' || Anime.category?.at(1) == 'SimulcastAnime'))
+export let exclusivesAnime = AllAnimes.filter((Anime => Anime.category?.at(0) == 'exclusivesAnime' || Anime.category?.at(1) == 'exclusivesAnime' || Anime.category?.at(2) == 'exclusivesAnime'))
+export let IntroToHidiveAnime = AllAnimes.filter((Anime => Anime.category?.at(0) == 'IntroToHidiveAnime' || Anime.category?.at(1) == 'IntroToHidiveAnime' || Anime.category?.at(2) == 'IntroToHidiveAnime' || Anime.category?.at(3) == 'IntroToHidiveAnime'))
+export let TrendingNowAnime = AllAnimes.filter((Anime => Anime.category?.at(0) == 'TrendingNowAnime' || Anime.category?.at(1) == 'TrendingNowAnime' || Anime.category?.at(2) == 'TrendingNowAnime' || Anime.category?.at(3) == 'TrendingNowAnime' || Anime.category?.at(4) == 'TrendingNowAnime'))
 
 
 

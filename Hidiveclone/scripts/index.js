@@ -2,12 +2,14 @@ import { SimulcastAnimeInfos } from "./animes-info.js";
 import { exclusivesAnimeInfos } from "./animes-info.js";
 import { IntroToHidiveAnimeInfos } from "./animes-info.js";
 import { TrendingNowAnimeInfos } from "./animes-info.js";
-import { recentlyAddedAnimes } from "./all-anime-infos.js";
+import { recentlyAddedAnimes, SimulcastAnimes, exclusivesAnime, IntroToHidiveAnime, TrendingNowAnime } from "./all-anime-infos.js";
 
 
 alert('this is a clone site made for learning!! FOR REAL ANIME GO TO HIDIVE')
 
 console.log(recentlyAddedAnimes)
+console.log(SimulcastAnimes)
+console.log(exclusivesAnime)
 
 localStorage.clear();
 
@@ -70,7 +72,7 @@ document.getElementById('prev-BTN').onclick = () => {
 let SimulcastAnimeInfosHTML = '';
 
 var refresh2 = () => {
-  SimulcastAnimeInfosHTML = generateHtml(SimulcastAnimeInfos, SimulcastAnimeInfosHTML);
+  SimulcastAnimeInfosHTML = generateHtml(SimulcastAnimes, SimulcastAnimeInfosHTML);
   document.querySelector('.js-anime-slides-simulcast').innerHTML = `${SimulcastAnimeInfosHTML}`
 
    // Set up click event listeners after refreshing
@@ -85,20 +87,20 @@ refresh2()
 
 document.getElementById('next-BTN2').onclick = () => {
   SimulcastAnimeInfosHTML = '';
-  changeopacity(SimulcastAnimeInfos);
+  changeopacity(SimulcastAnimes);
   refresh2()
 }
 
 document.getElementById('prev-BTN2').onclick = () => {
   SimulcastAnimeInfosHTML = '';
-  changeopacity(SimulcastAnimeInfos)
+  changeopacity(SimulcastAnimes)
   refresh2()
 }
 
 let exclusivesAnimeInfosHTML = '';
 
 var refresh3 = () => {
-  exclusivesAnimeInfosHTML = generateHtml(exclusivesAnimeInfos, exclusivesAnimeInfosHTML);
+  exclusivesAnimeInfosHTML = generateHtml(exclusivesAnime, exclusivesAnimeInfosHTML);
   document.querySelector('.js-anime-slides-exclusives').innerHTML = `${exclusivesAnimeInfosHTML}`  
 
    // Set up click event listeners after refreshing
@@ -113,20 +115,20 @@ refresh3()
 
 document.getElementById('next-BTN3').onclick = () => {
   exclusivesAnimeInfosHTML = '';
-  changeopacity(exclusivesAnimeInfos)
+  changeopacity(exclusivesAnime)
   refresh3()
 }
 
 document.getElementById('prev-BTN3').onclick = () => {
   exclusivesAnimeInfosHTML = '';
-  changeopacity(exclusivesAnimeInfos)
+  changeopacity(exclusivesAnime)
   refresh3()
 }
 
 let IntroToHidiveAnimeInfosHTML = '';
 
 var refresh4 = () => {
-  IntroToHidiveAnimeInfosHTML = generateHtml(IntroToHidiveAnimeInfos, IntroToHidiveAnimeInfosHTML);
+  IntroToHidiveAnimeInfosHTML = generateHtml(IntroToHidiveAnime, IntroToHidiveAnimeInfosHTML);
   document.querySelector('.js-anime-slides-INTRO-TO-HIDIVE').innerHTML = `${IntroToHidiveAnimeInfosHTML}`
 
    // Set up click event listeners after refreshing
@@ -141,20 +143,20 @@ refresh4()
 
 document.getElementById('next-BTN4').onclick = () => {
   IntroToHidiveAnimeInfosHTML = '';
-  changeopacity(IntroToHidiveAnimeInfos)
+  changeopacity(IntroToHidiveAnime)
   refresh4()
 }
 
 document.getElementById('prev-BTN4').onclick = () => {
   IntroToHidiveAnimeInfosHTML = '';
-  changeopacity(IntroToHidiveAnimeInfos)
+  changeopacity(IntroToHidiveAnime)
   refresh4()
 }
 
 let TrendingNowAnimeInfosHTML = '';
 
 var refresh5 = () => {
-  TrendingNowAnimeInfosHTML = generateHtml(TrendingNowAnimeInfos, TrendingNowAnimeInfosHTML); 
+  TrendingNowAnimeInfosHTML = generateHtml(TrendingNowAnime, TrendingNowAnimeInfosHTML); 
   document.querySelector('.js-anime-slides-TRENDING-NOW').innerHTML = `${TrendingNowAnimeInfosHTML}`  
 
    // Set up click event listeners after refreshing
@@ -169,12 +171,12 @@ refresh5()
 
 document.getElementById('next-BTN5').onclick = () => {
   TrendingNowAnimeInfosHTML = '';
-  changeopacity(TrendingNowAnimeInfos)
+  changeopacity(TrendingNowAnime)
   refresh5()
 }
 
 document.getElementById('prev-BTN5').onclick = () => {
   TrendingNowAnimeInfosHTML = '';
-  changeopacity(TrendingNowAnimeInfos)
+  changeopacity(TrendingNowAnime)
   refresh5()
 }
