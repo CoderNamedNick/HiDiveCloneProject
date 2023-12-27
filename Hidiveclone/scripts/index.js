@@ -1,7 +1,3 @@
-import { SimulcastAnimeInfos } from "./animes-info.js";
-import { exclusivesAnimeInfos } from "./animes-info.js";
-import { IntroToHidiveAnimeInfos } from "./animes-info.js";
-import { TrendingNowAnimeInfos } from "./animes-info.js";
 import { recentlyAddedAnimes, SimulcastAnimes, exclusivesAnime, IntroToHidiveAnime, TrendingNowAnime } from "./all-anime-infos.js";
 
 
@@ -10,6 +6,7 @@ alert('this is a clone site made for learning!! FOR REAL ANIME GO TO HIDIVE')
 console.log(recentlyAddedAnimes)
 console.log(SimulcastAnimes)
 console.log(exclusivesAnime)
+console.log(TrendingNowAnime)
 
 localStorage.clear();
 

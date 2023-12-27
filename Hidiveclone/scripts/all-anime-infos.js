@@ -76,7 +76,7 @@ export const AllAnimes = [{
   image: 'css/animePosters/DEA_01_MASTER_300x169.jpg',
   genre: ['Action ', 'Fantasy ', 'Adventure'],
   paragraph: 'An undead sorcerer and powerful Dark Lord awakens as a ten-year-old boy a thousand years after entering magical stasis during a climactic battle. Now he has to adapt to a strange new era and deal with the twisted monsters called Voids.',
-  Classid: 'E0000-0000-0005',
+  Classid: 'D0000-0000-0001',
   hoverID: 'Displaying',
   newEpTimes: '&#128344; FINISHED',
   opacity: 1,
@@ -244,7 +244,7 @@ export const AllAnimes = [{
   image: 'css/SimulcastPosters/HLK_01_MASTER_300x169.jpg',
   genre: ['action ', 'fantasy ', ' Comedy'],
   paragraph: `Why would a human want to kill all humans? What secrets is he hiding? A world-shaking plot is afoot, and human hero Helck may just be the demons’ last hope..`,
-  Classid: 'E0000-0000-0004',
+  Classid: 'D0000-0000-0002',
   hoverID: 'Displaying',
   newEpTimes: '&#128344; FINISHED',
   opacity: 1,
@@ -268,7 +268,7 @@ export const AllAnimes = [{
   image: 'css/SimulcastPosters/EIS_01_MASTER_300x169.jpg',
   genre: ['action ', 'fantasy ','Supernatural ', 'Adventure'],
   paragraph: `When Cid is isekai’d to another world, he creates an underground organization to live out a fight against a made-up cult. Little does he know the cult is real, and they’re not happy his power fantasy just impeded their plans!`,
-  Classid: 'E0000-0000-0001',
+  Classid: 'D0000-0000-0003',
   hoverID: 'Displaying',
   newEpTimes: '&#128344; FINISHED',
   opacity: 1,
@@ -388,10 +388,10 @@ export const AllAnimes = [{
   image: 'css/ExclusivePosters/PHI_01_MASTER_300x169.jpg',
   genre: ['Comedy ', 'Supernatural'],
   paragraph: `Yuya is part of the idol duo ZINGS, but his laziness and disdain for fans puts him in danger of getting blacklisted. That is, until he meets Asahi, the ghost of a former idol who’s eager to stage her own comeback by possessing Yuya's willing body!`,
-  Classid: 'E0000-0001-0005',
+  Classid: 'D0000-0000-0004',
   hoverID: 'NotDisplaying',
   newEpTimes: '&#128344; FINISHED',
-  opacity: 0,
+  opacity: 1,
   category: ['TrendingNowAnime',]
 },
 {
@@ -460,10 +460,10 @@ export const AllAnimes = [{
   image: 'css/IntroToHidivePosters/GTE_MASTER_300x169.jpg',
   genre: ['Action ', 'Fantasy ', 'Supernatural '],
   paragraph: `His failed attempt to save a doujinshi sale from an otherworldly attack turned Itami into an accidental hero. He’s promoted to second lieutenant of the Self-Defense Force and sent on a mission through the gate into another world.`,
-  Classid: 'E0000-0001-0004',
+  Classid: 'D0000-0000-0005',
   hoverID: 'NotDisplaying',
   newEpTimes: '&#128344; FINISHED',
-  opacity: 0,
+  opacity: 1,
   category: ['TrendingNowAnime',]
 },
 {
@@ -544,10 +544,10 @@ export const AllAnimes = [{
   image: 'css/TrendingnowPosters/SHV_01_MASTER_300x169_01.jpg',
   genre: ['Mature ','Action ','Fantasy'],
   paragraph: `Heaven has been thrown into chaos, and the Seven Heavenly Virtues, are sent to Earth to find the “true messiah”. As these beauties from the sky try to race against time, they realize how far the Seven Mortal Sins have spread their plague.`,
-  Classid: 'E0000-0000-0002',
+  Classid: 'D0000-0001-0001',
   hoverID: 'Displaying',
   newEpTimes: '&#128344; FINISHED',
-  opacity: 1,
+  opacity: 0,
   category: ['TrendingNowAnime',]
 },
 {
@@ -556,10 +556,10 @@ export const AllAnimes = [{
   image: 'css/TrendingnowPosters/PGD_MOVIE2_MASTER_300x169.jpg',
   genre: ['Supernatural ','Drama ','Mystery ','Thriller'],
   paragraph: `Is destiny a matter of chance or a matter of choice? To keep their terminally ill sister, Himari, alive, Kanba and Shouma must find the mysterious Penguindrum.`,
-  Classid: 'E0000-0000-0003',
+  Classid: 'D0000-0001-0002',
   hoverID: 'Displaying',
   newEpTimes: '&#128344; FINISHED',
-  opacity: 1,
+  opacity: 0,
   category: ['TrendingNowAnime',]
 },
 {
@@ -568,7 +568,7 @@ export const AllAnimes = [{
   image: 'css/TrendingnowPosters/MNA_01_MASTER_300x169.jpg',
   genre: ['Fantasy ','Adventure ','Comedy ','Slice of Life','Fantasy'],
   paragraph: `Sarasa was gifted a house to use as an alchemy storefront, but it’s smackdab in the middle of nowhere! With customers to find and supplies to gather, Sarasa has her work cut out for her as she transmutes this bad location into a golden opportunity.`,
-  Classid: 'E0000-0001-0001',
+  Classid: 'D0000-0001-0003',
   hoverID: 'NotDisplaying',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
@@ -580,7 +580,7 @@ export const AllAnimes = [{
   image: 'css/TrendingnowPosters/EKL_01_MASTER_300x169.jpg',
   genre: ['Romance ','Comedy ','Shoujo'],
   paragraph: `Endo and Kobayashi love to bicker about their latest video game fixation. They think they're simply providing color commentary, but one of the game’s characters, Siegwald, can hear them talking about his fiancée, the villainess Lieselotte!`,
-  Classid: 'E0000-0001-0002',
+  Classid: 'D0000-0001-0004',
   hoverID: 'NotDisplaying',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
@@ -592,7 +592,7 @@ export const AllAnimes = [{
   image: 'css/TrendingnowPosters/ORH_01_MASTER_300x169.jpg',
   genre: ['Comedy ','Fantasy ','Seinen'],
   paragraph: `The Demon Lord seeks revenge on Max, the hero, after a humiliating defeat ten years ago! Unfortunately, Max now has no interest in an epic rematch after his humiliating fall from hero to zero.`,
-  Classid: 'E0000-0001-0003',
+  Classid: 'D0000-0001-0005',
   hoverID: 'NotDisplaying',
   newEpTimes: '&#128344; FINISHED',
   opacity: 0,
@@ -600,10 +600,10 @@ export const AllAnimes = [{
 }];
 
 export let recentlyAddedAnimes = AllAnimes.filter((Anime => Anime.category?.at(0) == 'recentlyAddedAnime'))
-export let SimulcastAnimes = AllAnimes.filter((Anime => Anime.category?.at(0) == 'SimulcastAnime' || Anime.category?.at(1) == 'SimulcastAnime'))
-export let exclusivesAnime = AllAnimes.filter((Anime => Anime.category?.at(0) == 'exclusivesAnime' || Anime.category?.at(1) == 'exclusivesAnime' || Anime.category?.at(2) == 'exclusivesAnime'))
-export let IntroToHidiveAnime = AllAnimes.filter((Anime => Anime.category?.at(0) == 'IntroToHidiveAnime' || Anime.category?.at(1) == 'IntroToHidiveAnime' || Anime.category?.at(2) == 'IntroToHidiveAnime' || Anime.category?.at(3) == 'IntroToHidiveAnime'))
-export let TrendingNowAnime = AllAnimes.filter((Anime => Anime.category?.at(0) == 'TrendingNowAnime' || Anime.category?.at(1) == 'TrendingNowAnime' || Anime.category?.at(2) == 'TrendingNowAnime' || Anime.category?.at(3) == 'TrendingNowAnime' || Anime.category?.at(4) == 'TrendingNowAnime'))
+export let SimulcastAnimes = AllAnimes.filter((Anime => Anime.category?.at(0) == 'SimulcastAnime'))
+export let exclusivesAnime = AllAnimes.filter((Anime => Anime.category?.at(0) == 'exclusivesAnime'))
+export let IntroToHidiveAnime = AllAnimes.filter((Anime => Anime.category?.at(0) == 'IntroToHidiveAnime'))
+export let TrendingNowAnime = AllAnimes.filter((Anime => Anime.category?.at(0) == 'TrendingNowAnime'))
 
 
 
