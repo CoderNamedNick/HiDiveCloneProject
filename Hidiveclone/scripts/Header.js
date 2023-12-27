@@ -1,8 +1,8 @@
 
-let b = () => {
+let SearchbarAfter = () => {
   document.getElementById('search-icon-div').innerHTML = `
   <input id="searchbar-after" onkeypress="handleKeyPress(event)" placeholder="search">
-  <button id="Search-icon-btn-after" onclick="a()"><img class="Search-icon-after" src="css/images/icons8-search-48 (1).png"></button>  `
+  <button id="Search-icon-btn-after" onclick="SearchbarBefore()"><img class="Search-icon-after" src="css/images/icons8-search-48 (1).png"></button>  `
   document.getElementById('Trial-signup-div').innerHTML = `
   <a href="https://www.hidive.com/dashboard">
     <button class="Trial-signup-btn-after">
@@ -12,10 +12,10 @@ let b = () => {
   `
 }
 
-let a = () => {
+let SearchbarBefore = () => {
   document.getElementById('search-icon-div').innerHTML = `
   <input id="searchbar" type="text" placeholder="search">
-  <button id="Search-icon-btn" onclick="b()"><img class="Search-icon" src="css/images/icons8-search-48 (1).png"></button>`
+  <button id="Search-icon-btn" onclick="SearchbarAfter()"><img class="Search-icon" src="css/images/icons8-search-48 (1).png"></button>`
   document.getElementById('Trial-signup-div').innerHTML = `
   <a href="https://www.hidive.com/dashboard">
     <button class="Trial-signup-btn">
@@ -25,9 +25,9 @@ let a = () => {
   `
 }
 
-let c = () => {
+let MoreToolTipAfter = () => {
   document.getElementById('More-div').innerHTML = `
-  <button onclick="d()" class="More">MORE <p class="caret">&#9660;</p>
+  <button onclick="MoreToolTipBefore()" class="More">MORE <p class="caret">&#9660;</p>
   </button>
   <div class="tooltip-after">
     <p class="News-tooltip">NEWS</p>
@@ -36,9 +36,9 @@ let c = () => {
   `
 }
 
-let d = () => {
+let MoreToolTipBefore = () => {
   document.getElementById('More-div').innerHTML = `
-  <button onclick="c()" class="More">MORE <p class="caret">&#9660;</p>
+  <button onclick="MoreToolTipAfter()" class="More">MORE <p class="caret">&#9660;</p>
   </button>
   <div class="tooltip">
     <p class="News-tooltip">NEWS</p>
@@ -47,9 +47,9 @@ let d = () => {
   `
 }
 
-let e = () => {
+let AccountIconToolTipAfter = () => {
   document.getElementById('account-icon-div').innerHTML = `
-  <button onclick="f()" id="account-btn"><img class="account-icon" src="css/images/icons8-user-64.png"></button>
+  <button onclick="AccountIconToolTipBefore()" id="account-btn"><img class="account-icon" src="css/images/icons8-user-64.png"></button>
   <div class="account-tooltip-after">
   <a href="login.html"><p class="login-tooltip">LOG IN</p></a>
     <hr>
@@ -58,9 +58,9 @@ let e = () => {
   `
 }
 
-let f = () => {
+let AccountIconToolTipBefore = () => {
   document.getElementById('account-icon-div').innerHTML = `
-  <button onclick="e()" id="account-btn"><img class="account-icon" src="css/images/icons8-user-64.png"></button>
+  <button onclick="AccountIconToolTipAfter()" id="account-btn"><img class="account-icon" src="css/images/icons8-user-64.png"></button>
   <div class="account-tooltip">
   <a href="login.html"><p class="login-tooltip">LOG IN</p></a>
     <hr>
