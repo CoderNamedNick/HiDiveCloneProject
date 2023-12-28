@@ -82,3 +82,17 @@ function handleKeyPress(event) {
     window.location.href = "search.html";
   }
 }
+
+let inputedsearch2= '';
+
+function handleKeyPress2(event) {
+  if (event.key === 'Enter') {
+    var inputValue2 = document.getElementById('search-searchpage').value;
+    alert('Entered value: ' + inputValue2);
+    // You can do something with the entered value here
+    inputedsearch2 = inputValue2
+    localStorage.setItem('myVariable2', inputedsearch2);
+    console.log(inputedsearch);
+    window.location.href = "search.html";
+  }
+}
