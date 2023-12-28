@@ -27,7 +27,7 @@ const generateHtml = (array, html) => {
       <div class="anime-times-flexbox ${anime.Classid}" style="position: relative; opacity: ${anime.opacity}">
         <img class="anime-Previews" src="${anime.image}">
         <div class="new-episode-times" style="z-index: 10003"><p>${anime.newEpTimes}</p></div>
-        <a href="#" class="blah" data-anime-all-id="${anime.id}"><span class="hovers ${anime.hoverID}">${anime.name}</span></a>
+        <a href="#" class="blah" data-anime-all-id="${anime.id}"><span class="hovers ${anime.hoverID}">${anime.name} <br> <span class="hovercaret">&#9660;</span></span></a>
       </div>
     `;
   });

@@ -162,6 +162,13 @@ body{
   animation-duration: 1s;
   animation-direction: right;
 }
+.hovers{
+  white-space: initial;
+}
+.hovercaret{
+  font-size: 24px;
+  width: 200px;
+}
 @keyframes slider2 {
   from {margin-left: -1000px;}
   to {margin-left: 10px;}
