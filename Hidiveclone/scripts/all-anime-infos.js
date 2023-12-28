@@ -1,3 +1,4 @@
+//update this with episodes and tv ratings
 export const AllAnimes = [{
   id: 'A0000-0000-0001',
   name: 'BLADE OF THE IMMORTAL',
