@@ -609,29 +609,31 @@ export let TrendingNowAnime = AllAnimes.filter((Anime => Anime.category?.at(0) =
 
 
 export let getsearch = (param, param2,) => {
-  localStorage.clear()
-  param.forEach((Anime) => {
-    if(Anime.name === param2) {
-      document.getElementById('Anime-search-result-div').innerHTML = `
-      <img class="searched-anime-image" src="${Anime.image}">
-          <div class="anime-search-description-div">
-            <div class="searched-anime-name">
-              <h2>${Anime.name}</h2>
+  if (param2 !== null) {
+    localStorage.clear()
+    param.forEach((Anime) => {
+      if(Anime.name === param2) {
+        document.getElementById('Anime-search-result-div').innerHTML = `
+        <img class="searched-anime-image" src="${Anime.image}">
+            <div class="anime-search-description-div">
+              <div class="searched-anime-name">
+                <h2>${Anime.name}</h2>
+              </div>
+              <div class="searched-anime-Stats">
+                <p>Genre: ${Anime.genre}</p>
+              </div>
+              <div class="searched-anime-paragraph">
+                <p>${Anime.paragraph}</p>
+              </div>
+              <div class="searched-anime-watchnow">
+                <p><a style="cursor: pointer;">  Show Info</a>  <a style="cursor: pointer;" id="WATCHNOW">  Watch Now</a></p>
+              </div>
             </div>
-            <div class="searched-anime-Stats">
-              <p>Genre: ${Anime.genre}</p>
-            </div>
-            <div class="searched-anime-paragraph">
-              <p>${Anime.paragraph}</p>
-            </div>
-            <div class="searched-anime-watchnow">
-              <p><a style="cursor: pointer;">  Show Info</a>  <a style="cursor: pointer;" id="WATCHNOW">  Watch Now</a></p>
-            </div>
-          </div>
-      `
-      let AnimeID = Anime.id
-      localStorage.setItem("AnimeSlected", AnimeID)
-      console.log(AnimeID)
-    }
-  });
+        `
+        let AnimeID = Anime.id
+        localStorage.setItem("AnimeSlected", AnimeID)
+        console.log(AnimeID)
+      }
+    });
+  }
 }

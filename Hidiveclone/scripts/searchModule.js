@@ -23,9 +23,6 @@ if (retrievedValue === null) {
   getsearch(AllAnimes, retrievedValue2);
 }
 
-
-//getsearch(AllAnimes, retrievedValue);
-
 document.getElementById('WATCHNOW').onclick = () => {
   window.location.href = "watchAnime.html";
 }
