@@ -167,7 +167,6 @@ body{
 }
 .hovercaret{
   font-size: 24px;
-  width: 200px;
 }
 @keyframes slider2 {
   from {margin-left: -1000px;}

@@ -3,11 +3,6 @@ import { recentlyAddedAnimes, SimulcastAnimes, exclusivesAnime, IntroToHidiveAni
 
 alert('this is a clone site made with pure vanilla javascript for learning!! FOR REAL ANIME GO TO HIDIVE')
 
-console.log(recentlyAddedAnimes)
-console.log(SimulcastAnimes)
-console.log(exclusivesAnime)
-console.log(TrendingNowAnime)
-
 localStorage.clear();
 
 let recentlyAddedAnimeInfosHTML = '';
@@ -27,7 +22,7 @@ const generateHtml = (array, html) => {
       <div class="anime-times-flexbox ${anime.Classid}" style="position: relative; opacity: ${anime.opacity}">
         <img class="anime-Previews" src="${anime.image}">
         <div class="new-episode-times" style="z-index: 10003"><p>${anime.newEpTimes}</p></div>
-        <a href="#" class="blah" data-anime-all-id="${anime.id}"><span class="hovers ${anime.hoverID}">${anime.name} <br> <span class="hovercaret">&#9660;</span></span></a>
+        <a href="#" class="blah" data-anime-all-id="${anime.id}"><span class="hovers ${anime.hoverID}">${anime.name} <br> <span class="hovercaret"> &#65088;</span></span></a>
       </div>
     `;
   });
