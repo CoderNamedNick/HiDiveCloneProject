@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulcast practice website</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/header.css">
+  
+</head>
+<body>
+  <div class="main">
+    <div class="Header">
+      <div class="FlexBox">
+        <div class="left-side">
+          <div class="Header-logo">
+            <img class="Logo" src="css/images/HIDIVE_logo.svg">
+          </div>
+          <div class="Header-list">
+              <a href="https://www.hidive.com/dashboard">SIMULCASTS</a>
+              <a href="https://www.hidive.com/dashboard"> DUBS</a>
+              <a href="https://www.hidive.com/dashboard">SERIES</a>
+              <a href="https://www.hidive.com/dashboard">MOVIES</a>
+              <a href="https://www.hidive.com/dashboard">&#124;</a>
+              <a href="https://www.hidive.com/dashboard">SCHEDULE</a>
+              <a href="https://www.hidive.com/dashboard">HOME</a>
+              <div id="More-div">
+                <button onclick="MoreToolTipAfter()" class="More">MORE <p class="caret">&#9660;</p>
+                </button>
+                <div class="tooltip">
+                  <p class="News-tooltip">NEWS</p>
+                  <p class="Shop-tooltip">SHOP</p>
+                </div>
+              </div>
+          </div>
+  
+        </div>
+        <div class="right-side">
+          <div id="Trial-signup-div">
+            <a href="https://www.hidive.com/dashboard">
+              <button class="Trial-signup-btn">
+                START 7-DAY FREE TRIAL
+              </button>
+            </a>
+          </div>
+          <div id="search-icon-div">
+            <input id="searchbar" type="text" placeholder="search">
+            <button id="Search-icon-btn" onclick="SearchbarAfter()"><img class="Search-icon" src="css/images/icons8-search-48 (1).png"></button>
+          </div>
+          <div id="account-icon-div">
+            <button onclick="AccountIconToolTipAfter()" id="account-btn"><img class="account-icon" src="css/images/icons8-user-64.png"></button>
+            <div class="account-tooltip">
+              <a href="login.html"><p class="login-tooltip">LOG IN</p></a>
+              <hr>
+              <p class="help-tooltip">HELP CENTER</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    <div class="main-container">
+      <div class="coverphoto-container">
+
+      </div>
+      <br>
+      <div class="sub-main-container">
+        <h1>SIMULCASTS &#10095; put catagory here</h1>
+        <hr>
+        <p>catogories:</p>
+        <button>put catagory here</button>
+        <p>genre:</p>
+        <button>ALL</button>
+        <p>audio:</p>
+        <button>ALL</button>
+        <div>
+          
+        </div>
+      </div>
+      <h1>Simulacast</h1>
+      <div class="slides-descriptions">
+        <p class="Section-descripts">RECENTLY ADDED</p>
+        <a class="view-all" href="">VIEW ALL (41)</a>
+      </div>
+      <div style="position: relative;">
+        <div class="anime-slides js-anime-slides-recentlyAdded">
+      
+        </div>
+        <a id="prev-BTN" style="z-index: 1000000000001;" class="prev js-prev1">&#10094;</a>
+        <button style="z-index: 1000000000001;" id="next-BTN"><a class="next js-next1" >&#10095;</a></button>
+      </div> 
+      <div class="slides-descriptions">
+        <p class="Section-descripts">SIMULCASTS</p>
+        <a class="view-all" href=""></a>
+      </div>
+      <div style="position: relative;">
+        <div  class="anime-slides js-anime-slides-simulcast">
+      
+        </div>
+        <a id="prev-BTN2" class="prev js-prev1">&#10094;</a>
+        <button id="next-BTN2"><a class="next js-next1" >&#10095;</a></button>
+      </div>
+      <div class="slides-descriptions">
+        <p class="Section-descripts">EXCLUSIVES</p>
+        <a class="view-all" href="">VIEW ALL (103)</a>
+      </div>
+      <div style="position: relative;">
+        <div  class="anime-slides js-anime-slides-exclusives">
+      
+        </div>
+        <a id="prev-BTN3" class="prev js-prev2">&#10094;</a>
+        <button id="next-BTN3"><a class="next js-next2" >&#10095;</a></button>
+      </div>
+      <div class="slides-descriptions">
+        <p class="Section-descripts">INTRO TO HIDIVE</p>
+        <a class="view-all" href="">VIEW ALL (12)</a>
+      </div>
+      <div style="position: relative;">
+        <div  class="anime-slides js-anime-slides-INTRO-TO-HIDIVE">
+      
+        </div>
+        <a id="prev-BTN4" class="prev js-prev3">&#10094;</a>
+        <button id="next-BTN4"><a class="next js-next3" >&#10095;</a></button>
+      </div>
+      <div class="slides-descriptions">
+        <p class="Section-descripts">TRENDING NOW</p>
+        <a class="view-all" href=""></a>
+      </div>
+      <div style="position: relative;">
+        <div  class="anime-slides js-anime-slides-TRENDING-NOW">
+      
+        </div>
+        <a id="prev-BTN5" class="prev js-prev4">&#10094;</a>
+        <button id="next-BTN5"><a class="next js-next4" >&#10095;</a></button>
+      </div>
+    </div> 
+    <footer class="footer">
+      <div class="footer-list">
+        <a href="">Sign Up</a>
+        <span class="lines">&#124;</span>
+        <a href="">Help Center</a>
+        <span class="lines">&#124;</span>
+        <a href="">About Us</a>
+        <span class="lines">&#124;</span>
+        <a href="">Contact Us</a>
+        <span class="lines">&#124;</span>
+        <a href="">Careers</a>
+        <span class="lines">&#124;</span>
+        <a href="">Privacy Policy</a>
+        <span class="lines">&#124;</span>
+        <a href="">Terms of Use</a>
+        <span class="lines">&#124;</span>
+        <a href="">Press</a>
+        <span class="lines">&#124;</span>
+        <a href="">Devices</a>
+        <span class="lines">&#124;</span>
+        <a href="">Accessibility</a>
+        <span class="lines">&#124;</span>
+        <a href="">Sitemap</a>
+        <span class="lines">&#124;</span>
+        <a href="">Cookies</a>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="scripts/index.js"></script>
+  <script src="scripts/Header.js"></script>
+  <script src="scripts/SlideShow.js"></script>
+</body>
+</html>
