@@ -23,6 +23,16 @@ if (retrievedValue === null) {
   getsearch(AllAnimes, retrievedValue2);
 }
 
+if (retrievedValue === null && retrievedValue2 === null) {
+  document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('search-result-div').innerHTML = `
+    <input onkeypress="handleKeyPress2(event)" id="search-searchpage" class="search-searchpage" type="text" value="">
+    <button class="Search-icon-searchpage-btn"><img class="Search-icon-searchpage" src="css/images/icons8-search-30.png"></button>
+    `;
+  });
+  getsearch(AllAnimes, retrievedValue2);
+}
+
 document.getElementById('WATCHNOW').onclick = () => {
   window.location.href = "watchAnime.html";
 }

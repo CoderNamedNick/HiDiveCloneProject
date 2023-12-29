@@ -637,4 +637,10 @@ export let getsearch = (param, param2,) => {
       }
     });
   }
-}
+  if (param2 == null) {
+    localStorage.clear()
+    document.getElementById('Anime-search-result-div').innerHTML = `
+      <h1>NO MATCH</h1>
+    `
+  }
+};
