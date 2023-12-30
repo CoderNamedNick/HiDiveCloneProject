@@ -9,6 +9,16 @@
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .coverphoto {
+    width: 800px;
+  }
+  .sub-main-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 800px;
+  }
+}
+
 .hr1{
   margin: 5px;
   margin-left: 10px;
