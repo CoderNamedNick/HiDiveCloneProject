@@ -32,9 +32,21 @@
   color: #888787;
 }
 .prefences-btn{
-  background-color: rgb(76, 204, 255);
+  background-color: rgb(21, 185, 250);
   border: none;
   border-radius: 4px;
   padding: 4px;
   color: white;
+}
+
+.sub-main-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: auto;
+  height: 500px;
+}
+.anime-prefences-preview{
+  display: inline;
+  width: 100px;
+  height: 100px;
 }
