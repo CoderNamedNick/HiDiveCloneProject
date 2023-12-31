@@ -30,7 +30,7 @@ const generateprefencedHtml = (array, html) => {
 };
 
 var refresh = () => {
-  prefencedAnimesHTML = generateprefencedHtml(TrendingNowAnime, prefencedAnimesHTML);
+  prefencedAnimesHTML = generateprefencedHtml(TrendingNowAnime, prefencedAnimesHTML) + generateprefencedHtml(TrendingNowAnime, prefencedAnimesHTML);
   document.querySelector('.sub-main-grid').innerHTML = `${prefencedAnimesHTML}`;
 
   // Set up click event listeners after refreshing
