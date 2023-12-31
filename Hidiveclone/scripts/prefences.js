@@ -17,11 +17,13 @@ const generateprefencedHtml = (array, html) => {
 
   array.forEach((anime) => {
     html += `
-      <div class="anime-times-flexbox" style="position: relative;">
-        <img class="anime-Previews" src="${anime.image}">
-        <div class="new-episode-times" style="z-index: 10003"><p>${anime.newEpTimes}</p></div>
-        <a href="#" class="blah" data-anime-all-id="${anime.id}"><span class="hovers ${anime.hoverID}">${anime.name} <br> <span class="hovercaret"> &#65088;</span></span></a>
-      </div>
+      <div class="anime-prefences-preview">
+        <div class="anime-times-flexbox" style="position: relative;">
+          <img class="anime-Previews" src="${anime.image}">
+          <div class="new-episode-times" style="z-index: 10003"><p>${anime.newEpTimes}</p></div>
+          <a href="#" class="blah" data-anime-all-id="${anime.id}"><span class="hovers ${anime.hoverID}">${anime.name} <br> <span class="hovercaret"> &#65088;</span></span></a>
+        </div>
+      </div>  
     `;
   });
   return html;

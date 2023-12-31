@@ -3,22 +3,6 @@
   width: 1200px;
 }
 
-@media only screen and (max-width: 1199px) {
-  .coverphoto {
-    width: 1000px;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .coverphoto {
-    width: 800px;
-  }
-  .sub-main-grid{
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 400px;
-  }
-}
-
 .hr1{
   margin: 5px;
   margin-left: 10px;
@@ -50,16 +34,69 @@
 }
 
 .sub-main-grid{
+  margin-left: -20px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 220px 220px 220px 220px 220px;
+  grid-template-rows: 140px 140px;
+  align-items: center;
+  justify-content: center;
   width: auto;
-  height: 500px;
-  gap: 20px;
+  height: auto;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 .anime-prefences-preview{
   display: inline;
-  width: 120px;
-  height: 120px;
+  width: auto;
+  height: auto
 }
 
+.anime-times-flexbox{
+  width: auto;
+}
+
+@media only screen and (max-width: 1199px) {
+  .coverphoto {
+    width: 1000px;
+  }
+  .sub-main-grid{
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: 140px 140px 140px;
+    height: 400px;
+    margin-bottom: 70px;
+  }
+  .anime-prefences-preview{
+    display: inline;
+    width: 220px;
+    height: auto;
+  }
+  .anime-times-flexbox{
+    width: 200px;
+  }
+  .anime-Previews{
+    width: 220px;
+    height: 130px;
+  }
+  .new-episode-times{
+    margin-top: -114px;
+    margin-left: -220px;
+  }
+  .hovers{
+    padding-top: 55px;
+    text-align: center;
+    padding-bottom: 55px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .coverphoto {
+    width: 800px;
+  }
+  .sub-main-grid{
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: 140px 140px 140px;
+    height: 400px;
+  }
+}
