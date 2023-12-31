@@ -1,4 +1,4 @@
-import { TrendingNowAnime } from "../scripts/all-anime-infos.js";
+import { TrendingNowAnime, recentlyAddedAnimes } from "../scripts/all-anime-infos.js";
 
 
 function clickedpreview(animeId) {
@@ -29,8 +29,8 @@ const generateprefencedHtml = (array, html) => {
   return html;
 };
 
-var refresh = () => {
-  prefencedAnimesHTML = generateprefencedHtml(TrendingNowAnime, prefencedAnimesHTML) + generateprefencedHtml(TrendingNowAnime, prefencedAnimesHTML);
+var refresh = (param) => {
+  prefencedAnimesHTML = generateprefencedHtml(param, prefencedAnimesHTML) + generateprefencedHtml(param, prefencedAnimesHTML);
   document.querySelector('.sub-main-grid').innerHTML = `${prefencedAnimesHTML}`;
 
   // Set up click event listeners after refreshing
@@ -40,4 +40,5 @@ var refresh = () => {
     });
   });
 }
-refresh()
+refresh(TrendingNowAnime)
+//refresh(recentlyAddedAnimes)
