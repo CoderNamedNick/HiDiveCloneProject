@@ -17,14 +17,17 @@
 .sub-main-container{
   margin-left: 14px;
 }
+
 .prefences-div{
   margin-bottom: 30px;
 }
+
 .prefences{
   display: inline;
   font-size: 14px;
   color: #888787;
 }
+
 .prefences-btn{
   background-color: rgb(21, 185, 250);
   border: none;
@@ -32,9 +35,11 @@
   padding: 4px;
   color: white;
 }
+
 .prefences-btn:hover{
   background-color: rgb(3, 156, 216);
 }
+
 .sub-main-grid{
   margin-left: -20px;
   display: grid;
@@ -57,7 +62,7 @@
   width: auto;
 }
 
-.catagory-tooltip1{
+.catagory-tooltip{
   display: flex;
   flex-direction: column;
   justify-content: space-between;

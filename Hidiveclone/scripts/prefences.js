@@ -1,11 +1,9 @@
-import { TrendingNowAnime, recentlyAddedAnimes } from "../scripts/all-anime-infos.js";
-
-
+import { TrendingNowAnime, recentlyAddedAnimes, exclusivesAnime, SimulcastAnimes } from "../scripts/all-anime-infos.js";
 
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  let catagoryDiv = document.querySelector('.catagory-tooltip1');
+  let catagoryDiv = document.querySelector('.catagory-tooltip');
   let catagoryBTN = document.querySelector('.prefences-btn');
 
   function toolTipsShow() {
@@ -21,9 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   catagoryBTN.addEventListener('click', toolTipsShow);
 });
-
-
-
 
 function clickedpreview(animeId) {
   let retrievedAnime1ID = animeId;
@@ -54,7 +49,7 @@ const generateprefencedHtml = (array, html) => {
 };
 
 var refresh = (param) => {
-  prefencedAnimesHTML = generateprefencedHtml(param, prefencedAnimesHTML) + generateprefencedHtml(param, prefencedAnimesHTML);
+  prefencedAnimesHTML = generateprefencedHtml(param, prefencedAnimesHTML) // + generateprefencedHtml(param, prefencedAnimesHTML);
   document.querySelector('.sub-main-grid').innerHTML = `${prefencedAnimesHTML}`;
 
   // Set up click event listeners after refreshing
@@ -64,5 +59,28 @@ var refresh = (param) => {
     });
   });
 }
-refresh(TrendingNowAnime)
+refresh(SimulcastAnimes)
 //refresh(recentlyAddedAnimes)
+
+document.addEventListener('DOMContentLoaded', function () {
+  let Simulcasttooltip = document.getElementById('SimulcastTT');
+  let exclusivestooltip = document.getElementById('ExclusivesTT');
+  let recentlyAddedtooltip = document.getElementById('RecentlyAddedTT');
+  let trendingNowtooltip = document.getElementById('TrendingNowTT');
+
+  function changePreference(animes) {
+    refresh(animes);
+  }
+  recentlyAddedtooltip.addEventListener('click', function () {
+    changePreference(recentlyAddedAnimes);
+  });
+  Simulcasttooltip.addEventListener('click', function () {
+    changePreference(SimulcastAnimes);
+  });
+  exclusivestooltip.addEventListener('click', function () {
+    changePreference(exclusivesAnime);
+  });
+  trendingNowtooltip.addEventListener('click', function () {
+    changePreference(TrendingNowAnime);
+  });
+});
