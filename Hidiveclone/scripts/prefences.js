@@ -1,6 +1,30 @@
 import { TrendingNowAnime, recentlyAddedAnimes } from "../scripts/all-anime-infos.js";
 
 
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  let catagoryDiv = document.querySelector('.catagory-tooltip1');
+  let catagoryBTN = document.querySelector('.prefences-btn');
+
+  function toolTipsShow() {
+      let computedStyle = window.getComputedStyle(catagoryDiv);
+      let currentOpacity = computedStyle.getPropertyValue('opacity');
+
+      if (currentOpacity === '0') {
+          catagoryDiv.style.opacity = '1';
+      } else {
+          catagoryDiv.style.opacity = '0';
+      }
+  }
+
+  catagoryBTN.addEventListener('click', toolTipsShow);
+});
+
+
+
+
 function clickedpreview(animeId) {
   let retrievedAnime1ID = animeId;
   localStorage.setItem("AnimeSelected",retrievedAnime1ID)
