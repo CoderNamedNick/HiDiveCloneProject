@@ -609,6 +609,7 @@ export let TrendingNowAnime = AllAnimes.filter((Anime => Anime.category?.at(0) =
 
 
 
+
 export let getsearch = (param, param2,) => {
   if (param2 !== null) {
     localStorage.clear()
