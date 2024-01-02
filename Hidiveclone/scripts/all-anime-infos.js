@@ -605,7 +605,7 @@ export let SimulcastAnimes = AllAnimes.filter((Anime => Anime.category?.at(0) ==
 export let exclusivesAnime = AllAnimes.filter((Anime => Anime.category?.at(0) == 'exclusivesAnime'))
 export let IntroToHidiveAnime = AllAnimes.filter((Anime => Anime.category?.at(0) == 'IntroToHidiveAnime'))
 export let TrendingNowAnime = AllAnimes.filter((Anime => Anime.category?.at(0) == 'TrendingNowAnime'))
-
+export let RomanceAnime = AllAnimes.filter((Anime => Anime.genre.includes('Romance ')))
 
 
 

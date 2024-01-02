@@ -1,7 +1,7 @@
-import { TrendingNowAnime, recentlyAddedAnimes, exclusivesAnime, SimulcastAnimes } from "../scripts/all-anime-infos.js";
+import { TrendingNowAnime, recentlyAddedAnimes, exclusivesAnime, SimulcastAnimes, RomanceAnime } from "../scripts/all-anime-infos.js";
 
 
-
+console.log(RomanceAnime)
 document.addEventListener('DOMContentLoaded', function () {
   let catagoryDiv = document.querySelector('.catagory-tooltip');
   let catagoryBTN = document.querySelector('.prefences-btn');
@@ -80,6 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let exclusivestooltip = document.getElementById('ExclusivesTT');
   let recentlyAddedtooltip = document.getElementById('RecentlyAddedTT');
   let trendingNowtooltip = document.getElementById('TrendingNowTT');
+  let romancetooltip = document.getElementById('RomanceTT')
 
   function changePreference(animes) {
     refresh(animes);
@@ -95,5 +96,8 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   trendingNowtooltip.addEventListener('click', function () {
     changePreference(TrendingNowAnime);
+  });
+  romancetooltip.addEventListener('click', function () {
+    changePreference(RomanceAnime);
   });
 });
