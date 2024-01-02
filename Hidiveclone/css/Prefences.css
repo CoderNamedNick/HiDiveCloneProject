@@ -62,14 +62,13 @@
   width: auto;
 }
 
-.catagory-tooltip{
+.catagory-tooltip, .genre-tooltip{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 8px;
   margin: 0;
   margin-top: 4px;
-  margin-left: 76px;
   padding: 10px 20px;
   color: white;
   background-color: rgb(11, 11, 11, 0.8);
@@ -78,8 +77,14 @@
   position: absolute;
   opacity: 0;
 }
-
-.C-tooltips:hover{
+.catagory-tooltip{
+  margin-left: 76px;
+}
+.genre-tooltip{
+  margin-left: 205px;
+  opacity: 1;
+}
+.C-tooltips:hover, .G-tooltips:hover{
   color: rgb(76, 204, 255);
   cursor: pointer;
 }
