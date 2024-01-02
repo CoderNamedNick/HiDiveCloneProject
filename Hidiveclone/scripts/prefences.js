@@ -5,8 +5,10 @@ import { TrendingNowAnime, recentlyAddedAnimes, exclusivesAnime, SimulcastAnimes
 document.addEventListener('DOMContentLoaded', function () {
   let catagoryDiv = document.querySelector('.catagory-tooltip');
   let catagoryBTN = document.querySelector('.prefences-btn');
+  let genreDiv = document.querySelector('.genre-tooltip');
+  let genreBTN = document.querySelectorAll('.prefences-btn')[1];
 
-  function toolTipsShow() {
+  function CatagorytoolTipsShow() {
       let computedStyle = window.getComputedStyle(catagoryDiv);
       let currentOpacity = computedStyle.getPropertyValue('opacity');
 
@@ -15,9 +17,20 @@ document.addEventListener('DOMContentLoaded', function () {
       } else {
           catagoryDiv.style.opacity = '0';
       }
-  }
+  };
+  function GenretoolTipsShow() {
+    let computedStyle = window.getComputedStyle(genreDiv);
+    let currentOpacity = computedStyle.getPropertyValue('opacity');
 
-  catagoryBTN.addEventListener('click', toolTipsShow);
+    if (currentOpacity === '0') {
+      genreDiv.style.opacity = '1';
+    } else {
+      genreDiv.style.opacity = '0';
+    }
+  };
+
+  catagoryBTN.addEventListener('click', CatagorytoolTipsShow);
+  genreBTN.addEventListener('click', GenretoolTipsShow)
 });
 
 function clickedpreview(animeId) {

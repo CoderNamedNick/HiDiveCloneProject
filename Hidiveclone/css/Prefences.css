@@ -82,7 +82,6 @@
 }
 .genre-tooltip{
   margin-left: 205px;
-  opacity: 1;
 }
 .C-tooltips:hover, .G-tooltips:hover{
   color: rgb(76, 204, 255);
