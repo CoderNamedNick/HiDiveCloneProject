@@ -42,6 +42,13 @@ function clickedpreview(animeId) {
 
 localStorage.clear();
 
+//make variables for this to be consistent with both catagories and genre
+const changeh2tag = (param, param2) => {
+  document.getElementById('h2-catagory-genre').innerHTML = `
+    <h2>${param} &#10095; ${param2}</h2>
+  `
+}
+
 let prefencedAnimesHTML = ''
 
 const generateprefencedHtml = (array, html) => {
@@ -86,6 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
     refresh(animes);
   }
   recentlyAddedtooltip.addEventListener('click', function () {
+    changeh2tag('Recntly Added', 'ALL')
     changePreference(recentlyAddedAnimes);
   });
   Simulcasttooltip.addEventListener('click', function () {
