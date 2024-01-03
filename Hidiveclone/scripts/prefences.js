@@ -1,16 +1,24 @@
-import { TrendingNowAnime, recentlyAddedAnimes, exclusivesAnime, SimulcastAnimes, RomanceAnime, ComedyAnime } from "../scripts/all-anime-infos.js";
+import { AllAnimes, TrendingNowAnime, recentlyAddedAnimes, exclusivesAnime, SimulcastAnimes, RomanceAnime, ComedyAnime } from "../scripts/all-anime-infos.js";
+ 
+let AllAnime = [];
 
 let comedyAnime = [];
 
-ComedyAnime.forEach((anime, index) => {
-  // Check if there is no other anime with the same ID before the current index
-  const isUnique = !ComedyAnime.slice(0, index).some(otherAnime => otherAnime.id === anime.id);
-  if (isUnique) {
-    comedyAnime.push(anime);
-  }
-});
+
+function UniqueArray(param, param2) {
+  param.forEach((anime, index) => {
+    // Check if there is no other anime with the same ID before the current index
+    const isUnique = !param.slice(0, index).some(otherAnime => otherAnime.id === anime.id);
+    if (isUnique) {
+      param2.push(anime);
+    }
+  });
+}
+UniqueArray(ComedyAnime, comedyAnime)
+UniqueArray(AllAnimes, AllAnime)
 
 console.log(comedyAnime)
+console.log(AllAnime)
 document.addEventListener('DOMContentLoaded', function () {
   let catagoryDiv = document.querySelector('.catagory-tooltip');
   let catagoryBTN = document.querySelector('.prefences-btn');
@@ -23,8 +31,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (currentOpacity === '0') {
           catagoryDiv.style.opacity = '1';
+          catagoryDiv.style.Zindex = '10000'
       } else {
           catagoryDiv.style.opacity = '0';
+          catagoryDiv.style.Zindex = '0'
       }
   };
   function GenretoolTipsShow() {
@@ -124,11 +134,16 @@ let filterbygenre = (param, param2) => {
     const newArray = TrendingNowAnime.filter(anime => anime.genre.includes(param2));
     newArray.forEach(anime => param.push(anime));
   }
+  if (currentCatagory === 'All') {
+    const newArray = AllAnime.filter(anime => anime.genre.includes(param2));
+    newArray.forEach(anime => param.push(anime));
+  }
   
 }
 
 
 document.addEventListener('DOMContentLoaded', function () {
+  let AllAnimetooltip = document.getElementById('AllTT')
   let Simulcasttooltip = document.getElementById('SimulcastTT');
   let exclusivestooltip = document.getElementById('ExclusivesTT');
   let recentlyAddedtooltip = document.getElementById('RecentlyAddedTT');
@@ -138,6 +153,11 @@ document.addEventListener('DOMContentLoaded', function () {
   function changePreference(animes) {
     refresh(animes);
   }
+  AllAnimetooltip.addEventListener('click', function () {
+    changeh2tag('All', '')
+    changethecatgory('All')
+    changePreference(AllAnime);
+  });
   recentlyAddedtooltip.addEventListener('click', function () {
     changeh2tag('Recently Added', '')
     changethecatgory('Recently Added')
@@ -160,8 +180,9 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   romancetooltip.addEventListener('click', function () {
     changeh2tag('', 'Romance')
-    filterbygenre(romancefiltered, 'Romance ')
+    filterbygenre(romancefiltered, 'Romance ',)
     console.log(romancefiltered)
     changePreference(romancefiltered);
+    romancefiltered = [];
   });
 });
