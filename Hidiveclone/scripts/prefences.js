@@ -42,10 +42,19 @@ function clickedpreview(animeId) {
 
 localStorage.clear();
 
+let Catagory = '';
+let Genre = 'All';
+
 //make variables for this to be consistent with both catagories and genre
 const changeh2tag = (param, param2) => {
+  if (param != '') {
+    Catagory = param
+  }
+  if (param2 != '') {
+    Genre = param2
+  }
   document.getElementById('h2-catagory-genre').innerHTML = `
-    <h2>${param} &#10095; ${param2}</h2>
+    <h2>${Catagory} &#10095; ${Genre}</h2>
   `
 }
 
@@ -93,19 +102,23 @@ document.addEventListener('DOMContentLoaded', function () {
     refresh(animes);
   }
   recentlyAddedtooltip.addEventListener('click', function () {
-    changeh2tag('Recntly Added', 'ALL')
+    changeh2tag('Recently Added', '')
     changePreference(recentlyAddedAnimes);
   });
   Simulcasttooltip.addEventListener('click', function () {
+    changeh2tag('Simulcats', '')
     changePreference(SimulcastAnimes);
   });
   exclusivestooltip.addEventListener('click', function () {
+    changeh2tag('Hidive Exclusives', '')
     changePreference(exclusivesAnime);
   });
   trendingNowtooltip.addEventListener('click', function () {
+    changeh2tag('Trending Now', '')
     changePreference(TrendingNowAnime);
   });
   romancetooltip.addEventListener('click', function () {
+    changeh2tag('', 'Romance')
     changePreference(RomanceAnime);
   });
 });
