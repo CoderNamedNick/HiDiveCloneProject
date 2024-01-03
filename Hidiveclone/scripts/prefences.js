@@ -98,7 +98,35 @@ var refresh = (param) => {
   });
 }
 refresh(SimulcastAnimes)
-//refresh(recentlyAddedAnimes)
+
+var currentCatagory = 'Simulcast';
+function changethecatgory(param) {
+  currentCatagory = param
+  console.log(currentCatagory)
+}
+
+let romancefiltered = [];
+
+let filterbygenre = (param, param2) => {
+  if (currentCatagory === 'Recently Added') {
+    const newArray = recentlyAddedAnimes.filter(anime => anime.genre.includes(param2));
+    newArray.forEach(anime => param.push(anime));
+  }
+  if (currentCatagory === 'Simulcast') {
+    const newArray = SimulcastAnimes.filter(anime => anime.genre.includes(param2));
+    newArray.forEach(anime => param.push(anime));
+  }
+  if (currentCatagory === 'Hiddive Exclusives') {
+    const newArray = exclusivesAnime.filter(anime => anime.genre.includes(param2));
+    newArray.forEach(anime => param.push(anime));
+  }
+  if (currentCatagory === 'Trending Now') {
+    const newArray = TrendingNowAnime.filter(anime => anime.genre.includes(param2));
+    newArray.forEach(anime => param.push(anime));
+  }
+  
+}
+
 
 document.addEventListener('DOMContentLoaded', function () {
   let Simulcasttooltip = document.getElementById('SimulcastTT');
@@ -112,22 +140,28 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   recentlyAddedtooltip.addEventListener('click', function () {
     changeh2tag('Recently Added', '')
+    changethecatgory('Recently Added')
     changePreference(recentlyAddedAnimes);
   });
   Simulcasttooltip.addEventListener('click', function () {
-    changeh2tag('Simulcats', '')
+    changeh2tag('Simulcast', '')
+    changethecatgory('Simulcast')
     changePreference(SimulcastAnimes);
   });
   exclusivestooltip.addEventListener('click', function () {
     changeh2tag('Hidive Exclusives', '')
+    changethecatgory('Hidive Exclusives')
     changePreference(exclusivesAnime);
   });
   trendingNowtooltip.addEventListener('click', function () {
     changeh2tag('Trending Now', '')
+    changethecatgory('Trending Now')
     changePreference(TrendingNowAnime);
   });
   romancetooltip.addEventListener('click', function () {
     changeh2tag('', 'Romance')
-    changePreference(RomanceAnime);
+    filterbygenre(romancefiltered, 'Romance ')
+    console.log(romancefiltered)
+    changePreference(romancefiltered);
   });
 });
