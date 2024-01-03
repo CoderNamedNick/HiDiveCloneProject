@@ -1,7 +1,16 @@
-import { TrendingNowAnime, recentlyAddedAnimes, exclusivesAnime, SimulcastAnimes, RomanceAnime } from "../scripts/all-anime-infos.js";
+import { TrendingNowAnime, recentlyAddedAnimes, exclusivesAnime, SimulcastAnimes, RomanceAnime, ComedyAnime } from "../scripts/all-anime-infos.js";
 
+let comedyAnime = [];
 
-console.log(RomanceAnime)
+ComedyAnime.forEach((anime, index) => {
+  // Check if there is no other anime with the same ID before the current index
+  const isUnique = !ComedyAnime.slice(0, index).some(otherAnime => otherAnime.id === anime.id);
+  if (isUnique) {
+    comedyAnime.push(anime);
+  }
+});
+
+console.log(comedyAnime)
 document.addEventListener('DOMContentLoaded', function () {
   let catagoryDiv = document.querySelector('.catagory-tooltip');
   let catagoryBTN = document.querySelector('.prefences-btn');
