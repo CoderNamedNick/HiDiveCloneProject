@@ -31,10 +31,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (currentOpacity === '0') {
           catagoryDiv.style.opacity = '1';
-          catagoryDiv.style.Zindex = '10000'
+          catagoryDiv.style.zIndex = '10000000'
       } else {
           catagoryDiv.style.opacity = '0';
-          catagoryDiv.style.Zindex = '0'
+          catagoryDiv.style.zIndex = '0'
       }
   };
   function GenretoolTipsShow() {
@@ -43,8 +43,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (currentOpacity === '0') {
       genreDiv.style.opacity = '1';
+      genreDiv.style.zIndex = '10000000'
     } else {
       genreDiv.style.opacity = '0';
+      genreDiv.style.zIndex = '0'
     }
   };
 
