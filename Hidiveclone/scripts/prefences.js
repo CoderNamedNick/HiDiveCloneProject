@@ -3,9 +3,8 @@ import { AllAnimes, TrendingNowAnime, recentlyAddedAnimes, exclusivesAnime, Simu
 
 
 
-//function filters the arrays to be unique and only have one main id for extra meassure
+//function filters the array to be unique and only have one main id for extra meassure
 let AllAnime = [];
-let comedyAnime = [];
 
 function UniqueArray(param, param2) {
   param.forEach((anime, index) => {
@@ -16,10 +15,8 @@ function UniqueArray(param, param2) {
     }
   });
 }
-UniqueArray(ComedyAnime, comedyAnime)
 UniqueArray(AllAnimes, AllAnime)
 
-console.log(comedyAnime)
 console.log(AllAnime)
 console.log(exclusivesAnime)
 
@@ -65,7 +62,8 @@ localStorage.clear();
 //changes static HTML on page to refect what is on
 let Catagory = '';
 let Genre = 'All';
-let ButtonHTML = '';
+let CatButtonHTML = '';
+let GenButtonHTML = '';
 var currentCatagory = 'Simulcast';
 
 const changeh2tag = (param, param2) => {
@@ -81,9 +79,13 @@ const changeh2tag = (param, param2) => {
 }
 const changeButtonHTML = () => {
   if (Catagory != '') {
-    ButtonHTML = Catagory
+    CatButtonHTML = Catagory
   }
-  document.getElementById('catagory-btn').innerText = `${ButtonHTML}`
+  if (Genre != '') {
+    GenButtonHTML = Genre
+  }
+  document.getElementById('catagory-btn').innerText = `${CatButtonHTML}`
+  document.getElementById('genre-btn').innerText = `${GenButtonHTML}`
 }
 function changethecatgory(param) {
   currentCatagory = param
@@ -132,6 +134,7 @@ refresh(SimulcastAnimes)
 // function filters the anime Category by genres
 let romancefiltered = [];
 let comedyfiltered = [];
+let fantasyfiltered = [];
 
 let filterbygenre = (param, param2) => {
   if (currentCatagory === 'Recently Added') {
@@ -166,6 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let trendingNowtooltip = document.getElementById('TrendingNowTT');
   let romancetooltip = document.getElementById('RomanceTT')
   let comedytooltip = document.getElementById('ComedyTT')
+  let fantasytooltip = document.getElementById('FantasyTT')
 
   function changePreference(animes) {
     refresh(animes);
@@ -202,6 +206,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   romancetooltip.addEventListener('click', function () {
     changeh2tag('', 'Romance')
+    changeButtonHTML()
     filterbygenre(romancefiltered, 'Romance ',)
     console.log(romancefiltered)
     changePreference(romancefiltered);
@@ -209,9 +214,18 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   comedytooltip.addEventListener('click', function () {
     changeh2tag('', 'Comedy')
+    changeButtonHTML()
     filterbygenre(comedyfiltered, 'Comedy ',)
     console.log(comedyfiltered)
     changePreference(comedyfiltered);
     comedyfiltered = [];
+  });
+  fantasytooltip.addEventListener('click', function () {
+    changeh2tag('', 'Fantasy')
+    changeButtonHTML()
+    filterbygenre(fantasyfiltered, 'Fantasy ',)
+    console.log(fantasyfiltered)
+    changePreference(fantasyfiltered);
+    fantasyfiltered = [];
   });
 });
