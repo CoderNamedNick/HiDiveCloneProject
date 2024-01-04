@@ -19,6 +19,7 @@ UniqueArray(AllAnimes, AllAnime)
 
 console.log(comedyAnime)
 console.log(AllAnime)
+console.log(exclusivesAnime)
 document.addEventListener('DOMContentLoaded', function () {
   let catagoryDiv = document.querySelector('.catagory-tooltip');
   let catagoryBTN = document.querySelector('.prefences-btn');
@@ -118,6 +119,7 @@ function changethecatgory(param) {
 }
 
 let romancefiltered = [];
+let comedyfiltered = [];
 
 let filterbygenre = (param, param2) => {
   if (currentCatagory === 'Recently Added') {
@@ -128,7 +130,7 @@ let filterbygenre = (param, param2) => {
     const newArray = SimulcastAnimes.filter(anime => anime.genre.includes(param2));
     newArray.forEach(anime => param.push(anime));
   }
-  if (currentCatagory === 'Hiddive Exclusives') {
+  if (currentCatagory === 'Hidive Exclusives') {
     const newArray = exclusivesAnime.filter(anime => anime.genre.includes(param2));
     newArray.forEach(anime => param.push(anime));
   }
@@ -151,32 +153,33 @@ document.addEventListener('DOMContentLoaded', function () {
   let recentlyAddedtooltip = document.getElementById('RecentlyAddedTT');
   let trendingNowtooltip = document.getElementById('TrendingNowTT');
   let romancetooltip = document.getElementById('RomanceTT')
+  let comedytooltip = document.getElementById('ComedyTT')
 
   function changePreference(animes) {
     refresh(animes);
   }
   AllAnimetooltip.addEventListener('click', function () {
-    changeh2tag('All', '')
+    changeh2tag('All', 'All')
     changethecatgory('All')
     changePreference(AllAnime);
   });
   recentlyAddedtooltip.addEventListener('click', function () {
-    changeh2tag('Recently Added', '')
+    changeh2tag('Recently Added', 'All')
     changethecatgory('Recently Added')
     changePreference(recentlyAddedAnimes);
   });
   Simulcasttooltip.addEventListener('click', function () {
-    changeh2tag('Simulcast', '')
+    changeh2tag('Simulcast', 'All')
     changethecatgory('Simulcast')
     changePreference(SimulcastAnimes);
   });
   exclusivestooltip.addEventListener('click', function () {
-    changeh2tag('Hidive Exclusives', '')
+    changeh2tag('Hidive Exclusives', 'All')
     changethecatgory('Hidive Exclusives')
     changePreference(exclusivesAnime);
   });
   trendingNowtooltip.addEventListener('click', function () {
-    changeh2tag('Trending Now', '')
+    changeh2tag('Trending Now', 'All')
     changethecatgory('Trending Now')
     changePreference(TrendingNowAnime);
   });
@@ -186,5 +189,12 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log(romancefiltered)
     changePreference(romancefiltered);
     romancefiltered = [];
+  });
+  comedytooltip.addEventListener('click', function () {
+    changeh2tag('', 'Comedy')
+    filterbygenre(comedyfiltered, 'Comedy ',)
+    console.log(comedyfiltered)
+    changePreference(comedyfiltered);
+    comedyfiltered = [];
   });
 });
