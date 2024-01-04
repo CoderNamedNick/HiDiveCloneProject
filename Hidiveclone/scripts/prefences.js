@@ -135,6 +135,13 @@ refresh(SimulcastAnimes)
 let romancefiltered = [];
 let comedyfiltered = [];
 let fantasyfiltered = [];
+let seinenfiltered = [];
+let shoujofiltered = [];
+let sliceoflifefiltered = [];
+let actionfiltered = [];
+let adventurefiltered = [];
+let dramafiltered = [];
+let thrillerfiltered = [];
 
 let filterbygenre = (param, param2) => {
   if (currentCatagory === 'Recently Added') {
@@ -170,6 +177,13 @@ document.addEventListener('DOMContentLoaded', function () {
   let romancetooltip = document.getElementById('RomanceTT')
   let comedytooltip = document.getElementById('ComedyTT')
   let fantasytooltip = document.getElementById('FantasyTT')
+  let seinentooltip = document.getElementById('SeinenTT')
+  let shoujotooltip = document.getElementById('ShoujoTT')
+  let sliceoflifetooltip = document.getElementById('SliceoflifeTT')
+  let actiontooltip = document.getElementById('ActionTT')
+  let adventuretooltip = document.getElementById('AdventureTT')
+  let dramatooltip = document.getElementById('DramaTT')
+  let thrillertooltip = document.getElementById('ThrillerTT')
 
   function changePreference(animes) {
     refresh(animes);
@@ -227,5 +241,61 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log(fantasyfiltered)
     changePreference(fantasyfiltered);
     fantasyfiltered = [];
+  });
+  seinentooltip.addEventListener('click', function () {
+    changeh2tag('', 'Seinen')
+    changeButtonHTML()
+    filterbygenre(seinenfiltered, 'Seinen ',)
+    console.log(seinenfiltered)
+    changePreference(seinenfiltered);
+    seinenfiltered = [];
+  });
+  shoujotooltip.addEventListener('click', function () {
+    changeh2tag('', 'Shoujo')
+    changeButtonHTML()
+    filterbygenre(shoujofiltered, 'Shoujo ',)
+    console.log(shoujofiltered)
+    changePreference(shoujofiltered);
+    shoujofiltered = [];
+  });
+  sliceoflifetooltip.addEventListener('click', function () {
+    changeh2tag('', 'Slice of Life')
+    changeButtonHTML()
+    filterbygenre(sliceoflifefiltered, 'Slice of Life ',)
+    console.log(sliceoflifefiltered)
+    changePreference(sliceoflifefiltered);
+    sliceoflifefiltered = [];
+  });
+  actiontooltip.addEventListener('click', function () {
+    changeh2tag('', 'Action')
+    changeButtonHTML()
+    filterbygenre(actionfiltered, 'Action ',)
+    console.log(actionfiltered)
+    changePreference(actionfiltered);
+    actionfiltered = [];
+  });
+  adventuretooltip.addEventListener('click', function () {
+    changeh2tag('', 'Adventure')
+    changeButtonHTML()
+    filterbygenre(adventurefiltered, 'Adventure ',)
+    console.log(adventurefiltered)
+    changePreference(adventurefiltered);
+    adventurefiltered = [];
+  });
+  dramatooltip.addEventListener('click', function () {
+    changeh2tag('', 'Drama')
+    changeButtonHTML()
+    filterbygenre(dramafiltered, 'Drama ',)
+    console.log(dramafiltered)
+    changePreference(dramafiltered);
+    dramafiltered = [];
+  });
+  thrillertooltip.addEventListener('click', function () {
+    changeh2tag('', 'Thriller')
+    changeButtonHTML()
+    filterbygenre(thrillerfiltered, 'Thriller ',)
+    console.log(thrillerfiltered)
+    changePreference(thrillerfiltered);
+    thrillerfiltered = [];
   });
 });
