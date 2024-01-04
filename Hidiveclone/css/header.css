@@ -188,7 +188,7 @@ body{
 .account-tooltip-after{
   position: fixed;
   margin-top: 10px;
-  margin-left: -40px;
+  margin-left: -80px;
   width: 120px;
   background-color: rgb(11, 11, 11);
   opacity: 1;
