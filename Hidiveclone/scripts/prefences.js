@@ -80,6 +80,15 @@ const changeh2tag = (param, param2) => {
   `
 }
 
+let ButtonHTML = '';
+
+const changeButtonHTML = () => {
+  if (Catagory != '') {
+    ButtonHTML = Catagory
+  }
+  document.getElementById('catagory-btn').innerText = `${ButtonHTML}`
+}
+
 let prefencedAnimesHTML = ''
 
 const generateprefencedHtml = (array, html) => {
@@ -160,26 +169,31 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   AllAnimetooltip.addEventListener('click', function () {
     changeh2tag('All', 'All')
+    changeButtonHTML()
     changethecatgory('All')
     changePreference(AllAnime);
   });
   recentlyAddedtooltip.addEventListener('click', function () {
     changeh2tag('Recently Added', 'All')
+    changeButtonHTML()
     changethecatgory('Recently Added')
     changePreference(recentlyAddedAnimes);
   });
   Simulcasttooltip.addEventListener('click', function () {
     changeh2tag('Simulcast', 'All')
+    changeButtonHTML()
     changethecatgory('Simulcast')
     changePreference(SimulcastAnimes);
   });
   exclusivestooltip.addEventListener('click', function () {
     changeh2tag('Hidive Exclusives', 'All')
+    changeButtonHTML()
     changethecatgory('Hidive Exclusives')
     changePreference(exclusivesAnime);
   });
   trendingNowtooltip.addEventListener('click', function () {
     changeh2tag('Trending Now', 'All')
+    changeButtonHTML()
     changethecatgory('Trending Now')
     changePreference(TrendingNowAnime);
   });
