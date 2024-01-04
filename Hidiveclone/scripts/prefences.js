@@ -1,9 +1,11 @@
 import { AllAnimes, TrendingNowAnime, recentlyAddedAnimes, exclusivesAnime, SimulcastAnimes, RomanceAnime, ComedyAnime } from "../scripts/all-anime-infos.js";
  
+
+
+
+//function filters the arrays to be unique and only have one main id for extra meassure
 let AllAnime = [];
-
 let comedyAnime = [];
-
 
 function UniqueArray(param, param2) {
   param.forEach((anime, index) => {
@@ -20,6 +22,8 @@ UniqueArray(AllAnimes, AllAnime)
 console.log(comedyAnime)
 console.log(AllAnime)
 console.log(exclusivesAnime)
+
+//makes tool tipos appear and dissapear
 document.addEventListener('DOMContentLoaded', function () {
   let catagoryDiv = document.querySelector('.catagory-tooltip');
   let catagoryBTN = document.querySelector('.prefences-btn');
@@ -55,19 +59,15 @@ document.addEventListener('DOMContentLoaded', function () {
   genreBTN.addEventListener('click', GenretoolTipsShow)
 });
 
-function clickedpreview(animeId) {
-  let retrievedAnime1ID = animeId;
-  localStorage.setItem("AnimeSelected",retrievedAnime1ID)
-  //alert('wait');
-  window.location.href = "watchAnime.html";
-}
 
 localStorage.clear();
 
+//changes static HTML on page to refect what is on
 let Catagory = '';
 let Genre = 'All';
+let ButtonHTML = '';
+var currentCatagory = 'Simulcast';
 
-//make variables for this to be consistent with both catagories and genre
 const changeh2tag = (param, param2) => {
   if (param != '') {
     Catagory = param
@@ -79,18 +79,18 @@ const changeh2tag = (param, param2) => {
     <h2>${Catagory} &#10095; ${Genre}</h2>
   `
 }
-
-let ButtonHTML = '';
-
 const changeButtonHTML = () => {
   if (Catagory != '') {
     ButtonHTML = Catagory
   }
   document.getElementById('catagory-btn').innerText = `${ButtonHTML}`
 }
+function changethecatgory(param) {
+  currentCatagory = param
+  console.log(currentCatagory)
+}
 
-let prefencedAnimesHTML = ''
-
+// function that generates HTML and refreshes the page to show HTML
 const generateprefencedHtml = (array, html) => {
   html = '';
 
@@ -107,7 +107,13 @@ const generateprefencedHtml = (array, html) => {
   });
   return html;
 };
-
+function clickedpreview(animeId) {
+  let retrievedAnime1ID = animeId;
+  localStorage.setItem("AnimeSelected",retrievedAnime1ID)
+  //alert('wait');
+  window.location.href = "watchAnime.html";
+}
+let prefencedAnimesHTML = '';
 var refresh = (param) => {
   prefencedAnimesHTML = generateprefencedHtml(param, prefencedAnimesHTML) // + generateprefencedHtml(param, prefencedAnimesHTML);
   document.querySelector('.sub-main-grid').innerHTML = `${prefencedAnimesHTML}`;
@@ -121,12 +127,9 @@ var refresh = (param) => {
 }
 refresh(SimulcastAnimes)
 
-var currentCatagory = 'Simulcast';
-function changethecatgory(param) {
-  currentCatagory = param
-  console.log(currentCatagory)
-}
 
+
+// function filters the anime Category by genres
 let romancefiltered = [];
 let comedyfiltered = [];
 
@@ -154,7 +157,7 @@ let filterbygenre = (param, param2) => {
   
 }
 
-
+// main function for tool tips filtering
 document.addEventListener('DOMContentLoaded', function () {
   let AllAnimetooltip = document.getElementById('AllTT')
   let Simulcasttooltip = document.getElementById('SimulcastTT');
