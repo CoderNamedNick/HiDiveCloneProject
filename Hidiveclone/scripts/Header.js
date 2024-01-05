@@ -47,6 +47,10 @@ let MoreToolTipBefore = () => {
   `
 }
 
+function setSessionCookie(name, value, path = '/') {
+  const cookieString = `${name}=${value}; path=${path}`;
+  document.cookie = cookieString;
+}
 
 function getCookie(name) {
   const cookieArray = document.cookie.split('; ');
@@ -59,13 +63,21 @@ function getCookie(name) {
   return null;
 }
 
-const LoggedIn = getCookie('loggedinTrue2');
-console.log('loggged in ' + LoggedIn)
+let logout = () => {
+  setSessionCookie('loggedinTrue2', -1);
+  AccountIconToolTipBefore();
+};
+
+const getLoggedInStatus = () => {
+  const value = getCookie('loggedinTrue2');
+  return value !== null && value !== '-1' ? value : null;
+};
 
 let AccountIconToolTipAfter = () => {
-  console.log('loggged in ' + LoggedIn)
+  const LoggedIn = getLoggedInStatus();
+  console.log('logged in ' + LoggedIn);
   if (LoggedIn) {
-    console.log('yayyyyyy')
+    console.log('yayyyyyy');
     document.getElementById('account-icon-div').innerHTML = `
     <button onclick="AccountIconToolTipBefore()" id="account-btn"><img class="account-icon" src="css/images/icons8-user-64.png"></button>
     <div class="account-tooltip-after">
@@ -76,9 +88,9 @@ let AccountIconToolTipAfter = () => {
       <button onclick="logout()" ><p class="logout-tooltip">Log Out</p></button>
       <p class="help-tooltip">HELP CENTER</p>
     </div>
-    `
-  }else {
-    console.log('shit')
+    `;
+  } else {
+    console.log('shit');
     document.getElementById('account-icon-div').innerHTML = `
     <button onclick="AccountIconToolTipBefore()" id="account-btn"><img class="account-icon" src="css/images/icons8-user-64.png"></button>
     <div class="account-tooltip-after">
@@ -86,13 +98,14 @@ let AccountIconToolTipAfter = () => {
       <hr>
       <p class="help-tooltip">HELP CENTER</p>
     </div>
-    `
+    `;
   }
-}
+};
 
 let AccountIconToolTipBefore = () => {
+  const LoggedIn = getLoggedInStatus();
   if (LoggedIn) {
-    console.log('boobs')
+    console.log('boobs');
     document.getElementById('account-icon-div').innerHTML = `
     <button onclick="AccountIconToolTipAfter()" id="account-btn"><img class="account-icon" src="css/images/icons8-user-64.png"></button>
     <div class="account-tooltip">
@@ -103,8 +116,8 @@ let AccountIconToolTipBefore = () => {
       <p class="logout-tooltip">Log Out</p>
       <p class="help-tooltip">HELP CENTER</p>
     </div>
-    `
-  }else {
+    `;
+  } else {
     document.getElementById('account-icon-div').innerHTML = `
     <button onclick="AccountIconToolTipAfter()" id="account-btn"><img class="account-icon" src="css/images/icons8-user-64.png"></button>
     <div class="account-tooltip">
@@ -112,9 +125,9 @@ let AccountIconToolTipBefore = () => {
       <hr>
       <p class="help-tooltip">HELP CENTER</p>
     </div>
-  `
+    `;
   }
-}
+};
 
 let inputedsearch= '';
 

@@ -88,8 +88,10 @@ const changeButtonHTML = () => {
   document.getElementById('genre-btn').innerText = `${GenButtonHTML}`
 }
 function changethecatgory(param) {
-  currentCatagory = param
-  console.log(currentCatagory)
+  if (param != '') {
+    currentCatagory = param
+    console.log(currentCatagory)
+  }
 }
 function changecoverphoto () {
   let coverphotoDiv = document.getElementById('coverphoto-div')
@@ -192,6 +194,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let exclusivestooltip = document.getElementById('ExclusivesTT');
   let recentlyAddedtooltip = document.getElementById('RecentlyAddedTT');
   let trendingNowtooltip = document.getElementById('TrendingNowTT');
+  let alltooltip = document.getElementById('All-genreTT')
   let romancetooltip = document.getElementById('RomanceTT')
   let comedytooltip = document.getElementById('ComedyTT')
   let fantasytooltip = document.getElementById('FantasyTT')
@@ -240,6 +243,27 @@ document.addEventListener('DOMContentLoaded', function () {
     changecoverphoto()
     changethecatgory('Trending Now')
     changePreference(TrendingNowAnime);
+  });
+  alltooltip.addEventListener('click', function () {
+    changeh2tag('', 'All')
+    changeButtonHTML()
+    changecoverphoto()
+    changethecatgory('')
+    if (currentCatagory === 'All') {
+      changePreference(AllAnime);
+    }
+    if (currentCatagory === 'Recently Added') {
+      changePreference(recentlyAddedAnimes);
+    }
+    if (currentCatagory === 'Simulcast') {
+      changePreference(SimulcastAnimes);
+    }
+    if (currentCatagory === 'Hidive Exclusives') {
+      changePreference(exclusivesAnime);
+    }
+    if (currentCatagory === 'Trending Now') {
+      changePreference(TrendingNowAnime);
+    }
   });
   romancetooltip.addEventListener('click', function () {
     changeh2tag('', 'Romance')
