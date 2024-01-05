@@ -47,26 +47,73 @@ let MoreToolTipBefore = () => {
   `
 }
 
+
+function getCookie(name) {
+  const cookieArray = document.cookie.split('; ');
+  for (let i = 0; i < cookieArray.length; i++) {
+    const cookiePair = cookieArray[i].split('=');
+    if (cookiePair[0] === name) {
+      return cookiePair[1];
+    }
+  }
+  return null;
+}
+
+const LoggedIn = getCookie('loggedinTrue2');
+console.log('loggged in ' + LoggedIn)
+
 let AccountIconToolTipAfter = () => {
-  document.getElementById('account-icon-div').innerHTML = `
-  <button onclick="AccountIconToolTipBefore()" id="account-btn"><img class="account-icon" src="css/images/icons8-user-64.png"></button>
-  <div class="account-tooltip-after">
-  <a href="login.html"><p class="login-tooltip">LOG IN</p></a>
-    <hr>
-    <p class="help-tooltip">HELP CENTER</p>
-  </div>
-  `
+  console.log('loggged in ' + LoggedIn)
+  if (LoggedIn) {
+    console.log('yayyyyyy')
+    document.getElementById('account-icon-div').innerHTML = `
+    <button onclick="AccountIconToolTipBefore()" id="account-btn"><img class="account-icon" src="css/images/icons8-user-64.png"></button>
+    <div class="account-tooltip-after">
+      <p class="myaccount-tooltip">My Account</p>
+      <p class="switchaccount-tooltip">Switch Account</p>
+      <p class="payment-tooltip">Payment Plans</p>
+      <hr>
+      <button onclick="logout()" ><p class="logout-tooltip">Log Out</p></button>
+      <p class="help-tooltip">HELP CENTER</p>
+    </div>
+    `
+  }else {
+    console.log('shit')
+    document.getElementById('account-icon-div').innerHTML = `
+    <button onclick="AccountIconToolTipBefore()" id="account-btn"><img class="account-icon" src="css/images/icons8-user-64.png"></button>
+    <div class="account-tooltip-after">
+      <a href="login.html"><p class="login-tooltip">LOG IN</p></a>
+      <hr>
+      <p class="help-tooltip">HELP CENTER</p>
+    </div>
+    `
+  }
 }
 
 let AccountIconToolTipBefore = () => {
-  document.getElementById('account-icon-div').innerHTML = `
-  <button onclick="AccountIconToolTipAfter()" id="account-btn"><img class="account-icon" src="css/images/icons8-user-64.png"></button>
-  <div class="account-tooltip">
-  <a href="login.html"><p class="login-tooltip">LOG IN</p></a>
-    <hr>
-    <p class="help-tooltip">HELP CENTER</p>
-  </div>
+  if (LoggedIn) {
+    console.log('boobs')
+    document.getElementById('account-icon-div').innerHTML = `
+    <button onclick="AccountIconToolTipAfter()" id="account-btn"><img class="account-icon" src="css/images/icons8-user-64.png"></button>
+    <div class="account-tooltip">
+      <p class="myaccount-tooltip">My Account</p>
+      <p class="switchaccount-tooltip">Switch Account</p>
+      <p class="payment-tooltip">Payment Plans</p>
+      <hr>
+      <p class="logout-tooltip">Log Out</p>
+      <p class="help-tooltip">HELP CENTER</p>
+    </div>
+    `
+  }else {
+    document.getElementById('account-icon-div').innerHTML = `
+    <button onclick="AccountIconToolTipAfter()" id="account-btn"><img class="account-icon" src="css/images/icons8-user-64.png"></button>
+    <div class="account-tooltip">
+      <a href="login.html"><p class="login-tooltip">LOG IN</p></a>
+      <hr>
+      <p class="help-tooltip">HELP CENTER</p>
+    </div>
   `
+  }
 }
 
 let inputedsearch= '';
