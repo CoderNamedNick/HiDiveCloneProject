@@ -622,7 +622,7 @@ export let getsearch = (param, param2,) => {
                 <h2>${Anime.name}</h2>
               </div>
               <div class="searched-anime-Stats">
-                <p>Genre: ${Anime.genre}</p>
+                <p>Genre: ${Anime.genre[0] + Anime.genre[1]}</p>
               </div>
               <div class="searched-anime-paragraph">
                 <p>${Anime.paragraph}</p>
