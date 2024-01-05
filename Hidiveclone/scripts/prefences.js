@@ -91,6 +91,24 @@ function changethecatgory(param) {
   currentCatagory = param
   console.log(currentCatagory)
 }
+function changecoverphoto () {
+  let coverphotoDiv = document.getElementById('coverphoto-div')
+  if (Catagory === 'All') {
+    coverphotoDiv.innerHTML = `<img class="coverphoto" src="css/PrefencesPosters/MostPopular_ISR.png">`
+  }
+  if (Catagory === 'Recently Added') {
+    coverphotoDiv.innerHTML = `<img class="coverphoto" src="css/PrefencesPosters/DRB_RecentlyAdded.png">`
+  }
+  if (Catagory === 'Simulcast') {
+    coverphotoDiv.innerHTML = `<img class="coverphoto" src="css/PrefencesPosters/DKG_Simulcasts.png">`
+  }
+  if (Catagory === 'Hidive Exclusives') {
+    coverphotoDiv.innerHTML = `<img class="coverphoto" src="css/PrefencesPosters/ORH_HDExclusives.png">`
+  }
+  if (Catagory === 'Trending Now') {
+    coverphotoDiv.innerHTML = `<img class="coverphoto" src="css/PrefencesPosters/TrendingNow-BPR.png">`
+  }
+}
 
 // function that generates HTML and refreshes the page to show HTML
 const generateprefencedHtml = (array, html) => {
@@ -191,30 +209,35 @@ document.addEventListener('DOMContentLoaded', function () {
   AllAnimetooltip.addEventListener('click', function () {
     changeh2tag('All', 'All')
     changeButtonHTML()
+    changecoverphoto()
     changethecatgory('All')
     changePreference(AllAnime);
   });
   recentlyAddedtooltip.addEventListener('click', function () {
     changeh2tag('Recently Added', 'All')
     changeButtonHTML()
+    changecoverphoto()
     changethecatgory('Recently Added')
     changePreference(recentlyAddedAnimes);
   });
   Simulcasttooltip.addEventListener('click', function () {
     changeh2tag('Simulcast', 'All')
     changeButtonHTML()
+    changecoverphoto()
     changethecatgory('Simulcast')
     changePreference(SimulcastAnimes);
   });
   exclusivestooltip.addEventListener('click', function () {
     changeh2tag('Hidive Exclusives', 'All')
     changeButtonHTML()
+    changecoverphoto()
     changethecatgory('Hidive Exclusives')
     changePreference(exclusivesAnime);
   });
   trendingNowtooltip.addEventListener('click', function () {
     changeh2tag('Trending Now', 'All')
     changeButtonHTML()
+    changecoverphoto()
     changethecatgory('Trending Now')
     changePreference(TrendingNowAnime);
   });
