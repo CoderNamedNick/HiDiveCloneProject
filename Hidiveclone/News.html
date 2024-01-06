@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>practice website</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/header.css">
+  
+</head>
+<body>
+  <div class="main">
+    <div class="Header">
+      <div class="FlexBox">
+        <div class="left-side">
+          <div class="Header-logo">
+            <img class="Logo" src="css/images/HIDIVE_logo.svg">
+          </div>
+          <div class="Header-list">
+              <a href="Prefences.html">SIMULCASTS</a>
+              <a href="Prefences.html"> DUBS</a>
+              <a href="Prefences.html">SERIES</a>
+              <a href="Prefences.html">MOVIES</a>
+              <a href="">&#124;</a>
+              <a href="https://www.hidive.com/dashboard">SCHEDULE</a>
+              <a href="index.html">HOME</a>
+              <div id="More-div">
+                <button onclick="MoreToolTipAfter()" class="More">MORE <p class="caret">&#9660;</p>
+                </button>
+                <div class="tooltip">
+                  <p class="News-tooltip">NEWS</p>
+                  <p class="Shop-tooltip">SHOP</p>
+                </div>
+              </div>
+          </div>
+  
+        </div>
+        <div class="right-side">
+          <div id="Trial-signup-div">
+            <a href="https://www.hidive.com/dashboard">
+              <button class="Trial-signup-btn">
+                START 7-DAY FREE TRIAL
+              </button>
+            </a>
+          </div>
+          <div id="search-icon-div">
+            <input id="searchbar" type="text" placeholder="search">
+            <button id="Search-icon-btn" onclick="SearchbarAfter()"><img class="Search-icon" src="css/images/icons8-search-48 (1).png"></button>
+          </div>
+          <div id="account-icon-div">
+            <button onclick="AccountIconToolTipAfter()" id="account-btn"><img class="account-icon" src="css/images/icons8-user-64.png"></button>
+            <div class="account-tooltip">
+              <a href="login.html"><p class="login-tooltip">LOG IN</p></a>
+              <hr>
+              <p class="help-tooltip">HELP CENTER</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    <div class="main-container">
+      <div id="coverphoto-div" class="coverphoto-container">
+        <img class="coverphoto" src="css/PrefencesPosters/DKG_Simulcasts.png">
+      </div>
+      <h2>Hidive News</h2>
+      <!--make grid here-->
+    </div> 
+    <footer class="footer">
+      <div class="footer-list">
+        <a href="">Sign Up</a>
+        <span class="lines">&#124;</span>
+        <a href="">Help Center</a>
+        <span class="lines">&#124;</span>
+        <a href="">About Us</a>
+        <span class="lines">&#124;</span>
+        <a href="">Contact Us</a>
+        <span class="lines">&#124;</span>
+        <a href="">Careers</a>
+        <span class="lines">&#124;</span>
+        <a href="">Privacy Policy</a>
+        <span class="lines">&#124;</span>
+        <a href="">Terms of Use</a>
+        <span class="lines">&#124;</span>
+        <a href="">Press</a>
+        <span class="lines">&#124;</span>
+        <a href="">Devices</a>
+        <span class="lines">&#124;</span>
+        <a href="">Accessibility</a>
+        <span class="lines">&#124;</span>
+        <a href="">Sitemap</a>
+        <span class="lines">&#124;</span>
+        <a href="">Cookies</a>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="scripts/index.js"></script>
+  <script src="scripts/Header.js"></script>
+  <script src="scripts/SlideShow.js"></script>
+</body>
+</html>

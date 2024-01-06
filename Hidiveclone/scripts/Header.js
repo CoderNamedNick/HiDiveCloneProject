@@ -1,5 +1,5 @@
 
-
+// try to set cookie for header tabs
 
 let SearchbarAfter = () => {
   document.getElementById('search-icon-div').innerHTML = `
