@@ -175,11 +175,23 @@ document.getElementById('prev-BTN5').onclick = () => {
 
 
 let HeaderSimulcast = document.getElementById('Simulcast-Header');
-
+let HeaderTrending = document.getElementById('Trending-Header');
+let HeaderSeries = document.getElementById('Series-Header');
 
 HeaderSimulcast.onclick = () => {
-  let asdfghj = 'Simulcast'
-  localStorage.setItem('asdfg', asdfghj)
-  console.log(asdfghj);
+  let Prefence = 'Simulcast'
+  localStorage.setItem('asdfg', Prefence)
+  console.log(Prefence);
 };
 
+HeaderTrending.onclick = () => {
+  let Prefence = 'Trending Now'
+  localStorage.setItem('asdfg', Prefence)
+  console.log(Prefence);
+};
+
+HeaderSeries.onclick = () => {
+  let Prefence = 'All'
+  localStorage.setItem('asdfg', Prefence)
+  console.log(Prefence);
+};

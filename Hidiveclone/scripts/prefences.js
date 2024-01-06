@@ -367,6 +367,12 @@ document.addEventListener('DOMContentLoaded', function () {
       changecoverphoto()
       changethecatgory('All')
       changePreference(AllAnime);
+    } if (CatagoryPrefedByHeader === 'Trending Now') {
+      changeh2tag('Trending Now', 'All')
+      changeButtonHTML()
+      changecoverphoto()
+      changethecatgory('Trending Now')
+      changePreference(TrendingNowAnime);
     }
   }
 
