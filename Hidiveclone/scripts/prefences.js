@@ -206,6 +206,13 @@ document.addEventListener('DOMContentLoaded', function () {
   let dramatooltip = document.getElementById('DramaTT')
   let thrillertooltip = document.getElementById('ThrillerTT')
 
+
+  changeh2tag('All', 'All')
+  changeButtonHTML()
+  changecoverphoto()
+  changethecatgory('All')
+  changePreference(AllAnime);
+
   function changePreference(animes) {
     refresh(animes);
   }

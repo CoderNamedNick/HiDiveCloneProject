@@ -1,14 +1,6 @@
 
 
 
-let gotoPref = () => {
-  let SimulcastReteived = 'Simulcast'
-  localStorage.setItem('CatagoryPrefenced', SimulcastReteived)
-  window.location.href = "Preferences.html";
-}
-
-document.getElementById('Simulcast-header').addEventListener('click', gotoPref);
-
 let SearchbarAfter = () => {
   document.getElementById('search-icon-div').innerHTML = `
   <input id="searchbar-after" onkeypress="handleKeyPress(event)" placeholder="search">
