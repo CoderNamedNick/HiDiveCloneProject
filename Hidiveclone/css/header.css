@@ -210,6 +210,9 @@ body{
   font-size: 13px;
   font-family: Roboto, Arial;
 }
+.LogoutBTN{
+  border: none;
+}
 .Trial-signup-btn {
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: 1px 1px black;

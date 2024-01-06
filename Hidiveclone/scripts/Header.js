@@ -1,4 +1,14 @@
 
+
+
+let gotoPref = () => {
+  let SimulcastReteived = 'Simulcast'
+  localStorage.setItem('CatagoryPrefenced', SimulcastReteived)
+  window.location.href = "Preferences.html";
+}
+
+document.getElementById('Simulcast-header').addEventListener('click', gotoPref);
+
 let SearchbarAfter = () => {
   document.getElementById('search-icon-div').innerHTML = `
   <input id="searchbar-after" onkeypress="handleKeyPress(event)" placeholder="search">
@@ -85,7 +95,7 @@ let AccountIconToolTipAfter = () => {
       <p class="switchaccount-tooltip">Switch Account</p>
       <p class="payment-tooltip">Payment Plans</p>
       <hr>
-      <button onclick="logout()" ><p class="logout-tooltip">Log Out</p></button>
+      <button class="LogoutBTN" onclick="logout()" ><p class="logout-tooltip">Log Out</p></button>
       <p class="help-tooltip">HELP CENTER</p>
     </div>
     `;
