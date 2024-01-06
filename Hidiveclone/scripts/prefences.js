@@ -1,7 +1,10 @@
 import { AllAnimes, TrendingNowAnime, recentlyAddedAnimes, exclusivesAnime, SimulcastAnimes, RomanceAnime, ComedyAnime } from "../scripts/all-anime-infos.js";
- 
 
 
+
+
+let CatagoryPrefedByHeader = localStorage.getItem('asdfg')
+console.log(CatagoryPrefedByHeader)
 
 //function filters the array to be unique and only have one main id for extra meassure
 let AllAnime = [];
@@ -148,7 +151,6 @@ var refresh = (param) => {
   });
 }
 refresh(SimulcastAnimes)
-
 
 
 // function filters the anime Category by genres
@@ -352,4 +354,22 @@ document.addEventListener('DOMContentLoaded', function () {
     changePreference(thrillerfiltered);
     thrillerfiltered = [];
   });
+  let FinallyThisworks = () => {
+    if (CatagoryPrefedByHeader === 'Simulcast') {
+      changeh2tag('Simulcast', 'All')
+      changeButtonHTML()
+      changecoverphoto()
+      changethecatgory('Simulcast')
+      changePreference(SimulcastAnimes);
+    }if (CatagoryPrefedByHeader === 'All') {
+      changeh2tag('All', 'All')
+      changeButtonHTML()
+      changecoverphoto()
+      changethecatgory('All')
+      changePreference(AllAnime);
+    }
+  }
+
+  FinallyThisworks()
 });
+

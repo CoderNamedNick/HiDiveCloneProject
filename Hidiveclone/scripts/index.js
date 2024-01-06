@@ -172,3 +172,14 @@ document.getElementById('prev-BTN5').onclick = () => {
   changeopacity(TrendingNowAnime)
   refresh5()
 }
+
+
+let HeaderSimulcast = document.getElementById('Simulcast-Header');
+
+
+HeaderSimulcast.onclick = () => {
+  let asdfghj = 'Simulcast'
+  localStorage.setItem('asdfg', asdfghj)
+  console.log(asdfghj);
+};
+
