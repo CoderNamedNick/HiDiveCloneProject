@@ -15,13 +15,20 @@
   background-color: blue;
   width: auto;
   height: 190px;
+  z-index: 4;
 }
 .box-news-title{
   background-color: pink;
-  width: auto;
+  width: 380px;
   height: 80px;
+  z-index: 2000000;
 }
 .box-sample-text{
-  height: 150px;
+  height: 160px;
   background-color: blueviolet;
+}
+.image-for-box{
+  width: 380px;
+  height: 190px;
+  z-index: 5;
 }
