@@ -178,6 +178,7 @@ let HeaderSimulcast = document.getElementById('Simulcast-Header');
 let HeaderTrending = document.getElementById('Trending-Header');
 let HeaderSeries = document.getElementById('Series-Header');
 let HeaderExclusives = document.getElementById('Exclusives-Header');
+let HeaderNews = document.querySelector(".News-tooltip");
 
 HeaderSimulcast.onclick = () => {
   let Prefence = 'Simulcast'
@@ -202,3 +203,7 @@ HeaderExclusives.onclick = () => {
   localStorage.setItem('asdfg', Prefence)
   console.log(Prefence);
 };
+
+HeaderNews.onclick = () => {
+  window.location.href = "News.html";
+}

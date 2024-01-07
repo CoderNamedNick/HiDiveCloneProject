@@ -32,7 +32,7 @@ let MoreToolTipAfter = () => {
   <button onclick="MoreToolTipBefore()" class="More">MORE <p class="caret">&#9660;</p>
   </button>
   <div class="tooltip-after">
-    <p class="News-tooltip">NEWS</p>
+    <a href="News.html"><p class="News-tooltip">NEWS</p></a>
     <p class="Shop-tooltip">SHOP</p>
   </div>
   `
@@ -43,7 +43,7 @@ let MoreToolTipBefore = () => {
   <button onclick="MoreToolTipAfter()" class="More">MORE <p class="caret">&#9660;</p>
   </button>
   <div class="tooltip">
-    <p class="News-tooltip">NEWS</p>
+    <a href="News.html"><p class="News-tooltip">NEWS</p></a>
     <p class="Shop-tooltip">SHOP</p>
   </div>
   `
