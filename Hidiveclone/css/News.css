@@ -1,6 +1,27 @@
+.coverphoto{
+  width: 1200px;
+}
+
 .grid-container{
+  margin-left: 20px;
+  margin-right: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px 300px 300px;
-  gap: 15px;
+  grid-template-rows: 420px 420px 420px;
+  gap: 30px;
+}
+
+.box-image{
+  background-color: blue;
+  width: auto;
+  height: 190px;
+}
+.box-news-title{
+  background-color: pink;
+  width: auto;
+  height: 80px;
+}
+.box-sample-text{
+  height: 150px;
+  background-color: blueviolet;
 }
