@@ -177,6 +177,7 @@ document.getElementById('prev-BTN5').onclick = () => {
 let HeaderSimulcast = document.getElementById('Simulcast-Header');
 let HeaderTrending = document.getElementById('Trending-Header');
 let HeaderSeries = document.getElementById('Series-Header');
+let HeaderExclusives = document.getElementById('Exclusives-Header');
 
 HeaderSimulcast.onclick = () => {
   let Prefence = 'Simulcast'
@@ -192,6 +193,12 @@ HeaderTrending.onclick = () => {
 
 HeaderSeries.onclick = () => {
   let Prefence = 'All'
+  localStorage.setItem('asdfg', Prefence)
+  console.log(Prefence);
+};
+
+HeaderExclusives.onclick = () => {
+  let Prefence = 'Hidive Exclusives'
   localStorage.setItem('asdfg', Prefence)
   console.log(Prefence);
 };

@@ -373,6 +373,12 @@ document.addEventListener('DOMContentLoaded', function () {
       changecoverphoto()
       changethecatgory('Trending Now')
       changePreference(TrendingNowAnime);
+    } if (CatagoryPrefedByHeader === 'Hidive Exclusives') {
+      changeh2tag('Hidive Exclusives', 'All')
+      changeButtonHTML()
+      changecoverphoto()
+      changethecatgory('Hidive Exclusives')
+      changePreference(exclusivesAnime);
     }
   }
 
