@@ -3,12 +3,21 @@
 }
 
 .grid-container{
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 370px 370px 370px;
   grid-template-rows: 420px 420px 420px;
   gap: 30px;
+}
+.grid-boxes{
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(80, 80, 80);
+  width: 370px;
+  height: 430px;
 }
 
 .box-image{
@@ -18,17 +27,19 @@
   z-index: 4;
 }
 .box-news-title{
-  background-color: pink;
-  width: 380px;
+  background-color: rgb(34, 34, 34);
+  color: white;
+  width: 370px;
   height: 80px;
   z-index: 2000000;
 }
 .box-sample-text{
   height: 160px;
-  background-color: blueviolet;
+  width: 370px;
+  background-color: rgb(34, 34, 34);
 }
 .image-for-box{
-  width: 380px;
+  width: 370px;
   height: 190px;
   z-index: 5;
 }
