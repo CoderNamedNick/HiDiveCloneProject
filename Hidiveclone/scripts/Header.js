@@ -1,5 +1,4 @@
 
-// try to set cookie for header tabs
 
 let SearchbarAfter = () => {
   document.getElementById('search-icon-div').innerHTML = `
@@ -33,7 +32,7 @@ let MoreToolTipAfter = () => {
   </button>
   <div class="tooltip-after">
     <a href="News.html"><p class="News-tooltip">NEWS</p></a>
-    <p class="Shop-tooltip">SHOP</p>
+    <a href="https://www.sentaifilmworks.com"><p class="Shop-tooltip">SHOP</p></a>
   </div>
   `
 }
@@ -44,7 +43,7 @@ let MoreToolTipBefore = () => {
   </button>
   <div class="tooltip">
     <a href="News.html"><p class="News-tooltip">NEWS</p></a>
-    <p class="Shop-tooltip">SHOP</p>
+    <a href="https://www.sentaifilmworks.com"><p class="Shop-tooltip">SHOP</p></a>
   </div>
   `
 }
@@ -84,11 +83,11 @@ let AccountIconToolTipAfter = () => {
     <button onclick="AccountIconToolTipBefore()" id="account-btn"><img class="account-icon" src="css/images/icons8-user-64.png"></button>
     <div class="account-tooltip-after">
       <p class="myaccount-tooltip">My Account</p>
-      <p class="switchaccount-tooltip">Switch Account</p>
-      <p class="payment-tooltip">Payment Plans</p>
+      <button onclick="switchAcc()" class="SwitchAccBTN"><p class="switchaccount-tooltip">Switch Account</p></button>
+      <button onclick="payment()" class="PaymentBTN"><p class="payment-tooltip">Payment Plans</p></button>
       <hr>
       <button class="LogoutBTN" onclick="logout()" ><p class="logout-tooltip">Log Out</p></button>
-      <p class="help-tooltip">HELP CENTER</p>
+      <button onclick="helpcenter()" class="HelpBTN"><p class="help-tooltip">HELP CENTER</p><button>
     </div>
     `;
   } else {
@@ -98,12 +97,22 @@ let AccountIconToolTipAfter = () => {
     <div class="account-tooltip-after">
       <a href="login.html"><p class="login-tooltip">LOG IN</p></a>
       <hr>
-      <p class="help-tooltip">HELP CENTER</p>
+      <button onclick="helpcenter()" class="HelpBTN"><p class="help-tooltip">HELP CENTER</p><button>
     </div>
     `;
   }
 };
 
+let helpcenter = () => {
+  alert('Since this is a pratice website there is no help center sorry!!')
+}
+let payment = () => {
+  alert('This is a practice website as much as i would LOVE YOUR MONEY please go to Hidive.com to spend it')
+}
+let switchAcc = () => {
+  logout()
+  window.location.href = 'login.html'
+}
 let AccountIconToolTipBefore = () => {
   const LoggedIn = getLoggedInStatus();
   if (LoggedIn) {
