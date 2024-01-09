@@ -381,7 +381,40 @@ document.addEventListener('DOMContentLoaded', function () {
       changePreference(exclusivesAnime);
     }
   }
-
   FinallyThisworks()
+
+  let simulcastHeader = document.getElementById('Simulcast-Header')
+  let TrendingtHeader = document.getElementById('Trending-Header')
+  let SeriesHeader = document.getElementById('Series-Header')
+  let ExclusivesHeader = document.getElementById('Exclusives-Header')
+
+  simulcastHeader.onclick = () => {
+    changeh2tag('Simulcast', 'All')
+    changeButtonHTML()
+    changecoverphoto()
+    changethecatgory('Simulcast')
+    changePreference(SimulcastAnimes);
+  }
+  TrendingtHeader.onclick = () => {
+    changeh2tag('Trending Now', 'All')
+    changeButtonHTML()
+    changecoverphoto()
+    changethecatgory('Trending Now')
+    changePreference(TrendingNowAnime);
+  }
+  SeriesHeader.onclick = () => {
+    changeh2tag('All', 'All')
+    changeButtonHTML()
+    changecoverphoto()
+    changethecatgory('All')
+    changePreference(AllAnime);
+  }
+  ExclusivesHeader.onclick = () => {
+    changeh2tag('Hidive Exclusives', 'All')
+    changeButtonHTML()
+    changecoverphoto()
+    changethecatgory('Hidive Exclusives')
+    changePreference(exclusivesAnime);
+  }
 });
 
