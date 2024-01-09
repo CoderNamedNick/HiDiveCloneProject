@@ -20,13 +20,14 @@
   height: 430px;
 }
 
-.box-image{
+.box-image0, .box-image1, .box-image2, .box-image3, .box-image4, .box-image5, .box-image6, .box-image7, .box-image8{
   background-color: blue;
   width: auto;
   height: 190px;
   z-index: 4;
+  cursor: pointer;
 }
-.box-news-title{
+.box-news-title0, .box-news-title1, .box-news-title2, .box-news-title3, .box-news-title4, .box-news-title5, .box-news-title6, .box-news-title7, .box-news-title8{
   background-color: rgb(34, 34, 34);
   color: white;
   width: 360px;
@@ -36,12 +37,14 @@
   text-align: left;
   font-size: 14px;
   padding-left: 10px;
+  cursor: pointer;
 }
-.box-sample-text{
+.box-sample-text0, .box-sample-text1, .box-sample-text2, .box-sample-text3, .box-sample-text4, .box-sample-text5, .box-sample-text6, .box-sample-text7, .box-sample-text8{
   height: 150px;
   width: 360px;
   padding-left: 10px;
   background-color: rgb(34, 34, 34);
+  cursor: pointer;
 }
 .image-for-box{
   width: 370px;
