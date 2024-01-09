@@ -1,0 +1,126 @@
+.coverphoto{
+  max-width: 1200px;
+  width: 1200px;
+}
+.private-flexbox, .Streaming-flexbox{
+  display: flex;
+  flex-direction: row;
+}
+.private-h2{
+  margin-left: 140px;
+  margin-top: -30px;
+  display: inline-block;
+  top: 0px;
+}
+.private-div{
+  display: inline-block;
+  margin-left: 60px;
+  margin-top: -30px;
+  padding-bottom: 0px;
+}
+.Inputs{
+  padding-right: 340px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 6px;
+  border: none;
+  margin-top: 6px;
+  margin-bottom: 20px;
+}
+.p-tags{
+  color: lightgray;
+  font-size: 15px;
+}
+.Streaming-h2{
+  margin-left: 130px;
+  margin-top: 20px;
+  display: inline-block;
+  top: 0px;
+}
+.streaming-div{
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 20px;
+  padding-bottom: 0px;
+}
+.CancelBTN, .SaveBTN{
+  display: inline;
+  width: 90px;
+  height: 36px;
+  align-self: flex-end;
+  background-color: rgb(3, 156, 216);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  margin-right: 80px;
+}
+.CancelBTN{
+  margin-bottom: -36px;
+  margin-right: 180px;
+  background-color: rgb(39, 39, 39);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(61, 61, 61);;
+}
+
+@media only screen and (max-width: 1199px) {
+  .coverphoto {
+    width: 1000px;
+  }
+  
+}
+
+@media only screen and (max-width: 1000px) {
+  .coverphoto {
+    width: 800px;
+  }
+  .private-h2{
+    margin-left: 0px;
+    margin-top: -30px;
+    display: inline-block;
+    top: 0px;
+  }
+  .Streaming-h2{
+    margin-left: 0px;
+    margin-top: 20px;
+    display: inline-block;
+    top: 0px;
+  }
+  .Inputs{
+    padding-right: 340px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 6px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .coverphoto {
+    width: 600px;
+  }
+  .private-h2{
+    margin-left: 0px;
+    margin-top: -30px;
+    display: inline-block;
+    top: 0px;
+  }
+  .Streaming-h2{
+    margin-left: 0px;
+    margin-top: 20px;
+    display: inline-block;
+    top: 0px;
+  }
+  .Inputs{
+    padding-right: 180px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 6px;
+    margin-bottom: 20px;
+  }
+}
