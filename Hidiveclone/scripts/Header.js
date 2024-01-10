@@ -67,6 +67,7 @@ function getCookie(name) {
 let logout = () => {
   setSessionCookie('loggedinTrue2', -1);
   AccountIconToolTipBefore();
+  window.location.href = 'index.html'
 };
 
 const getLoggedInStatus = () => {
@@ -82,7 +83,7 @@ let AccountIconToolTipAfter = () => {
     document.getElementById('account-icon-div').innerHTML = `
     <button onclick="AccountIconToolTipBefore()" id="account-btn"><img class="account-icon" src="css/images/icons8-user-64.png"></button>
     <div class="account-tooltip-after">
-      <p class="myaccount-tooltip">My Account</p>
+      <a href="MyAccount.html"><p class="myaccount-tooltip">My Account</p></a>
       <button onclick="switchAcc()" class="SwitchAccBTN"><p class="switchaccount-tooltip">Switch Account</p></button>
       <button onclick="payment()" class="PaymentBTN"><p class="payment-tooltip">Payment Plans</p></button>
       <hr>

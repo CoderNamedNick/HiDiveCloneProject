@@ -6,7 +6,6 @@
   <title>practice website</title>
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/header.css">
-  <!--<link rel="stylesheet" href="css/News.css">-->
   <link rel="stylesheet" href="css/MyAccount.css">
 </head>
 <body>
@@ -66,31 +65,33 @@
       <hr>
       <br>
       <br>
-      <div class="private-flexbox">
-        <div class="private-h2"><h2>PRIVATE</h2></div>
-        <div class="private-div">
-          <p class="p-tags">Nickname <span style="color: rgb(3, 156, 216); font-size: 12px;">Your Nickname is private and only used for profiles.</span></p>
-          <input class="Inputs" type="text" value="SupercoolName">
-          <p class="p-tags">Birth Date<span>Please dont lie</span></p>
-          <input class="Inputs" type="date">
+      <div id="main-sub-box">
+        <div class="private-flexbox">
+          <div class="private-h2"><h2>PRIVATE</h2></div>
+          <div class="private-div">
+            <p class="p-tags">Nickname <span style="color: rgb(3, 156, 216); font-size: 12px;">Your Nickname is private and only used for profiles.</span></p>
+            <input id="input1" class="Inputs" type="text" value="SupercoolName">
+            <p class="p-tags">Birth Date<span>Please dont lie</span></p>
+            <input id="input2" class="Inputs" type="date" value="2024-01-01">
+          </div>
         </div>
-      </div>
-      <hr>
-      <div class="Streaming-flexbox">
-        <div class="Streaming-h2"><h2>STREAMING</h2></div>
-        <div class="streaming-div">
-          <p class="p-tags">Language <span style="color: rgb(3, 156, 216); font-size: 12px;">The default language when multiple languages are available, such as dubs.</span></p>
-          <select class="Inputs"  name="UserProfileLang" id="UserProileLanguage">
-            <option value="EN">English</option>
-            <option value="JA">Japanese</option>
-            <option value="SP">Spanish</option>
-            <option value="FR">French</option>
-            <option value="KR">Korean</option>
-          </select>
+        <hr>
+        <div class="Streaming-flexbox">
+          <div class="Streaming-h2"><h2>STREAMING</h2></div>
+          <div class="streaming-div">
+            <p class="p-tags">Language <span style="color: rgb(3, 156, 216); font-size: 12px;">The default language when multiple languages are available, such as dubs.</span></p>
+            <select id="input3" class="Inputs"  name="UserProfileLang" id="UserProileLanguage">
+              <option value="English">English</option>
+              <option value="Japanese">Japanese</option>
+              <option value="Spanish">Spanish</option>
+              <option value="French">French</option>
+              <option value="Korean">Korean</option>
+            </select>
+          </div>
         </div>
       </div>
       <hr style="margin-bottom: 50px;">
-      <Button class="CancelBTN">CANCEL</Button><Button class="SaveBTN">SAVE</Button>
+      <Button class="CancelBTN">CANCEL</Button><Button id="savebtn" class="SaveBTN">SAVE</Button>
     </div> 
     <footer class="footer">
       <div class="footer-list">
@@ -121,7 +122,7 @@
     </footer>
   </div>
 
-  <script></script>
+  <script src="scripts/Myaccount.js"></script>
   <script src="scripts/Header.js"></script>
 </body>
 </html>
