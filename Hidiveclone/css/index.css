@@ -259,7 +259,6 @@ a {
     z-index: 100000000;
   }
 }
-
 @media only screen and (max-width: 1000px) {
   .main-container, .slideshow-container, .footer, .anime-slides{
     width: 800px;
@@ -299,7 +298,6 @@ a {
     gap: 4px;
   }
 }
-
 @media only screen and (max-width: 800px) {
   .main-container, .slideshow-container, .footer, .anime-slides{
     width: 600px;

@@ -1,7 +1,6 @@
 .coverphoto{
   width: 1200px;
 }
-
 .grid-container{
   margin-left: 10px;
   margin-right: 10px;
@@ -19,7 +18,6 @@
   width: 370px;
   height: 430px;
 }
-
 .box-image0, .box-image1, .box-image2, .box-image3, .box-image4, .box-image5, .box-image6, .box-image7, .box-image8{
   background-color: blue;
   width: auto;
@@ -51,7 +49,6 @@
   height: 190px;
   z-index: 5;
 }
-
 @media only screen and (max-width: 1199px) {
   .coverphoto {
     width: 1000px;
@@ -105,7 +102,6 @@
     z-index: 5;
   }
 }
-
 @media only screen and (max-width: 1000px) {
   .coverphoto {
     width: 800px;
@@ -159,7 +155,6 @@
     z-index: 5;
   }
 }
-
 @media only screen and (max-width: 800px) {
   .coverphoto {
     width: 600px;
