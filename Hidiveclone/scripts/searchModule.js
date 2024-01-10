@@ -13,6 +13,7 @@ if (retrievedValue2 === null) {
   });
   getsearch(AllAnimes, retrievedValue);
 }
+
 if (retrievedValue === null) {
   document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('search-result-div').innerHTML = `
@@ -31,9 +32,8 @@ if (retrievedValue === null && retrievedValue2 === null) {
     `;
   });
   getsearch(AllAnimes, retrievedValue2);
-}
+};
 
 document.getElementById('WATCHNOW').onclick = () => {
   window.location.href = "watchAnime.html";
-}
-
+};

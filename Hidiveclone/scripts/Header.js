@@ -1,5 +1,3 @@
-
-
 let SearchbarAfter = () => {
   document.getElementById('search-icon-div').innerHTML = `
   <input id="searchbar-after" onkeypress="handleKeyPress(event)" placeholder="search">
@@ -147,10 +145,8 @@ function handleKeyPress(event) {
   if (event.key === 'Enter') {
     var inputValue = document.getElementById('searchbar-after').value;
     alert('Entered value: ' + inputValue);
-    // You can do something with the entered value here
     inputedsearch = inputValue
     localStorage.setItem('myVariable', inputedsearch);
-    console.log(inputedsearch);
     window.location.href = "search.html";
   }
 }
@@ -161,10 +157,8 @@ function handleKeyPress2(event) {
   if (event.key === 'Enter') {
     var inputValue2 = document.getElementById('search-searchpage').value;
     alert('Entered value: ' + inputValue2);
-    // You can do something with the entered value here
     inputedsearch2 = inputValue2
     localStorage.setItem('myVariable2', inputedsearch2);
-    console.log(inputedsearch);
     window.location.href = "search.html";
   }
 }

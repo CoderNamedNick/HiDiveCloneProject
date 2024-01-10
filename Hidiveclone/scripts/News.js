@@ -1,4 +1,3 @@
-
 function makeHoverEffects(images, div1, div2) {
   images.forEach(function (image) {
     image.addEventListener('mouseover', function () {
@@ -13,7 +12,7 @@ function makeHoverEffects(images, div1, div2) {
 
     image.addEventListener('mouseout', function () {
       div1.forEach(function (div) {
-        div.style.backgroundColor = ''; // Set it to an empty string to revert to the default color
+        div.style.backgroundColor = '';
       });
 
       div2.forEach(function (div) {
@@ -35,7 +34,7 @@ function makeHoverEffects(images, div1, div2) {
 
     div.addEventListener('mouseout', function () {
       div1.forEach(function (div) {
-        div.style.backgroundColor = ''; // Set it to an empty string to revert to the default color
+        div.style.backgroundColor = '';
       });
 
       div2.forEach(function (div) {
@@ -57,7 +56,7 @@ function makeHoverEffects(images, div1, div2) {
 
     div.addEventListener('mouseout', function () {
       div1.forEach(function (div) {
-        div.style.backgroundColor = ''; // Set it to an empty string to revert to the default color
+        div.style.backgroundColor = '';
       });
 
       div2.forEach(function (div) {

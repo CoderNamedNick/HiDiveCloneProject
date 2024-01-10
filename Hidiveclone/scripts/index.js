@@ -10,7 +10,6 @@ let recentlyAddedAnimeInfosHTML = '';
 function clickedpreview(animeId) {
   let retrievedAnime1ID = animeId;
   localStorage.setItem("AnimeSelected",retrievedAnime1ID)
-  //alert('wait');
   window.location.href = "watchAnime.html";
 }
 
@@ -74,7 +73,6 @@ var refresh2 = () => {
     });
   });
 }
-
 refresh2()
 
 document.getElementById('next-BTN2').onclick = () => {
@@ -102,7 +100,6 @@ var refresh3 = () => {
     });
   });
 }
-
 refresh3()
 
 document.getElementById('next-BTN3').onclick = () => {
@@ -130,7 +127,6 @@ var refresh4 = () => {
     });
   });
 }
-
 refresh4()
 
 document.getElementById('next-BTN4').onclick = () => {
@@ -158,7 +154,6 @@ var refresh5 = () => {
     });
   });
 }
-
 refresh5()
 
 document.getElementById('next-BTN5').onclick = () => {
@@ -172,7 +167,6 @@ document.getElementById('prev-BTN5').onclick = () => {
   changeopacity(TrendingNowAnime)
   refresh5()
 }
-
 
 let HeaderSimulcast = document.getElementById('Simulcast-Header');
 let HeaderTrending = document.getElementById('Trending-Header');

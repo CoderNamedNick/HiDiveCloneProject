@@ -4,11 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
   let Dateinput = document.getElementById('input2');
   let Languageinput = document.getElementById('input3');
 
-  if (!saveBTN || !Nicknameinput || !Dateinput || !Languageinput) {
-    console.error('One or more elements not found.');
-    return;
-  }
-
   let saveddataNickname = '';
   let saveddatadate = '';
   let saveddatalang = '';
@@ -25,8 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
       setSessionCookie('language', saveddatalang, '/');
 
       console.log('Values saved:', saveddataNickname, saveddatadate, saveddatalang);
-    } else {
-      console.error('One or more input elements are undefined.');
     }
   };
 });

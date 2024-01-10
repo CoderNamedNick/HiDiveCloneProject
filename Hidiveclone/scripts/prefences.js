@@ -1,12 +1,8 @@
-import { AllAnimes, TrendingNowAnime, recentlyAddedAnimes, exclusivesAnime, SimulcastAnimes, RomanceAnime, ComedyAnime } from "../scripts/all-anime-infos.js";
-
-
-
+import { AllAnimes, TrendingNowAnime, recentlyAddedAnimes, exclusivesAnime, SimulcastAnimes } from "../scripts/all-anime-infos.js";
 
 let CatagoryPrefedByHeader = localStorage.getItem('asdfg')
-console.log(CatagoryPrefedByHeader)
 
-//function filters the array to be unique and only have one main id for extra meassure
+//function filters the array to be unique and only have one main id for extra meassure for AllAnime
 let AllAnime = [];
 
 function UniqueArray(param, param2) {
@@ -20,10 +16,7 @@ function UniqueArray(param, param2) {
 }
 UniqueArray(AllAnimes, AllAnime)
 
-console.log(AllAnime)
-console.log(exclusivesAnime)
-
-//makes tool tipos appear and dissapear
+//makes tool tips appear and dissapear
 document.addEventListener('DOMContentLoaded', function () {
   let catagoryDiv = document.querySelector('.catagory-tooltip');
   let catagoryBTN = document.querySelector('.prefences-btn');
@@ -58,7 +51,6 @@ document.addEventListener('DOMContentLoaded', function () {
   catagoryBTN.addEventListener('click', CatagorytoolTipsShow);
   genreBTN.addEventListener('click', GenretoolTipsShow)
 });
-
 
 localStorage.clear();
 
@@ -135,12 +127,11 @@ const generateprefencedHtml = (array, html) => {
 function clickedpreview(animeId) {
   let retrievedAnime1ID = animeId;
   localStorage.setItem("AnimeSelected",retrievedAnime1ID)
-  //alert('wait');
   window.location.href = "watchAnime.html";
 }
 let prefencedAnimesHTML = '';
 var refresh = (param) => {
-  prefencedAnimesHTML = generateprefencedHtml(param, prefencedAnimesHTML) // + generateprefencedHtml(param, prefencedAnimesHTML);
+  prefencedAnimesHTML = generateprefencedHtml(param, prefencedAnimesHTML)
   document.querySelector('.sub-main-grid').innerHTML = `${prefencedAnimesHTML}`;
 
   // Set up click event listeners after refreshing
@@ -152,8 +143,7 @@ var refresh = (param) => {
 }
 refresh(SimulcastAnimes)
 
-
-// function filters the anime Category by genres
+// function filters the anime Category by genres-- im so proud of this!!
 let romancefiltered = [];
 let comedyfiltered = [];
 let fantasyfiltered = [];
@@ -186,7 +176,6 @@ let filterbygenre = (param, param2) => {
     const newArray = AllAnime.filter(anime => anime.genre.includes(param2));
     newArray.forEach(anime => param.push(anime));
   }
-  
 }
 
 // main function for tool tips filtering
@@ -207,7 +196,6 @@ document.addEventListener('DOMContentLoaded', function () {
   let adventuretooltip = document.getElementById('AdventureTT')
   let dramatooltip = document.getElementById('DramaTT')
   let thrillertooltip = document.getElementById('ThrillerTT')
-
 
   changeh2tag('All', 'All')
   changeButtonHTML()
@@ -417,4 +405,3 @@ document.addEventListener('DOMContentLoaded', function () {
     changePreference(exclusivesAnime);
   }
 });
-

@@ -1,4 +1,4 @@
-//update this with episodes and tv ratings
+
 export const AllAnimes = [{
   id: 'A0000-0000-0001',
   name: 'BLADE OF THE IMMORTAL',
@@ -605,10 +605,6 @@ export let SimulcastAnimes = AllAnimes.filter((Anime => Anime.category?.at(0) ==
 export let exclusivesAnime = AllAnimes.filter((Anime => Anime.category?.at(0) == 'exclusivesAnime'))
 export let IntroToHidiveAnime = AllAnimes.filter((Anime => Anime.category?.at(0) == 'IntroToHidiveAnime'))
 export let TrendingNowAnime = AllAnimes.filter((Anime => Anime.category?.at(0) == 'TrendingNowAnime'))
-export let RomanceAnime = AllAnimes.filter((Anime => Anime.genre.includes('Romance ')))
-export let ComedyAnime = AllAnimes.filter((Anime => Anime.genre.includes('Comedy ')))
-
-
 
 export let getsearch = (param, param2,) => {
   if (param2 !== null) {
